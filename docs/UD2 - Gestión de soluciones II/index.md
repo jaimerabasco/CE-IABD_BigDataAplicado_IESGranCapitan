@@ -9,7 +9,10 @@ En una empresa u organización, los datos generados a diario son, principalmente
 
 El crecimiento exponencial de los datos manejados por una organización ha hecho que los computadores sean las únicas herramientas capaces de procesar estos datos para obtener información y ofrecer ayuda en la toma de decisiones. En este contexto, aparecen los **sistemas de ayuda a la decisión** o _Decision Support Systems (DSS)_ que ayudan a quienes ocupan puestos de gestión a tomar decisiones o elegir entre diferentes alternativas. 
 
->📄 **Sistema de ayuda a la decisión**: Conjunto de técnicas y herramientas tecnológicas desarrolladas para procesar y analizar datos para ofrecer soporte en la toma decisiones a quienes ocupan puestos de gestión o dirección en una organización. Para ello, el sistema combina los recursos de los gestores junto con los recursos computacionales para optimizar el proceso de toma de decisiones.
+!!! info "Sistema de ayuda a la decisión"
+
+    📄 **Sistema de ayuda a la decisión**: Conjunto de técnicas y herramientas tecnológicas desarrolladas para procesar y analizar datos para ofrecer soporte en la toma decisiones a quienes ocupan puestos de gestión o dirección en una organización. Para ello, el sistema combina los recursos de los gestores junto con los recursos computacionales para optimizar el proceso de toma de decisiones.
+
 
 Mientras que las bases de datos relacionales han sido tradicionalmente el componente del _back-end_ en el diseño de sistemas de ayuda a la decisión, los almacenes de datos se han convertido en una opción mucho más competitiva como elemento _back-end_ al mejorar el rendimiento de éstas.
 
@@ -31,8 +34,9 @@ La aparición de los **almacenes de datos** está ligada, principalmente, a una 
 
 A continuación, se muestra una **definición de almacén de datos** muy extendida, dada por W. Inmon, quien es conocido por ser el “padre” del concepto de almacén de datos.
 
+!!! info "Almacén de datos (Data Warehouse)"
 
->📄 **Almacén de datos (Data Warehouse)**: Colección de datos orientados a temas, integrados, variante en el tiempo y no volátil que da soporte al proceso de toma de decisiones de la dirección.
+    📄 **Almacén de datos (Data Warehouse)**: Colección de datos orientados a temas, integrados, variante en el tiempo y no volátil que da soporte al proceso de toma de decisiones de la dirección.
 
 Para entender correctamente esta definición, es necesario ahondar en las características que incluye la misma.
 
@@ -50,7 +54,7 @@ Así pues, los sistemas **OLTP están dirigidos por la tecnología y orientados 
 
 
 | Característica | **BBDD Operacionales(OLTP)** | **Almacén Datos(OLAP)** |
-| -- | -- | -- |
+| -- | :--: | :--: |
 | **Objetivo** | Depende de la aplicación | Toma de decisiones |
 | **Usuarios** | Miles | Cientos |
 | **Trabajo con...** | Transacciones predefinidas | Consultas y análisis específicos |
@@ -78,7 +82,9 @@ Las arquitecturas disponibles para el **diseño de almacenes de datos** se basan
 
 - **Seguridad**: Monitorizando el acceso a los datos estratégicos guardados en el almacén de datos.
 
->📄 Las arquitecturas de **almacenes de datos** se clasifican, fundamentalmente, en dos tipos: arquitecturas orientadas a la estructura y arquitecturas orientadas a la empresa.
+!!! note "Almacén de datos"
+
+   📄 Las arquitecturas de **almacenes de datos** se clasifican, fundamentalmente, en dos tipos: arquitecturas orientadas a la estructura y arquitecturas orientadas a la empresa.
 
 ### 2.3.1 Arquitecturas orientadas a la estructura
 
@@ -106,8 +112,9 @@ Fue diseñada con el objetivo de solucionar el problema de la separación que pr
 
 - **Análisis**: Conjunto de procesos a partir de los cuales los datos son eficientemente y flexiblemente analizados, generando informes y simulando escenarios hipotéticos para dar soporte a la toma de decisiones.
 
->📋 **Data mart** es un subconjunto o agregación de los datos almacenados en un almacén de datos primario que incluye información relevante sobre un área específica del negocio.
+!!! info "Data mart"
 
+    📋 **Data mart** es un subconjunto o agregación de los datos almacenados en un almacén de datos primario que incluye información relevante sobre un área específica del negocio.
 
 ![figura2.2][figura2.2]
 
@@ -173,7 +180,9 @@ Etapa que consiste en la **lectura de los datos de las distintas fuentes de las 
 
 En la actualidad, existe una gran cantidad de conjuntos de datos o _data sets_ públicos, conocidos bajo el nombre de Open Data, que abarcan una gran cantidad de dominios y con los que es posible trabajar para construir soluciones big data.  
 
->📋 **Open Data**: Se trata de datos que han sido generados por una fuente en particular, que abarcan un dominio temático o disciplinar y tienen atributos, dentro de los cuales está la frecuencia de actualización. Además, cuentan con una licencia específica que indica las condiciones de reutilización de los mismos.
+!!! note "Open Data"
+
+    📋 **Open Data**: Se trata de datos que han sido generados por una fuente en particular, que abarcan un dominio temático o disciplinar y tienen atributos, dentro de los cuales está la frecuencia de actualización. Además, cuentan con una licencia específica que indica las condiciones de reutilización de los mismos.
 
 **La fuente de los datos es en muchos de los casos el estado** nacional, provincial, municipal u organizaciones comerciales. En otras ocasiones, **la fuente de los datos es fruto del estudio o medición por parte de particulares**. Los **atributos** de los conjuntos de datos deben especificar cómo fueron obtenidos, incluyendo fechas de obtención, actualización y validez, así como el público involucrado, la metodología de recogida o muestreo, etc.
 
@@ -195,7 +204,9 @@ _[ver presentación BDA2.3](https://moodle.iesgrancapitan.org/pluginfile.php/581
 
 La etapa de transformación es la fase clave para **transformar los datos operativos en datos con un formato específico para alimentar un almacén de datos**. En esta etapa, **los datos se limpian y se transforman, añadiéndoles contexto y significado**. En caso de implementar un almacén de datos siguiendo una arquitectura de tres capas, **el proceso de transformación es el encargado de obtener la capa de datos reconciliados**. Si bien es cierto que algunos autores separan la limpieza y la transformación de los datos en dos etapas distintas, en este capítulo se considerarán ambas dentro de la fase de transformación.
 
-> 📄 La etapa de **transformación** engloba todos los procesos de limpieza y manipulación de los datos, con el objetivo de transformar los datos operativos propios de sistemas relacionales (OLTP) en datos preparados para ser incluidos dentro del almacén de datos (OLAP).
+!!! info "Transformación"
+
+    📄 La etapa de **transformación** engloba todos los procesos de limpieza y manipulación de los datos, con el objetivo de transformar los datos operativos propios de sistemas relacionales (OLTP) en datos preparados para ser incluidos dentro del almacén de datos (OLAP).
 
 La **limpieza de los datos** o _data cleaning_ engloba todos aquellos procedimientos necesarios para detectar y resolver situaciones problemáticas con los datos de partida que pudieran suponer problemas potenciales a la hora de analizarlos. Así pues, los datos de partida pueden ser **incompletos**, es decir, pueden contener atributos sin valor o valores agregados, **incorrectos** que incluyan errores o valores sin ningún significado, lo cual es común cuando los datos se introducen manualmente en el sistema, o inconsistentes cuando los cambios no son propagados a todos los módulos del sistema, los rangos de un determinado atributo son cambiantes, existen datos duplicados...
 

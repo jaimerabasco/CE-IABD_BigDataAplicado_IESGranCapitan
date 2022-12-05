@@ -27,7 +27,9 @@ Alternativamente, las bases de datos **NoSQL** siguen el modelo conocido como **
 
 En la actualidad, las aplicaciones web modernas, el auge de la computación ubicua y el Big Data, presentan desafíos muy diferentes a los que presentan los sistemas de información tradicionales, implementados por medio de sistemas de bases de datos relacionales. Algunos **desafíos** son: el procesamiento masivo de datos, la alta frecuencia de lecturas y escrituras, los cambios dinámicos y frecuentes en el esquema de datos, la escalabilidad a costes razonables, gestión de datos temporales...En este contexto, en los últimos años han aparecido multitud de enfoques, modelos y tecnologías para aportar soluciones a los desafíos mencionados anteriormente. En este capítulo, se profundiza en **las bases de datos XML y las bases de datos documentales**.
 
-> 📄 **Base de datos NoSQL**: Sistema de bases de datos no relacional que utiliza distintas tecnologías para la gestión y almacenamiento distribuido de datos masivos sin un esquema estricto subyacente. Esta familia de base de datos permite incrementar la disponibilidad y escalabilidad del sistema, mejorando su rendimiento.
+!!! info "Base de datos NoSQL"
+
+    📄 **Base de datos NoSQL**: Sistema de bases de datos no relacional que utiliza distintas tecnologías para la gestión y almacenamiento distribuido de datos masivos sin un esquema estricto subyacente. Esta familia de base de datos permite incrementar la disponibilidad y escalabilidad del sistema, mejorando su rendimiento.
 
 ## 3.2 Bases de datos XML
 
@@ -172,7 +174,7 @@ _Listado 3.7: DTD Listado de Asignaturas con atributos_
 Finalmente, la tabla 3.1a muestra un resumen de definición de elementos y atributos en una DTD.
 
 | **Tipos** | **ELEMENTO** |
-| -- | -- |
+| :--: | :--: |
 | #PCDATA | Cadena de caracteres |
 | EMPTY | Elemento sin contexto |
 | ANY | Cualquier tipo |
@@ -187,7 +189,7 @@ _Tabla 3.1a: Descripción DTD de elementos y atributos XML_
 Y la tabla 3.1b muestra un resumen de definición de atributos en una DTD.
 
 | **Tipos** | **ATRIBUTOS** |
-| -- | -- |
+| :--: | :--: |
 | CDATA | Cadena de caracteres |
 | ID | Identificador |
 | IDREF |Referencia a un ID |
@@ -251,7 +253,7 @@ En cualquier sistema de bases de datos, además de los lenguajes de definición 
 **XPath es un lenguaje de manipulación de datos XML**. La principal característica de este lenguaje es que **interpreta un documento XML como una estructura de datos de tipo árbol**, donde los nodos y sus respectivas hojas se corresponden con los elementos y subelementos del documento XML. De esta forma, y utilizando comandos que permiten recorrer el documento de forma análoga a los comandos que se utilizan en una terminal de comandos para recorrer el sistema de archivos de un computador, es posible realizar consultas. La tabla 3.2 muestra un listado de los principales operadores utilizados en XPath.
 
 | **Operador** | **Significado** |
-| -- | -- |
+| :-- | :-- |
 | / | Navegación entre nodos del documento. Selecciona los nodos del nivel inferior. |
 | // | Navegación entre nodos del documento. Selecciona los nodos del nivel inferior de cualquier nodo especificado a continuación |
 | . | Selecciona el nodo actual |
@@ -265,14 +267,17 @@ _Tabla 3.2: XPath: Operadores básicos_
 
 Con estos operadores, veamos cómo realizar algunas consultas de ejemplo sobre el fragmento XML que especifica un listado de asignaturas.
 
->❓**Consulta 1**. Recuperar los nombres de todas las asignaturas.
->>/Asignaturas_Primero/Asignatura/titulo/text()
+??? question "**Consulta 1**. Recuperar los nombres de todas las asignaturas."
 
->❓**Consulta 2**. ¿Cuántas asignaturas son impartidas por más de un profesor?
->>/Asignaturas_Primero/Asignatura[count(profesor)>1]
+    /Asignaturas_Primero/Asignatura/titulo/text()
 
->❓**Consulta 3**. ¿Quiénes son los profesores que imparten la asignatura de física?
->>/Asignaturas_Primero/Asignatura[titulo="Fisica"]/profesor/nombre
+??? question "**Consulta 2**. ¿Cuántas asignaturas son impartidas por más de un profesor?"
+
+    /Asignaturas_Primero/Asignatura[count(profesor)>1]
+
+??? question "**Consulta 3**. ¿Quiénes son los profesores que imparten la asignatura de física?"
+
+    /Asignaturas_Primero/Asignatura[titulo="Fisica"]/profesor/nombre
 
 **Es posible utilizar XPath de forma on-line a través de visualizadores[^3] o, por ejemplo, instalando el plug-in XPatherizer de Notepad++, en caso de utilizar este último editor de código XML.**
 
@@ -298,7 +303,7 @@ _Listado 3.9: XSLT: Ejemplo de plantilla_
 Tal y como se puede observar en el fragmento anterior, una transformación o consulta XSLT se define mediante dos órdenes básicas: _match_ que especifica una expresión XPath para seleccionar uno o más nodos y _value − of select_ que devuelve los valores especificados de los nodos que se han obtenido como resultado de la expresión XPath. Merece la pena destacar que **cualquier texto o etiqueta del archivo XSLT que no esté en el espacio de nombre se copia a la salida sin cambios**. Esto quiere decir, que el resultado del fragmento anterior no son únicamente los títulos de las asignaturas, sino estos mismos delimitados por una etiqueta de apertura y cierre llamada _< titulo_asignatura >_. De esta forma, a partir de un documento XML se ha generado otro con el resultado de la consulta. A modo de resumen, la tabla 3.3 define los principales constructores XSLT.
 
 | **Constructor XSLT** | **Significado** |
-| -- | -- |
+| :-- | :-- |
 | _< xsl:template match = "expresion XPath" >_ | Selecciona nodos a devolver |
 | _<xsl:value − of select = "valor">_ | Devuelve todos los nodos que no coinciden con alguna otra plantilla |
 | _<xsl:template ><xsl:template match = "∗"/>_ | Selecciona el nodo actual |

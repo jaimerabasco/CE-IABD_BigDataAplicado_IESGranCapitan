@@ -424,7 +424,7 @@ Figura 4.5: Visualización de un grafo social
 
 **El grado de un nodo en un grafo se define como el número de aristas o conexiones que entran o salen de un nodo**. Así pues, en un nodo de un grafo se distinguen dos grados: el **grado de entrada**, correspondiente al conjunto de conexiones que entran a un nodo y el **grado de salida**, que se corresponde con el conjunto de aristas que salen de un nodo. El primero indica la **prominencia** de un nodo dentro de la red, mientras que el segundo la **influencia** del nodo dentro del grafo. Esta medida de centralidad es muy utilizada para identificar actores prominentes o influyentes o para identificar conductas fraudulentas, caracterizadas en ocasiones por una actividad anormal. Para calcular la centralidad de grado en este grafo, se almacenará en primer lugar el grafo creado y, a continuación, se ejecutará el método que calcula la centralidad de grado según el código mostrado en el listado 4.13. El nodo con mayor grado es Doug, que tiene un grado de 5, seguido de Alice que tiene un grado de 3.
 
- ```
+```
 CALL gds.graph.project(
 'myGraph_centralidad_grado',
 'User',
@@ -616,6 +616,7 @@ El método de vecinos comunes se basa en la idea genérica de que dos actores de
 Donde _N(x)_ es el conjunto de nodos adyacentes a _x_ y _N(y)_ es el conjunto de nodos adyacentes a _y_. Cuanto mayor es el valor de _CN_ calculado, existe mayor posibilidad de que se produzca un nuevo enlace entre _x_ e _y_. En el grafo social de ejemplo, el cálculo de vecinos comunes para Charles y Bridget se puede realizar a través del listado 4.19. El resultado de este cálculo es 2.
 
 ```
+//No funciona ni en la documentación oficial (09-11-2022)
 MATCH (x:User{id:'Charles'})
 MATCH (y:User{id:'Bridget'})
 RETURN gds.alpha.linkprediction.commonNeighbors(x,y) AS score
@@ -648,6 +649,7 @@ Se trata de una métrica compleja que evalúa la cercanía de un par de nodos pa
 En el grafo social de ejemplo, el cálculo de la asignación de recursos para Charles y Bridget se puede realizar a través del listado 4.21. El resultado de este cálculo es 0.309.
 
 ```
+//No funciona ni en la documentación oficial (09-11-2022)
 MATCH (x:User{id:'Charles'})
 MATCH (y:User{id:'Bridget'})
 RETURN gds.alpha.linkprediction.resourceAllocation(x, y) AS score

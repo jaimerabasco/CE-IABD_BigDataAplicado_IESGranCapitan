@@ -24,7 +24,9 @@ Por tanto, datos, información y conocimiento están estrechamente relacionados 
 
 4. La información de salida tras este proceso de decisión es que _Pablo está suspenso en matemáticas_.
 
->❓Pregunta. Siguiendo el ejemplo anterior ¿Cómo se produce el proceso de toma de decisiones para determinar si un número es primo?
+!!! question 
+
+    ❓Pregunta. Siguiendo el ejemplo anterior ¿Cómo se produce el proceso de toma de decisiones para determinar si un número es primo?
 
 Aunque se trate de un ejemplo trivial, la importancia del proceso de toma de decisiones no lo es. En **marketing**, por ejemplo, se analizan bases de datos de clientes para identificar distintos grupos e intentar predecir el comportamiento de estos. En el mundo de las **finanzas**, las inversiones realizadas por grandes empresas responden a un proceso complejo de toma de decisiones donde los datos son el eje fundamental de este proceso. En **medicina**, existe una gran cantidad de sistemas de ayuda a la decisión que permiten a los doctores contrastar y validar sus diagnósticos de forma precoz. En definitiva, no hay área de conocimiento ni ámbito de aplicación que escape al proceso de toma de decisiones.
 
@@ -50,7 +52,9 @@ En este sentido, la **computación distribuida**, en donde múltiples máquinas 
 
 Otras alternativas son la **programación paralela** y la **programación multi-procesador**, que permiten, respectivamente, aprovechar el paralelismo de múltiples hilos de ejecución dentro de un procesador y realizar el procesamiento dividiéndolo en múltiples hilos en diferentes procesadores
 
->❓ Pregunta. Piensa en procesos cotidianos que requieran un procesamiento on-line y en otros que requieran un procesamiento off-line.
+!!! question 
+
+    ❓ Pregunta. Piensa en procesos cotidianos que requieran un procesamiento on-line y en otros que requieran un procesamiento off-line.
 
 ⏳ En la actualidad, la proliferación de una gran cantidad de sensores con altas prestaciones y precios asequibles que permiten monitorizar y generar datos sobre cualquier proceso ha supuesto un **incremento exponencial en la cantidad de datos generados**. Es posible monitorizar casi cualquier proceso, incluyendo los domésticos como el consumo eléctrico de un hogar, la presencia dentro del mismo o procesos cotidianos como la actividad física, entre otros muchos. Hoy, los datos llevan la delantera en la carrera entre datos y tecnología. Si bien es cierto que la tecnología ha experimentado grandes avances en los últimos años, la cantidad de datos generada no deja de crecer. Esto supone un **reto permanente para la tecnología**, que sigue evolucionando a nivel hardware con la aparición de arquitecturas con mayores posibilidades procesamiento y almacenamiento y a nivel software, con la aparición de modelos de programación que optimizan el procesamiento de los datos.
 
@@ -69,8 +73,9 @@ Aunque a día de hoy también se sigue trabajando con archivos de datos en forma
 
   - ⚫ Finalmente, han aparecido nuevos tipos y formatos de datos, como por ejemplo, aquellos datos generados a partir de **grafos**, los cuales se tratarán en próximas secciones y capítulos con más detenimiento. Estos datos se corresponden, por ejemplo, con datos geográficos obtenidos a partir de mapas como los generados en aplicaciones como Google Maps u Open Street Maps o datos de seguimiento y actividad en redes sociales de gran valor en campañas publicitarias entre otros muchos.
 
-    
->❓Pregunta. Haz una búsqueda y elabora un listado con distintos tipos de datos y los formatos de almacenamiento más utilizados con los que se trabaja en ciencia de datos y big data.
+!!! question 
+
+    ❓Pregunta. Haz una búsqueda y elabora un listado con distintos tipos de datos y los formatos de almacenamiento más utilizados con los que se trabaja en ciencia de datos y big data.
 
 Los diferentes tipos y formatos de datos, los de ayer y los de hoy, son la materia básica fundamental en cualquier proceso de extracción de información y de conocimiento. Después, las metodologías empleadas para ello y arquitecturas hardware sobre las que se realice el procesamiento de los mismos, permitirán definir **procesos y metodologías de big data**, aplicadas a un ámbito concreto.
 
@@ -130,7 +135,7 @@ Los sistemas OLAP están basados, generalmente, en sistemas o interfaces multidi
 Finalmente, en cuanto a la visualización de los mismos, los sistemas OLAP permiten la visualización y el análisis multidimensional a partir de diferentes vistas de los datos, presentando los resultados en forma matricial y con mayores posibilidades estéticas y visuales. La tabla 1.1 muestra un resumen con las principales diferencias entre los sistemas **OLTP y OLAP**.
 
 | | **Bases de datos relacionales(OLTP)** | **Soluciones Business Intelligence(OLAP)** |
-| -- | -- | -- |
+| :-- | :--: | :--: |
 | **Concepto** | Sistema de procesamiento de transacciones en línea | Sistema de recuperación y análisis de datos en línea |
 | **Funciones** | Gestión de transacciones: inserción, actualización, eliminación... | Análisis de datos para dar soporte a la toma de decisiones |
 | **Procesamiento** | Transacciones cortas | Procesamientos de análisis complejos |
@@ -162,7 +167,7 @@ Las **bases de datos documentales** trabajan con documentos, entendidos como una
 🔖 Actualmente, **XML y JSON** son los formatos de intercambio de datos más utilizados en el desarrollo de aplicaciones web. Sin embargo, existen importantes diferencias entre ellos: XML es una extensión del lenguaje **Standard Generalized Markup Language (SGML)** el cual es un lenguaje que permite la creación, organización y etiquetado de documentos. Por su parte, JSON es una extensión del lenguaje **JavaScript**. XML tiene una notación más pesada que JSON, siendo este último un lenguaje más ligero que admite tipos de datos y matrices. Por su parte, XML no proporciona tipos ni estructuras de datos, sino que contiene un conjunto de reglas que, mediante el uso de atributos y elementos, permite codificar un documento. Finalmente, JSON es un lenguaje orientado a datos mientras que XML es un lenguaje orientado a documentos. La tabla 1.2 muestra una comparativa de estos y otros aspectos de ambos lenguajes.
 
 | | **XML** | **JSON** |
-| -- | -- | -- |
+| :-- | :--: | :--: |
 | **Lenguaje fuente** | SGML | JavaScript |
 | **Tipo Lenguaje** | Orientado a datos | Orientado a documentos |
 | **Notación** | Pesada | Ligera |
@@ -210,7 +215,10 @@ _[ver presentación BDA1.6](https://moodle.iesgrancapitan.org/pluginfile.php/574
 ```
 _Listado 2: Quedada en la puerta del sol_
 
-🔖 **Existen en la web múltiples aplicaciones online que permiten convertir archivos XML en JSON y viceversa** 〽️. En sucesivos capítulos, se profundizará más sobre la sintaxis de estos dos lenguajes así como la equivalencia entre los mismos a la hora de definir documentos que serán tratados posteriormente por una base de datos documental. También se describirán las tecnologías más utilizadas en este ámbito, haciendo especial énfasis en **MongoDB**, uno de los sistemas de bases de datos NoSQL orientado a documentos más utilizado a día de hoy.
+!!! note 
+
+    🔖 **Existen en la web múltiples aplicaciones online que permiten convertir archivos XML en JSON y viceversa** 〽️. En sucesivos capítulos, se profundizará más sobre la sintaxis de estos dos lenguajes así como la equivalencia entre los mismos a la hora de definir documentos que serán tratados posteriormente por una base de datos documental. También se describirán las tecnologías más utilizadas en este ámbito, haciendo especial énfasis en **MongoDB**, uno de los sistemas de bases de datos NoSQL orientado a documentos más utilizado a día de hoy.
+
 
 _[ver presentación BDA1.7](https://moodle.iesgrancapitan.org/pluginfile.php/57450/mod_folder/content/0/BDA_UD1_07.pdf?forcedownload=1)_
 ### 1.4.3 Bases de datos sobre grafos

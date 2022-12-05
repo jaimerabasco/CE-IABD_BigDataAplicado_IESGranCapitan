@@ -401,5 +401,5 @@ _alpha a 09-11-2022_
 //No funciona ni en la documentación oficial (09-11-2022)
 MATCH (x:User{id:'Charles'})
 MATCH (y:User{id:'Bridget'})
-RETURN gds.alpha.linkprediction.preferentialAttachment(x, y) AS score
+RETURN gds.alpha.linkprediction.resourceAllocation(x, y) AS score
 ```
