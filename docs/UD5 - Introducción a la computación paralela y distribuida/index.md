@@ -172,8 +172,6 @@ _Figura 5.3: Esquema de nodos en streaming. Upstream Nu y downstream Nd_
 
 _[ver presentación BDA5.4](https://moodle.iesgrancapitan.org/pluginfile.php/59950/mod_folder/content/0/BDA_UD5_04.pdf)_
 
-## 5.7 Hadoop
-
 
 [figura5.1]: images/Figura5.1_Esquema_organizacion_servicio_supercomputacion_cluster.png "Figura5.1_Esquema de organizacion de un servicio de supercomputacion en cluster"
 [figura5.2]: images/Figura5.2_Esquema_arquitectura_SOA.png "Figura5.2_Esquema de arquitectura SOA"

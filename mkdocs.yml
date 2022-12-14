@@ -1,5 +1,5 @@
 site_name: Big Data Aplicado
-site_url: https://jaimerabasco.github.io/https-github.com-jaimerabasco-CE-IABD_BigDataAplicado_IESGranCapitan_prueba2
+site_url: https://jaimerabasco.github.io/CE-IABD_BigDataAplicado_IESGranCapitan/
 use_directory_urls: false
 
 nav:
@@ -17,10 +17,8 @@ nav:
     - "Ejercicio de clase 2": "UD4 - Gestión de soluciones IV/Ejercicios_clase/Ejemplo2.md"
   - "UD5 - Introducción a la computación paralela y distribuida":
     - "UD5 - Introducción a la computación paralela y distribuida/index.md"
-#  - "UT5.- Ecosistema Hadoop":
-#      - "hadoop/index.md"
-#      - "S36.- Arquitecturas Big Data": "hadoop/01arq.md"
-#      - "S36.- Ingesta de datos": "hadoop/02etl.md"
+  - "UD6 - Apache Hadoop":
+    - "UD6 - Apache Hadoop/index.md"
 
 theme:
   name: "material"
@@ -93,8 +91,11 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
   - tables
+  - md_in_html
   - footnotes
   - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - meta
   - sane_lists
   - toc:
