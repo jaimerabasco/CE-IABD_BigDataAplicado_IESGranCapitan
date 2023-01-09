@@ -1,0 +1,1399 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://jaimerabasco.github.io/CE-IABD_BigDataAplicado_IESGranCapitan/UD3%20-%20Gesti%C3%B3n%20de%20soluciones%20III/index.html">
+      
+      
+        <link rel="prev" href="../UD2%20-%20Gesti%C3%B3n%20de%20soluciones%20II/index.html">
+      
+      
+        <link rel="next" href="Ejercicios_clase/Ejemplo1.html">
+      
+      <link rel="icon" href="../images/logo.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
+    
+    
+      
+        <title>UD 3 - Gestión de Soluciones III - Big Data Aplicado</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6b71719e.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="UD 3 - Gestión de Soluciones III - Big Data Aplicado" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="https://jaimerabasco.github.io/CE-IABD_BigDataAplicado_IESGranCapitan/assets/images/social/UD3 - Gestión de soluciones III/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://jaimerabasco.github.io/CE-IABD_BigDataAplicado_IESGranCapitan/UD3%20-%20Gesti%C3%B3n%20de%20soluciones%20III/index.html" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="UD 3 - Gestión de Soluciones III - Big Data Aplicado" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="https://jaimerabasco.github.io/CE-IABD_BigDataAplicado_IESGranCapitan/assets/images/social/UD3 - Gestión de soluciones III/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ud-3-gestion-de-soluciones-iii" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../index.html" title="Big Data Aplicado" class="md-header__button md-logo" aria-label="Big Data Aplicado" data-md-component="logo">
+      
+  <img src="../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Big Data Aplicado
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              UD 3 - Gestión de Soluciones III
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="Big Data Aplicado" class="md-nav__button md-logo" aria-label="Big Data Aplicado" data-md-component="logo">
+      
+  <img src="../images/logo.png" alt="logo">
+
+    </a>
+    Big Data Aplicado
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        Inicio
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../UD1%20-%20Gesti%C3%B3n%20de%20soluciones%20I/index.html">UD1.- Gestión de Soluciones I</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="UD1.- Gestión de Soluciones I" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          UD1.- Gestión de Soluciones I
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../UD2%20-%20Gesti%C3%B3n%20de%20soluciones%20II/index.html">UD2.- Gestión de Soluciones II</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="UD2.- Gestión de Soluciones II" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          UD2.- Gestión de Soluciones II
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index md-nav__link--active">
+          <a href="index.html">UD3.- Gestión de Soluciones III</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="UD3.- Gestión de Soluciones III" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          UD3.- Gestión de Soluciones III
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Ejercicios_clase/Ejemplo1.html" class="md-nav__link">
+        Ejercicio de clase
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../UD4%20-%20Gesti%C3%B3n%20de%20soluciones%20IV/index.html">UD4.- Gestión de Soluciones IV</a>
+          
+            <label for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="UD4.- Gestión de Soluciones IV" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          UD4.- Gestión de Soluciones IV
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UD4%20-%20Gesti%C3%B3n%20de%20soluciones%20IV/Ejercicios_clase/Ejemplo1.html" class="md-nav__link">
+        Ejercicio de clase 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UD4%20-%20Gesti%C3%B3n%20de%20soluciones%20IV/Ejercicios_clase/Ejemplo2.html" class="md-nav__link">
+        Ejercicio de clase 2
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../UD5%20-%20Introducci%C3%B3n%20a%20la%20computaci%C3%B3n%20paralela%20y%20distribuida/index.html">UD5 - Introducción a la computación paralela y distribuida</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="UD5 - Introducción a la computación paralela y distribuida" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          UD5 - Introducción a la computación paralela y distribuida
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../UD6%20-%20Apache%20Hadoop/index.html">UD6 - Apache Hadoop</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="UD6 - Apache Hadoop" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          UD6 - Apache Hadoop
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#31-bases-de-datos-nosql" class="md-nav__link">
+    3.1 Bases de datos NoSQL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-bases-de-datos-xml" class="md-nav__link">
+    3.2 Bases de datos XML
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Bases de datos XML">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#321-definition-type-document-dtd" class="md-nav__link">
+    3.2.1 Definition Type Document (DTD)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#322-xml-schema" class="md-nav__link">
+    3.2.2 XML Schema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#322-xpath" class="md-nav__link">
+    3.2.2 XPath
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#324-xslt" class="md-nav__link">
+    3.2.4 XSLT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#325-xquery" class="md-nav__link">
+    3.2.5 XQuery
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-bases-de-datos-documentales-mongodb" class="md-nav__link">
+    3.3 Bases de datos documentales: MongoDB
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3 Bases de datos documentales: MongoDB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#331-mongodb-caracteristicas-y-aplicaciones" class="md-nav__link">
+    3.3.1 MongoDB: Características y aplicaciones
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#332-mongodb-conceptos-basicos-utilidades-y-herramientas" class="md-nav__link">
+    3.3.2 MongoDB: Conceptos básicos, utilidades y herramientas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#333-mongodb-operaciones-crud" class="md-nav__link">
+    3.3.3 MongoDB: Operaciones CRUD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#334-mongodb-consultas-y-agregacion" class="md-nav__link">
+    3.3.4 MongoDB Consultas y Agregación
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ud-3-gestion-de-soluciones-iii">UD 3 - Gestión de Soluciones III<a class="headerlink" href="#ud-3-gestion-de-soluciones-iii" title="Permanent link">&para;</a></h1>
+<p>Este capítulo profundiza en dos soluciones de almacenamiento y gestión de datos propias de las bases de datos NoSQL: <strong>las bases de datos XML y las bases de datos documentales</strong>.</p>
+<h2 id="31-bases-de-datos-nosql">3.1 Bases de datos NoSQL<a class="headerlink" href="#31-bases-de-datos-nosql" title="Permanent link">&para;</a></h2>
+<p>El término <strong>NoSQL</strong> proviene del inglés y está formado por las palabras "No" y "SQL". El significado literal del término no debe confundir al lector ni alejarlo de su correcto significado. NoSQL no engloba solamente un conjunto de bases de datos y sistemas de almacenamiento que no utilizan SQL para su gestión. El significado de NoSQL amplía lo anterior, siendo el acrónimo de "<strong><em>Not only SQL</em></strong>". Por tanto, NoSQL es una categoría general de sistemas de bases de datos que, además de SQL, utilizan otra serie de tecnologías para almacenar y gestionar los datos. El término NoSQL fue acuñado en 1998 por Carlo Strozzy y retomado en el año 2009 por Eric Evans, quien aprovechó este término para referirse a esta nueva generación de familias de bases de datos como "<strong>Big Data</strong>".</p>
+<p>Las transacciones realizadas en los <strong>sistemas de bases de datos relacionales</strong> garantizan la consistencia y escalabilidad de las operaciones a través de una serie de características especificadas en el <strong>modelo ACID</strong>.</p>
+<ul>
+<li>
+<p><strong>Atomicidad (A)</strong>: Garantiza que una transacción se ha realizado completamente o no, evitando que algunas operaciones se ejecuten a medias.</p>
+</li>
+<li>
+<p><strong>Consistencia (C)</strong>: También conocida como <strong>integridad</strong>, asegura que cualquier transacción realizada desde un estado seguro en la base de datos conducirá a esta a otro estado también seguro o válido.</p>
+</li>
+<li>
+<p><strong>Aislamiento (I: Isolation)</strong>: Permite que el resultado en el estado del sistema sea el mismo, independientemente del modo de ejecución de las transacciones (secuencial o concurrente).</p>
+</li>
+<li>
+<p><strong>Durabilidad (D)</strong>: O <strong>persistencia</strong>, garantiza que a pesar de que se produzca un fallo en el sistema, los cambios realizados por una transacción persistirán.</p>
+</li>
+</ul>
+<p>Alternativamente, las bases de datos <strong>NoSQL</strong> siguen el modelo conocido como <strong>BASE</strong>, más flexible que ACID en aquellos sistemas de bases de datos que no se adhieren estrictamente al modelo relacional.</p>
+<ul>
+<li>
+<p><strong>Disponibilidad básica (Basic Availability)</strong>: El sistema siempre ofrece una respuesta a una petición de datos, aunque los datos sean inconsistentes, estén en fase de cambio o incluso se produzca un fallo.</p>
+</li>
+<li>
+<p><strong>Soft-state (S)</strong>: La consistencia de este tipo de bases de datos es eventual, por lo que el estado del sistema cambia a lo largo del tiempo, aunque no haya habido entradas de datos.</p>
+</li>
+<li>
+<p><strong>Eventual Consistency (E)</strong>: Cuando se dejan de recibir datos, el sistema se vuelve consistente. Así pues, los datos se propagan a todo el sistema, pero este continúa recibiendo datos sin evaluar la consistencia de los mismos para cada transacción antes de avanzar a la siguiente.</p>
+</li>
+</ul>
+<p>En la actualidad, las aplicaciones web modernas, el auge de la computación ubicua y el Big Data, presentan desafíos muy diferentes a los que presentan los sistemas de información tradicionales, implementados por medio de sistemas de bases de datos relacionales. Algunos <strong>desafíos</strong> son: el procesamiento masivo de datos, la alta frecuencia de lecturas y escrituras, los cambios dinámicos y frecuentes en el esquema de datos, la escalabilidad a costes razonables, gestión de datos temporales...En este contexto, en los últimos años han aparecido multitud de enfoques, modelos y tecnologías para aportar soluciones a los desafíos mencionados anteriormente. En este capítulo, se profundiza en <strong>las bases de datos XML y las bases de datos documentales</strong>.</p>
+<div class="admonition info">
+<p class="admonition-title">Base de datos NoSQL</p>
+<p>📄 <strong>Base de datos NoSQL</strong>: Sistema de bases de datos no relacional que utiliza distintas tecnologías para la gestión y almacenamiento distribuido de datos masivos sin un esquema estricto subyacente. Esta familia de base de datos permite incrementar la disponibilidad y escalabilidad del sistema, mejorando su rendimiento.</p>
+</div>
+<h2 id="32-bases-de-datos-xml">3.2 Bases de datos XML<a class="headerlink" href="#32-bases-de-datos-xml" title="Permanent link">&para;</a></h2>
+<p>El lenguaje <strong>XML</strong> (eXtensible Markup Language) es un lenguaje de marcas extensible derivado del lenguaje <strong>SGML</strong> (Standard Generalized Markup Language). Se trata de un lenguaje ideado para la definición y gestión de documentos que permite representar datos estructurados y semi-estructurados. En la actualidad, XML se ha convertido en un formato estándar para la comunicación entre aplicaciones, facilitando su integración. Entre las principales ventajas de XML destacan:</p>
+<ul>
+<li>
+<p><strong>Datos autodocumentados</strong>: Gracias a la posibilidad de definir cualquier tipo de etiquetas, no es necesario conocer el esquema para entender el significado de los datos. </p>
+</li>
+<li>
+<p><strong>Extensión</strong>: Permite adaptar el lenguaje fácilmente a cualquier dominio. Anidamiento: La definición de estructuras anidadas dota a los documentos de gran flexibilidad para transferir y consultar información. </p>
+</li>
+<li>
+<p><strong>Flexibilidad</strong>: Los documentos XML no tienen un formato estricto ni rígido, permitiendo añadir o ignorar información en ellos. </p>
+</li>
+</ul>
+<p><strong>Estructura de un documento XML</strong></p>
+<p>La estructura de un documento XML está compuesta de elementos. Un <strong>elemento</strong> es una porción de documento delimitado por un par de etiquetas <em>&lt; &gt;</em> (apertura) y <em>&lt; /&gt;</em> (cierre) entre las cuales se incluye un texto llamado <strong>contexto</strong> del elemento. Un elemento sin contexto puede abreviarse mediante el uso de una única etiquete <em><nombre_elemento/></em>. La estructura de un XML se forma <strong>anidando</strong> elementos para especificar la estructura del documento, formando una estructura de árbol. El fragmento de código 3.1 representa la estructura básica de un documento XML que representa un listado de asignaturas.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span><span class="nt">&lt;Asignaturas_Primero&gt;</span>
+<span class="linenos" data-linenos=" 2 "></span><span class="w">    </span><span class="nt">&lt;Asignatura&gt;</span>
+<span class="linenos" data-linenos=" 3 "></span><span class="w">        </span><span class="nt">&lt;titulo&gt;</span><span class="w"> </span>Cálculo<span class="w"> </span><span class="nt">&lt;/titulo&gt;</span>
+<span class="linenos" data-linenos=" 4 "></span><span class="w">        </span><span class="nt">&lt;tipo&gt;</span><span class="w"> </span>Anual<span class="w"> </span><span class="nt">&lt;/tipo&gt;</span>
+<span class="linenos" data-linenos=" 5 "></span><span class="w">        </span><span class="nt">&lt;profesor&gt;</span>
+<span class="linenos" data-linenos=" 6 "></span><span class="w">            </span><span class="nt">&lt;nombre&gt;</span><span class="w"> </span>Ana<span class="w"> </span><span class="nt">&lt;/nombre&gt;</span>
+<span class="linenos" data-linenos=" 7 "></span><span class="w">            </span><span class="nt">&lt;apellido&gt;</span><span class="w"> </span>Sanz<span class="w"> </span><span class="nt">&lt;/apellido&gt;</span>
+<span class="linenos" data-linenos=" 8 "></span><span class="w">        </span><span class="nt">&lt;/profesor&gt;</span>
+<span class="linenos" data-linenos=" 9 "></span><span class="w">        </span><span class="nt">&lt;profesor&gt;</span>
+<span class="linenos" data-linenos="10 "></span><span class="w">            </span><span class="nt">&lt;nombre&gt;</span><span class="w"> </span>Roberto<span class="w"> </span><span class="nt">&lt;/nombre&gt;</span>
+<span class="linenos" data-linenos="11 "></span><span class="w">            </span><span class="nt">&lt;apellido&gt;</span><span class="w"> </span>Hernández<span class="w"> </span><span class="nt">&lt;/apellido&gt;</span>
+<span class="linenos" data-linenos="12 "></span><span class="w">        </span><span class="nt">&lt;/profesor&gt;</span>
+<span class="linenos" data-linenos="13 "></span><span class="w">    </span><span class="nt">&lt;/Asignatura&gt;</span>
+<span class="linenos" data-linenos="14 "></span><span class="w">    </span><span class="nt">&lt;Asignatura&gt;</span>
+<span class="linenos" data-linenos="15 "></span><span class="w">        </span><span class="nt">&lt;titulo&gt;</span><span class="w"> </span>Física<span class="w"> </span><span class="nt">&lt;/titulo&gt;</span>
+<span class="linenos" data-linenos="16 "></span><span class="w">        </span><span class="nt">&lt;tipo&gt;</span><span class="w"> </span>Semestral<span class="w"> </span><span class="nt">&lt;/tipo&gt;</span>
+<span class="linenos" data-linenos="17 "></span><span class="w">        </span><span class="nt">&lt;profesor&gt;</span>
+<span class="linenos" data-linenos="18 "></span><span class="w">            </span><span class="nt">&lt;nombre&gt;</span><span class="w"> </span>Carmelo<span class="w"> </span><span class="nt">&lt;/nombre&gt;</span>
+<span class="linenos" data-linenos="19 "></span><span class="w">            </span><span class="nt">&lt;apellido&gt;</span><span class="w"> </span>Moya<span class="w"> </span><span class="nt">&lt;/apellido&gt;</span>
+<span class="linenos" data-linenos="20 "></span><span class="w">        </span><span class="nt">&lt;/profesor&gt;</span>
+<span class="linenos" data-linenos="21 "></span><span class="w">    </span><span class="nt">&lt;/Asignatura&gt;</span>
+<span class="linenos" data-linenos="22 "></span><span class="nt">&lt;/Asignaturas_Primero&gt;</span>
+</code></pre></div>
+<em>Listado 3.1: Listado de Asignaturas</em></p>
+<p>Los elementos de un documento pueden contener atributos. Los atributos se incluyen en la definición del elemento, dentro de la etiqueta de apertura. Sintácticamente, se representan mediante un par <em>nombre = valor</em>. A diferencia de un subelemento, <strong>un atributo solo puede aparecer una vez en una etiqueta</strong>. El uso de atributos y su diferencia con respecto a los elementos no siempre es evidente. A <strong>nivel de documento</strong>, los atributos se introducen para añadir texto que no se visualizará en el documento, mientras que los subelementos formarán parte del contenido del documento. A <strong>nivel de datos</strong>, la diferencia es insustancial, puesto que la misma información se puede representar utilizando atributos o subelementos. Por ejemplo, el subelemento <em>&lt; tipo &gt;</em> de una asignatura, podría representarse como un atributo del elemento asignatura. El listado 3.2 representa la asignatura de Cálculo del ejemplo anterior, incluyendo el título de la asignatura como atributo de la misma.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span><span class="nt">&lt;Asignaturas_Primero&gt;</span>
+<span class="linenos" data-linenos=" 2 "></span><span class="w">    </span><span class="nt">&lt;Asignatura&gt;</span>
+<span class="linenos" data-linenos=" 3 "></span><span class="w">        </span><span class="nt">&lt;titulo&gt;</span><span class="w"> </span>Cálculo<span class="w"> </span>tipo<span class="w"> </span>=<span class="w"> </span>&#39;anual&#39;<span class="w"> </span><span class="nt">&lt;/titulo&gt;</span>
+<span class="linenos" data-linenos=" 4 "></span><span class="w">        </span><span class="nt">&lt;tipo&gt;</span><span class="w"> </span>Anual<span class="w"> </span><span class="nt">&lt;/tipo&gt;</span>
+<span class="linenos" data-linenos=" 5 "></span><span class="w">        </span><span class="nt">&lt;profesor&gt;</span>
+<span class="linenos" data-linenos=" 6 "></span><span class="w">            </span><span class="nt">&lt;nombre&gt;</span><span class="w"> </span>Ana<span class="w"> </span><span class="nt">&lt;/nombre&gt;</span>
+<span class="linenos" data-linenos=" 7 "></span><span class="w">            </span><span class="nt">&lt;apellido&gt;</span><span class="w"> </span>Sanz<span class="w"> </span><span class="nt">&lt;/apellido&gt;</span>
+<span class="linenos" data-linenos=" 8 "></span><span class="w">        </span><span class="nt">&lt;/profesor&gt;</span>
+<span class="linenos" data-linenos=" 9 "></span><span class="w">        </span><span class="nt">&lt;profesor&gt;</span>
+<span class="linenos" data-linenos="10 "></span><span class="w">            </span><span class="nt">&lt;nombre&gt;</span><span class="w"> </span>Roberto<span class="w"> </span><span class="nt">&lt;/nombre&gt;</span>
+<span class="linenos" data-linenos="11 "></span><span class="w">            </span><span class="nt">&lt;apellido&gt;</span><span class="w"> </span>Hernández<span class="w"> </span><span class="nt">&lt;/apellido&gt;</span>
+<span class="linenos" data-linenos="12 "></span><span class="w">        </span><span class="nt">&lt;/profesor&gt;</span>
+<span class="linenos" data-linenos="13 "></span><span class="w">    </span><span class="nt">&lt;/Asignatura&gt;</span>
+<span class="linenos" data-linenos="14 "></span><span class="nt">&lt;/Asignaturas_Primero&gt;</span>
+</code></pre></div>
+<em>Listado 3.2: Uso de atributos para la definición de asignaturas</em></p>
+<p>Dado que una de las principales aplicaciones de XML es el intercambio de información entre organizaciones, y ante la flexibilidad del lenguaje que permite definir cualquier nombre para una etiqueta, es posible que <strong>existan conflictos entre los nombres de éstas</strong>. Para ello, se recurre a los <strong>espacios de nombres</strong>, los cuales permiten a las organizaciones especificar nombres de etiquetas únicos. De esta forma, se añade al nombre de la etiqueta o atributo un identificador de recursos universal. El listado muestra de forma resumida un ejemplo de utilización del espacio de nombres para la definición de asignaturas.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span><span class="nt">&lt;Asignatura</span><span class="w"> </span><span class="na">xmlns:AS=</span><span class="s">&quot;http://www.listado-asignaturas.com&quot;</span><span class="nt">&gt;</span>
+<span class="linenos" data-linenos=" 2 "></span><span class="w">    </span><span class="nt">&lt;AS:titulo&gt;</span><span class="w"> </span>Cálculo<span class="w"> </span>tipo<span class="w"> </span>=<span class="w"> </span>&#39;anual&#39;<span class="w"> </span><span class="nt">&lt;/AS:titulo&gt;</span>
+<span class="linenos" data-linenos=" 3 "></span><span class="w">    </span><span class="nt">&lt;AS:tipo&gt;</span><span class="w"> </span>Anual<span class="w"> </span><span class="nt">&lt;/AS:tipo&gt;</span>
+<span class="linenos" data-linenos=" 4 "></span><span class="w">    </span><span class="nt">&lt;AS:profesor&gt;</span>
+<span class="linenos" data-linenos=" 5 "></span><span class="w">        </span><span class="nt">&lt;AS:nombre&gt;</span><span class="w"> </span>Ana<span class="w"> </span><span class="nt">&lt;/AS:nombre&gt;</span>
+<span class="linenos" data-linenos=" 6 "></span><span class="w">        </span><span class="nt">&lt;AS:apellido&gt;</span><span class="w"> </span>Sanz<span class="w"> </span><span class="nt">&lt;/AS:apellido&gt;</span>
+<span class="linenos" data-linenos=" 7 "></span><span class="w">    </span><span class="nt">&lt;/AS:profesor&gt;</span>
+<span class="linenos" data-linenos=" 8 "></span><span class="w">    </span><span class="nt">&lt;AS:profesor&gt;</span>
+<span class="linenos" data-linenos=" 9 "></span><span class="w">        </span><span class="nt">&lt;AS:nombre&gt;</span><span class="w"> </span>Roberto<span class="w"> </span><span class="nt">&lt;/AS:nombre&gt;</span>
+<span class="linenos" data-linenos="10 "></span><span class="w">        </span><span class="nt">&lt;AS:apellido&gt;</span><span class="w"> </span>Hernández<span class="w"> </span><span class="nt">&lt;/AS:apellido&gt;</span>
+<span class="linenos" data-linenos="11 "></span><span class="w">    </span><span class="nt">&lt;/AS:profesor&gt;</span>
+<span class="linenos" data-linenos="12 "></span><span class="nt">&lt;/Asignatura&gt;</span>
+</code></pre></div>
+<em>Listado 3.3: Uso de un espacio de nombres</em></p>
+<p>Al igual que ocurre en las bases de datos relacionales, las bases de datos XML presentan una serie de <strong>lenguajes de definición de tipos de documentos XML</strong>. Concretamente, a continuación se profundizaran en <strong>DTD y XML Schema</strong>. Seguidamente, se estudiarán los lenguajes <strong>XPath, XSLT y XQuery</strong>, <strong>como lenguajes de manipulación de datos XML</strong> para la definición y ejecución de consultas.</p>
+<p><em><a href="https://moodle.iesgrancapitan.org/pluginfile.php/58312/mod_folder/content/0/BDA_UD3_01.pdf">ver presentación BDA3.1</a></em></p>
+<h3 id="321-definition-type-document-dtd">3.2.1 Definition Type Document (DTD)<a class="headerlink" href="#321-definition-type-document-dtd" title="Permanent link">&para;</a></h3>
+<p>En XML, se dice que un documento está <strong>bien formado</strong> si cumple con la sintaxis del lenguaje: correcta definición de elementos y atributos, correcto anidamiento...Como se puede apreciar, este concepto alude a la <strong>dimensión sintáctica de los documentos</strong>.</p>
+<p>Por otra parte, se dice que un documento XML <strong>es válido</strong> cuando <strong>está bien formado y cumple con la estructura de documento que ha sido dada a través de un lenguaje de definición de datos</strong>. Esta definición de la estructura de los documentos XML es <strong>opcional</strong>, si bien es cierto que es recomendable, especialmente cuando se trabaja con documentos complejos y con un volumen grande de ellos. La definición de tipos de documento o <strong>DTD permite definir la estructura de un documento XML</strong>. Para ello, la DTD especifica la estructura de los elementos y atributos de un documento: qué elementos pueden aparecer, qué atributos, qué subelementos, multiplicidad de ellos... Existen multitud de validadores on-line de documentos XML y sus correspondientes DTDs y/o XML Schemas<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
+<p>La <strong>declaración de una DTD</strong> dentro de un documento XML puede implementarse de dos formas: en primer lugar, de manera <strong>interna</strong>. En este caso, se añade la DTD después del preámbulo XML y justo antes del documento propiamente dicho. El listado 3.4 muestra un ejemplo de declaración interna de una DTD.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot; ?&gt;</span>
+<span class="linenos" data-linenos="2 "></span><span class="cp">&lt;!DOCTYPE Elemento_Raiz [Aquí la DTD]&gt;</span>
+<span class="linenos" data-linenos="3 "></span><span class="cm">&lt;!-------Aquí va el documento XML-----&gt;</span>
+</code></pre></div>
+<em>Listado 3.4: Declaración Interna DTD</em></p>
+<p>En segundo lugar, la <strong>DTD puede declararse de forma externa</strong>, definiendo la misma en un fichero .DTD aparte que después es enlazado en el documento. El listado 3.5 muestra un ejemplo de declaración externa de una DTD.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot; ?&gt;</span>
+<span class="linenos" data-linenos="2 "></span><span class="cp">&lt;!DOCTYPE Elemento_Raiz SYSTEM &quot;Mi_DTD.dtd&quot;&gt;</span>
+<span class="linenos" data-linenos="3 "></span><span class="err">&lt;</span>!-------Aquí<span class="w"> </span>va<span class="w"> </span>el<span class="w"> </span>documento<span class="w"> </span>XML-----
+</code></pre></div>
+<em>Listado 3.5: Declaración Externa DTD</em></p>
+<p>Siguiendo con el ejemplo del listado 3.1, el listado 3.6 muestra el archivo .dtd que validaría la estructura del documento de asignaturas.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="err">&lt;</span>¡<span class="w"> </span>DOCTYPE<span class="w"> </span>Listado_Asignaturas[
+<span class="linenos" data-linenos="2 "></span><span class="cp">&lt;! ELEMENT Asignaturas_Primero (Asignatura+)&gt;</span>
+<span class="linenos" data-linenos="3 "></span><span class="cp">&lt;! ELEMENT Asignatura (titulo, tipo, profesor+)&gt;</span>
+<span class="linenos" data-linenos="4 "></span><span class="cp">&lt;! ELEMENT titulo (#PCDATA)&gt;</span>
+<span class="linenos" data-linenos="5 "></span><span class="cp">&lt;! ELEMENT tipo (#PCDATA)&gt;</span>
+<span class="linenos" data-linenos="6 "></span><span class="cp">&lt;! ELEMENT profesor (nombre, apellido)&gt;</span>
+<span class="linenos" data-linenos="7 "></span><span class="cp">&lt;! ELEMENT nombre (#PCDATA)&gt;</span>
+<span class="linenos" data-linenos="8 "></span><span class="cp">&lt;! ELEMENT apellido (#PCDATA)&gt;</span>
+</code></pre></div>
+<em>Listado 3.6: DTD Listado de Asignaturas</em></p>
+<p>En el listado anterior, se define en primer lugar el tipo de documento "Listado_Asignaturas". A continuación, y especificados entre corchetes, se describen los elementos que contendrá el documento, comenzando por el elemento raíz "Asignaturas_Primero". Este elemento estará formado por uno o más elementos "Asignatura" (especificado mediante el operador +). Seguidamente, el elemento "Asignatura" viene dado por un conjunto de tres subelementos: título, tipo y profesor. Además, cada asignatura puede tener uno o más profesores. Los elementos título y tipo vienen dados por cadenas de caracteres (denotadas con la instrucción #PCDATA) mientras que el elemento profesor estará formado por dos subelementos llamados "nombre" y "apellido" ambos definidos mediante cadenas de caracteres.</p>
+<p>La definición de atributos para un elemento se hace a continuación de la definición del mismo utilizando <em>&lt;!ATTLIST &gt;</em>. El listado 3.7 muestra la DTD anterior en caso de que el tipo de asignatura sea considerado un atributo. </p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="err">&lt;</span>¡<span class="w"> </span>DOCTYPE<span class="w"> </span>Listado_Asignaturas[
+<span class="linenos" data-linenos="2 "></span><span class="cp">&lt;! ELEMENT Asignaturas_Primero (Asignatura+)&gt;</span>
+<span class="linenos" data-linenos="3 "></span><span class="cp">&lt;! ELEMENT Asignatura (titulo, profesor+)&gt;</span>
+<span class="linenos" data-linenos="4 "></span><span class="cp">&lt;! ATTLIST tipo id #CDATA REQUIRED&gt;</span>
+<span class="linenos" data-linenos="5 "></span><span class="cp">&lt;! ELEMENT titulo (#PCDATA)&gt;</span>
+<span class="linenos" data-linenos="6 "></span><span class="cp">&lt;! ELEMENT tipo (#PCDATA)&gt;</span>
+<span class="linenos" data-linenos="7 "></span><span class="cp">&lt;! ELEMENT profesor (nombre, apellido)&gt;</span>
+<span class="linenos" data-linenos="8 "></span><span class="cp">&lt;! ELEMENT nombre (#PCDATA)&gt;</span>
+</code></pre></div>
+<em>Listado 3.7: DTD Listado de Asignaturas con atributos</em></p>
+<p>Finalmente, la tabla 3.1a muestra un resumen de definición de elementos y atributos en una DTD.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>Tipos</strong></th>
+<th align="center"><strong>ELEMENTO</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">#PCDATA</td>
+<td align="center">Cadena de caracteres</td>
+</tr>
+<tr>
+<td align="center">EMPTY</td>
+<td align="center">Elemento sin contexto</td>
+</tr>
+<tr>
+<td align="center">ANY</td>
+<td align="center">Cualquier tipo</td>
+</tr>
+<tr>
+<td align="center"><strong>Operadores</strong></td>
+<td align="center"><strong>ELEMENTO</strong></td>
+</tr>
+<tr>
+<td align="center">|</td>
+<td align="center">Disyunción</td>
+</tr>
+<tr>
+<td align="center">+</td>
+<td align="center">Uno o más</td>
+</tr>
+<tr>
+<td align="center">*</td>
+<td align="center">Cero o más</td>
+</tr>
+<tr>
+<td align="center">?</td>
+<td align="center">Cero o uno</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabla 3.1a: Descripción DTD de elementos y atributos XML</em></p>
+<p>Y la tabla 3.1b muestra un resumen de definición de atributos en una DTD.</p>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>Tipos</strong></th>
+<th align="center"><strong>ATRIBUTOS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">CDATA</td>
+<td align="center">Cadena de caracteres</td>
+</tr>
+<tr>
+<td align="center">ID</td>
+<td align="center">Identificador</td>
+</tr>
+<tr>
+<td align="center">IDREF</td>
+<td align="center">Referencia a un ID</td>
+</tr>
+<tr>
+<td align="center"><strong>Operadores</strong></td>
+<td align="center"><strong>ELEMENTO</strong></td>
+</tr>
+<tr>
+<td align="center">#REQUIRED</td>
+<td align="center">Obligatorio</td>
+</tr>
+<tr>
+<td align="center">#IMPLIED</td>
+<td align="center">Opcional</td>
+</tr>
+<tr>
+<td align="center">#FIXED</td>
+<td align="center">Valor fijo</td>
+</tr>
+<tr>
+<td align="center">#DEFAULT</td>
+<td align="center">Valor por defecto</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabla 3.1a: Descripción DTD de atributos XML</em></p>
+<p><em><a href="https://moodle.iesgrancapitan.org/pluginfile.php/58312/mod_folder/content/0/BDA_UD3_02.pdf">ver presentación BDA3.2</a></em></p>
+<h3 id="322-xml-schema">3.2.2 XML Schema<a class="headerlink" href="#322-xml-schema" title="Permanent link">&para;</a></h3>
+<p>Se trata de un <strong>lenguaje de definición de la estructura de documentos XML más sofisticado que DTD</strong>. Aunque es <strong>más complejo, soluciona muchos de los inconvenientes de las DTD</strong>. De hecho, XML Schema es un superconjunto del lenguaje DTD especificado mediante la sintaxis de XML. Entre otros aspectos, XML Schema soporta no solo el tipo cadena de caracteres (soportado por DTD), sino también tipos numéricos, tipos complejos como listas y además permite al usuario definir sus propios tipos así como extender tipos de datos complejos mediante un mecanismo similar a la herencia. Además, XML Schema soporta el concepto de espacios de nombre, permitiendo reutilizar elementos de un esquema en otros.</p>
+<p>Un XML Schema se especifica en un documento aparte del documento XML con extensión <strong>.xsd</strong>. Dentro de este archivo, que sigue las reglas sintácticas de cualquier documento XML, se especifican las definiciones de cada elemento del esquema, qué atributos incluye así como sus tipos de datos válidos asociados tanto a los elementos como a los atributos. De esta forma, <strong>XML Schema permite definir un esquema para validar documentos XML, de forma más sofisticada a como lo hace DTD</strong>. El listado 3.8 muestra un XML Schema para el ejemplo del listado de asignaturas.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="linenos" data-linenos=" 2 "></span><span class="nt">&lt;xs:schema</span><span class="w"> </span><span class="na">attributeFormDefault=</span><span class="s">&quot;unqualified&quot;</span><span class="w"> </span><span class="na">elementFormDefault=</span><span class="s">&quot;qualified&quot;</span><span class="w"> </span><span class="na">xmlns:xs=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema&quot;</span><span class="nt">&gt;</span>
+<span class="linenos" data-linenos=" 3 "></span><span class="w">    </span><span class="nt">&lt;xs:element</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Asignaturas_Primero&quot;</span><span class="nt">&gt;</span>
+<span class="linenos" data-linenos=" 4 "></span><span class="w">        </span><span class="nt">&lt;xs:complexType&gt;</span>
+<span class="linenos" data-linenos=" 5 "></span><span class="w">            </span><span class="nt">&lt;xs:sequence&gt;</span>
+<span class="linenos" data-linenos=" 6 "></span><span class="w">                </span><span class="nt">&lt;xs:element</span><span class="w"> </span><span class="na">maxOccurs=</span><span class="s">&quot;unbounded&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Asignatura&quot;</span><span class="nt">&gt;</span>
+<span class="linenos" data-linenos=" 7 "></span><span class="w">                    </span><span class="nt">&lt;xs:complexType&gt;</span>
+<span class="linenos" data-linenos=" 8 "></span><span class="w">                        </span><span class="nt">&lt;xs:sequence&gt;</span>
+<span class="linenos" data-linenos=" 9 "></span><span class="w">                            </span><span class="nt">&lt;xs:element</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;titulo&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;xs:string&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="linenos" data-linenos="10 "></span><span class="w">                            </span><span class="nt">&lt;xs:element</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;tipo&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;xs:string&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="linenos" data-linenos="11 "></span><span class="w">                            </span><span class="nt">&lt;xs:element</span><span class="w"> </span><span class="na">maxOccurs=</span><span class="s">&quot;unbounded&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;profesor&quot;</span><span class="nt">&gt;</span>
+<span class="linenos" data-linenos="12 "></span><span class="w">                                </span><span class="nt">&lt;xs:complexType&gt;</span>
+<span class="linenos" data-linenos="13 "></span><span class="w">                                    </span><span class="nt">&lt;xs:sequence&gt;</span>
+<span class="linenos" data-linenos="14 "></span><span class="w">                                        </span><span class="nt">&lt;xs:element</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;nombre&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;xs:string&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="linenos" data-linenos="15 "></span><span class="w">                                        </span><span class="nt">&lt;xs:element</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;apellido&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;xs:string&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="linenos" data-linenos="16 "></span><span class="w">                                    </span><span class="nt">&lt;/xs:sequence&gt;</span>
+<span class="linenos" data-linenos="17 "></span><span class="w">                                </span><span class="nt">&lt;/xs:complexType&gt;</span>
+<span class="linenos" data-linenos="18 "></span><span class="w">                            </span><span class="nt">&lt;/xs:element&gt;</span>
+<span class="linenos" data-linenos="19 "></span><span class="w">                        </span><span class="nt">&lt;/xs:sequence&gt;</span>
+<span class="linenos" data-linenos="20 "></span><span class="w">                    </span><span class="nt">&lt;/xs:complexType&gt;</span>
+<span class="linenos" data-linenos="21 "></span><span class="w">                </span><span class="nt">&lt;/xs:element&gt;</span>
+<span class="linenos" data-linenos="22 "></span><span class="w">            </span><span class="nt">&lt;/xs:sequence&gt;</span>
+<span class="linenos" data-linenos="23 "></span><span class="w">        </span><span class="nt">&lt;/xs:complexType&gt;</span>
+<span class="linenos" data-linenos="24 "></span><span class="w">    </span><span class="nt">&lt;/xs:element&gt;</span>
+<span class="linenos" data-linenos="25 "></span><span class="nt">&lt;/xs:schema&gt;</span>
+</code></pre></div>
+<em>Listado 3.8: XML Schema: Listado de asignaturas</em></p>
+<p>El listado anterior comienza definiendo un XML Schema en la segunda línea de código. Cualquier XML Schema deberá incluir esta línea de código. El atributo <em>attributeFormDefault = "unqualified"</em> indica que no es necesario utilizar el prefijo del espacio de nombres para definir los atributos del esquema, mientras que el atributo <em>elementFormDefault = "qualified"</em> indica que no es necesario utilizar el prefijo del espacio de nombre para definir los elementos del esquema.</p>
+<p>A continuación, se define el elemento raíz "Asignaturas_Primero" el cual se trata de un tipo complejo, puesto que no se define con un tipo de datos básico como entero, carácter, etc. Este elemento está formado por una secuencia de elementos del tipo "Asignatura" (el número máximo de elementos Asignatura no está limitado ya que <em>maxOccurs = "unbounded"</em>. Los elementos Asignatura, a su vez, están formados de una secuencia de elementos "nombre", "tipo" (ambos de tipo cadena de caracteres) y un conjunto de elementos de tipo "profesor" no acotados, el cual se compone a su vez de los elementos "nombre" y "apellido", ambos de tipo cadena de caracteres.</p>
+<p>XML Schema permite representar la cardinalidad de un elemento, definiendo el número mínimo y máximo de ocurrencias mediante los atributos <em>minOccurs</em> y <em>maxOccurs</em>. Además, también es posible añadir restricciones de forma que se limiten los valores de un elemento o atributo, se permita elegir entre una lista de posibles...Finalmente, XML Schema dispone de los contenedores <em>sequence</em> para definir una secuencia ordenada de subelementos, <em>chocie</em> para definir la elección entre posibles grupos de elementos o elementos y <em>all</em> para definir un conjunto no ordenado de elementos. Al igual que sucedía con DTD, <strong>existen distintas herramientas on-line que no solo permiten validar un documento XML a partir de su esquema XSD, sino que también permiten generar el esquema XSD a partir del archivo XML</strong><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</p>
+<h3 id="322-xpath">3.2.2 XPath<a class="headerlink" href="#322-xpath" title="Permanent link">&para;</a></h3>
+<p>En cualquier sistema de bases de datos, además de los lenguajes de definición de datos, los <strong>lenguajes de manipulación de datos</strong> son esenciales para poder realizar consultas y recuperar datos, realizar actualizaciones, etc.</p>
+<p><strong>XPath es un lenguaje de manipulación de datos XML</strong>. La principal característica de este lenguaje es que <strong>interpreta un documento XML como una estructura de datos de tipo árbol</strong>, donde los nodos y sus respectivas hojas se corresponden con los elementos y subelementos del documento XML. De esta forma, y utilizando comandos que permiten recorrer el documento de forma análoga a los comandos que se utilizan en una terminal de comandos para recorrer el sistema de archivos de un computador, es posible realizar consultas. La tabla 3.2 muestra un listado de los principales operadores utilizados en XPath.</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Operador</strong></th>
+<th align="left"><strong>Significado</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">/</td>
+<td align="left">Navegación entre nodos del documento. Selecciona los nodos del nivel inferior.</td>
+</tr>
+<tr>
+<td align="left">//</td>
+<td align="left">Navegación entre nodos del documento. Selecciona los nodos del nivel inferior de cualquier nodo especificado a continuación</td>
+</tr>
+<tr>
+<td align="left">.</td>
+<td align="left">Selecciona el nodo actual</td>
+</tr>
+<tr>
+<td align="left">..</td>
+<td align="left">Selecciona el nodo padre o nodo de nivel superior</td>
+</tr>
+<tr>
+<td align="left">|</td>
+<td align="left">Expresa alternativas</td>
+</tr>
+<tr>
+<td align="left">@</td>
+<td align="left">Selecciona un atributo de un nodo</td>
+</tr>
+<tr>
+<td align="left">*</td>
+<td align="left">Selecciona todos los nodos</td>
+</tr>
+<tr>
+<td align="left">[]</td>
+<td align="left">Agrupa otros operadores</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabla 3.2: XPath: Operadores básicos</em></p>
+<p>Con estos operadores, veamos cómo realizar algunas consultas de ejemplo sobre el fragmento XML que especifica un listado de asignaturas.</p>
+<p>??? question "<strong>Consulta 1</strong>. Recuperar los nombres de todas las asignaturas."</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>/Asignaturas_Primero/Asignatura/titulo/text()
+</code></pre></div>
+<p>??? question "<strong>Consulta 2</strong>. ¿Cuántas asignaturas son impartidas por más de un profesor?"</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>/Asignaturas_Primero/Asignatura[count(profesor)&gt;1]
+</code></pre></div>
+<p>??? question "<strong>Consulta 3</strong>. ¿Quiénes son los profesores que imparten la asignatura de física?"</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>/Asignaturas_Primero/Asignatura[titulo=&quot;Fisica&quot;]/profesor/nombre
+</code></pre></div>
+<p><strong>Es posible utilizar XPath de forma on-line a través de visualizadores<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> o, por ejemplo, instalando el plug-in XPatherizer de Notepad++, en caso de utilizar este último editor de código XML.</strong></p>
+<p><em><a href="https://moodle.iesgrancapitan.org/pluginfile.php/58312/mod_folder/content/0/BDA_UD3_03.pdf">ver presentación BDA3.3</a></em></p>
+<h3 id="324-xslt">3.2.4 XSLT<a class="headerlink" href="#324-xslt" title="Permanent link">&para;</a></h3>
+<p>Otro lenguaje de manipulación de datos XML es el lenguaje XSLT. <strong>El lenguaje XSLT (XML StylesSheet Transformations) proviene del lenguaje XSL (XML StylesSheet)</strong>. Este último permite especificar las opciones de formato de un documento XML en un archivo separado, aislando así la especificación del contenido y la presentación de un archivo XML. Podría decirse que XSL es a XML lo que CSS es a HTML. <strong>El lenguaje XSLT permite especificar las opciones e formato de un documento XML, pudiendo transformar este documento en otros formatos como HTML, PDF, etc</strong>. Dada la potencia de este lenguaje, que es capaz de transformar un archivo XML en otro que también pudiera ser XML, <strong>se utiliza frecuentemente como lenguaje de consulta</strong>.</p>
+<p>Las transformaciones XSLT se definen por medio de <strong>plantillas</strong>, que permiten a su vez recuperar contenido del documento XML a través de la utilización de expresiones XPath. La principal característica de XSLT es que la aplicación de plantillas se realiza de forma recursiva, lo cual recibe el nombre de <strong>recursividad estructural</strong>. El listado 3.9 presenta un ejemplo de aplicación de una transformación XSLT por medio de una plantilla.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="nt">&lt;xsl:</span><span class="w"> </span><span class="err">template</span><span class="w"> </span><span class="na">match =</span><span class="w"> </span><span class="s">/Asignaturas_Primero/Asignatura</span><span class="w"> </span><span class="nt">&gt;</span>
+<span class="linenos" data-linenos="2 "></span><span class="w">    </span><span class="nt">&lt;titulo_asignatura&gt;</span>
+<span class="linenos" data-linenos="3 "></span><span class="w">        </span><span class="nt">&lt;xsl:value-of</span><span class="w"> </span><span class="na">select =</span><span class="w"> </span><span class="s">titulo/</span><span class="nt">&gt;</span>
+<span class="linenos" data-linenos="4 "></span><span class="w">    </span><span class="nt">&lt;/titulo_asignatura&gt;</span>
+<span class="linenos" data-linenos="5 "></span><span class="nt">&lt;/xsl:template&gt;</span>
+</code></pre></div>
+<em>Listado 3.9: XSLT: Ejemplo de plantilla</em></p>
+<p>Tal y como se puede observar en el fragmento anterior, una transformación o consulta XSLT se define mediante dos órdenes básicas: <em>match</em> que especifica una expresión XPath para seleccionar uno o más nodos y <em>value − of select</em> que devuelve los valores especificados de los nodos que se han obtenido como resultado de la expresión XPath. Merece la pena destacar que <strong>cualquier texto o etiqueta del archivo XSLT que no esté en el espacio de nombre se copia a la salida sin cambios</strong>. Esto quiere decir, que el resultado del fragmento anterior no son únicamente los títulos de las asignaturas, sino estos mismos delimitados por una etiqueta de apertura y cierre llamada <em>&lt; titulo_asignatura &gt;</em>. De esta forma, a partir de un documento XML se ha generado otro con el resultado de la consulta. A modo de resumen, la tabla 3.3 define los principales constructores XSLT.</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Constructor XSLT</strong></th>
+<th align="left"><strong>Significado</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><em>&lt; xsl:template match = "expresion XPath" &gt;</em></td>
+<td align="left">Selecciona nodos a devolver</td>
+</tr>
+<tr>
+<td align="left"><em><xsl:value − of select = "valor"></em></td>
+<td align="left">Devuelve todos los nodos que no coinciden con alguna otra plantilla</td>
+</tr>
+<tr>
+<td align="left"><em><xsl:template ><xsl:template match = "∗"/></em></td>
+<td align="left">Selecciona el nodo actual</td>
+</tr>
+<tr>
+<td align="left"><em><xsl:attribute nombre = "nombre atributo"></em></td>
+<td align="left">Añade un atributo al elemento precedente</td>
+</tr>
+<tr>
+<td align="left"><em><xsl:apply − templates/></em></td>
+<td align="left">Aplica la recursividad estructural</td>
+</tr>
+<tr>
+<td align="left"><em><xsl:keyname = "nombre clave" match = "elementos aplicar" use = "valor clave"/></em></td>
+<td align="left">Define una clave</td>
+</tr>
+<tr>
+<td align="left"><em><xsl:value − of select = "key("nombre clave" "valor")"/></em></td>
+<td align="left">Devuelve los nodos que coincidan con el valor especificado. Especifica</td>
+</tr>
+<tr>
+<td align="left">operaciones de combinación (JOINS)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><em><xsl:sort select = "elemento o atributo"/></em></td>
+<td align="left">Devuelve los nodos resultados, ordenados por un elemento o atributo</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabla 3.3: Principales Constructores XSLT</em></p>
+<p>Para trabajar con XSLT, se aconseja la descarga del software XML Copy Editor <a href="https://xml-copy-editor.sourceforge.io">https://xml-copy-editor.sourceforge.io</a>.</p>
+<p><em><a href="https://moodle.iesgrancapitan.org/pluginfile.php/58312/mod_folder/content/0/BDA_UD3_04.pdf">ver presentación BDA3.4</a></em></p>
+<h3 id="325-xquery">3.2.5 XQuery<a class="headerlink" href="#325-xquery" title="Permanent link">&para;</a></h3>
+<p>Es un <strong>lenguaje de consulta de propósito general sobre datos XML estandarizado por el consorcio W3C</strong>. XQuery procede del lenguaje de programación Quilt y, por este motivo, toma prestadas muchas características de otros lenguajes como XPath o SQL. De hecho, la sintaxis de XQuery es mucho más similar a la de SQL, al contrario que ocurría con lenguajes como XPath o XSLT. </p>
+<p>Para definir una consulta en XQuery se construye una expresión, denominada <strong>"FLWR"(flower, flor en inglés)</strong>. A continuación, se describen cada una de las sentencias de las que se compone la expresión:</p>
+<ul>
+<li>
+<p><strong>FOR</strong>: Obtiene una serie de variables cuyos valores son el resultado de una expresión XPath. Es el equivalente a la cláusula FROM del lenguaje SQL.</p>
+</li>
+<li>
+<p><strong>LET</strong>: Define y renombra expresiones complejas para ser utilizadas en el resto de la consulta, reduciendo la complejidad y aliviando la sintaxis. Es una cláusula opcional.</p>
+</li>
+<li>
+<p><strong>WHERE</strong>: En esta cláusula, llamada igualmente en SQL, se especifican condiciones sobre los resultados obtenidos en la cláusula FOR.</p>
+</li>
+<li>
+<p><strong>RETURN</strong>: Especifica y define el resultado que se va a obtener de la consulta. Se trata del equivalente a la cláusula <strong>SELECT</strong> en SQL.</p>
+</li>
+</ul>
+<p>Siguiendo la sintaxis anteriormente mencionada, el listado 3.10 muestra un ejemplo para obtener un listado con las asignaturas anuales.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="k">for</span><span class="w"> </span><span class="nv">$</span><span class="n">x</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="p">/</span><span class="nt">Asignaturas_Primero</span><span class="p">/</span><span class="nt">Asignatura</span>
+<span class="linenos" data-linenos="2 "></span><span class="k">let</span><span class="w"> </span><span class="nv">$</span><span class="n">nombre_asignatura</span><span class="o">:=</span><span class="w"> </span><span class="nv">$</span><span class="n">x</span><span class="p">/</span><span class="nt">titulo</span>
+<span class="linenos" data-linenos="3 "></span><span class="k">where</span><span class="w"> </span><span class="nv">$</span><span class="n">x</span><span class="p">/</span><span class="nt">tipo</span><span class="o">=</span><span class="s1">&#39;anual&#39;</span>
+<span class="linenos" data-linenos="4 "></span><span class="k">return</span><span class="w"> </span><span class="nt">&lt;asignatura_anual&gt;</span><span class="l"> $nombre_asignatura </span><span class="nt">&lt;/asignatura_anual&gt;</span>
+</code></pre></div>
+<em>Listado 3.10: XQuery: Ejemplo de consulta</em></p>
+<p>En el listado anterior,la cláusula <em>for</em> permitirá recorrer todos los elementos asignatura. Por su parte, let define una expresión en la que se asigna a <em>nombre_asignatura</em> el título de la asignatura que se está recorriendo en cada momento. La cláusula <em>where</em> impone el criterio de que el tipo de asignatura sea anual y, finalmente, <em>result</em> define como resultado un fragmento de código XML donde el nombre de la asignatura anual (según la expresión indicada en let) aparecerá como resultado encerrado entre dos etiquetas XML llamadas <em>asignatura_anual</em>. Tal y como se puede apreciar, XQuery también permite generar nuevos documetnos XML a partir de consultas.</p>
+<p>Al igual que SQL, XQuery dispone de multitud de funciones para la consulta de datos. Así, es posible utilizar la función <em>distinct()</em> para eliminar duplicados en los resultados así como funciones de agregación como <em>sum()</em> o <em>count()</em> además de poder especificar funciones definidas por el usuario. XQuery también permite utilizar "joins" incluyendo en la cláusula where el operador de combinación al igual que en SQL. Por otra parte, si bien es cierto que XQuery no posee el operador <em>group by</em> de SQL, este puede implementarse mediante la creación de consultas anidadas, las cuales sí que son soportadas por el lenguaje.</p>
+<h2 id="33-bases-de-datos-documentales-mongodb">3.3 Bases de datos documentales: MongoDB<a class="headerlink" href="#33-bases-de-datos-documentales-mongodb" title="Permanent link">&para;</a></h2>
+<p>Los sistemas de bases de datos documentales u orientados a documentos <strong>son sistemas de bases de datos NoSQL que almacenan datos, los cuales se estructuran en forma de documentos</strong>. En los últimos años, han proliferado una gran variedad de sistemas de este tipo como pueden ser <strong>Cassandra<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>, CouchDB<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>, Riak<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup> o MongoDB<sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup>, sobre el cual trata esta sección</strong>.</p>
+<p>El nombre <strong>MongoDB</strong> proviene de la palabra inglesa <strong>"homongous"</strong> que significa enorme. <strong>MongoDB es, por tanto, un sistema de base de datos NoSQL, open source, orientado a documentos y escrito en lenguaje C++</strong>. Este sistema de bases de datos está disponible no solo para múltiples plataformas y sistemas operativos (Windows, Linux, OS X) sino también como servicio empresarial en la nube y se puede integrar con otros servicios como, por ejemplo, Amazon Web Services (AWS).</p>
+<h3 id="331-mongodb-caracteristicas-y-aplicaciones">3.3.1 MongoDB: Características y aplicaciones<a class="headerlink" href="#331-mongodb-caracteristicas-y-aplicaciones" title="Permanent link">&para;</a></h3>
+<p>Tal y como se ha presentado anteriormente, MongoDB es un sistema de bases de datos documental u orientado a documentos. Esta orientación hace que los datos se almacenen de forma estructurada en forma de documentos, los cuales se acoplan sin problema en los tipos de datos utilizados por los lenguajes de programación. Además, esta concepción hace que una base de datos MongoDB disponga de un esquema dinámico y fácilmente modificable.</p>
+<p>En este apartado se pretende poner de relieve <strong>las principales características de MongoDB</strong> que hacen que sea en la actualidad uno de los sistemas de bases de datos NoSQL más utilizados tanto en el ámbito académico como en el profesional. </p>
+<ul>
+<li>
+<p><strong>Alto rendimiento</strong>: Gracias a la definición de los documentos y la creación de índices que hace que las lecturas y escrituras se realicen de forma más rápida.</p>
+</li>
+<li>
+<p><strong>Alta disponibilidad</strong>: MongoDB dispone de servidores replicados con restablecimiento automático maestro.</p>
+</li>
+<li>
+<p><strong>Fácil escalabilidad</strong>: Permitiendo distribuir colecciones de documentos entre diferentes máquinas de forma muy sencilla.</p>
+</li>
+<li>
+<p><strong>Indexación</strong>: Similar al concepto de índice en una base de datos relacional, permite crear índices e índices secundarios para mejorar el rendimiento de las consultas.</p>
+</li>
+<li>
+<p><strong>Consultas ad-hoc</strong>: Al igual que en una base de datos relacional, MongoDB da soporte a la búsqueda por campos, consultas de rangos, uso de expresiones regulares... A todo lo anterior, se añade la posibilidad de ejecutar y devolver una función JavaScript definida por el programador.</p>
+</li>
+<li>
+<p><strong>Replicación</strong>: Siguiendo el modelo maestro-esclavo. El maestro puede ejecutar comandos de lectura y escritura mientras que el esclavo solo tiene acceso de lectura y la posibilidad de realizar copias de seguridad. En caso de que el maestro caiga, el esclavo puede elegir un nuevo maestro para mantener el servicio de replicación.</p>
+</li>
+<li>
+<p><strong>Balanceo de carga</strong>: MongoDB es capaz de ejecutarse en múltiples servidores, pudiendo balancear la carga y/o duplicar los datos para mantener el correcto funcionamiento del sistema aunque se produzca un fallo hardware.</p>
+</li>
+<li>
+<p><strong>Almacenamiento de archivos</strong>: Todo lo anterior, facilita que este sistema de base de datos pueda ser usado con un sistema de archivos GridFS con balanceo de carga y replicación.</p>
+</li>
+<li>
+<p><strong>Agregación</strong>: Proporciona operadores de agregación y la posibilidad de utilizar funciones MapReduce para el procesamiento de datos por lotes.</p>
+</li>
+<li>
+<p><strong>Ejecución de Javscript del lado del servidor</strong>: Es posible realizar consultas utilizando JavaScript, de forma que éstas son enviadas directamente a la base de datos para ser ejecutadas.</p>
+</li>
+</ul>
+<p>Todas estas características hacen que, en la actualidad, MongoDB sea uno de los principales sistemas de bases de datos NoSQL elegidos en multitud de aplicaciones como: <strong>almacenamiento y registro de eventos, comercio electrónico, juegos, aplicaciones móviles, almacenes de datos, gestión de estadísticas en tiempo real y cualquier aplicación que requiera llevar a cabo analíticas sobre grandes volúmenes de datos</strong>.</p>
+<h3 id="332-mongodb-conceptos-basicos-utilidades-y-herramientas">3.3.2 MongoDB: Conceptos básicos, utilidades y herramientas<a class="headerlink" href="#332-mongodb-conceptos-basicos-utilidades-y-herramientas" title="Permanent link">&para;</a></h3>
+<p><strong><em><a href="https://www.mongodb.com/docs/manual/tutorial/getting-started/">Getting Started MongoDB</a></em></strong></p>
+<p>Aunque MongoDB es un sistema de bases de datos NoSQL con todo lo que ello implica, también ofrece toda la funcionalidad de la que disponen las bases de datos relacionales. Sin embargo, <strong>la estructura de una base de datos MongoDB difiere de la de una base de datos relacional</strong>.</p>
+<p>En un servidor MongoDB es posible crear tantas bases de datos como se desee. El concepto de <strong>base de datos</strong> es en este caso equivalente al de <strong>base de dato</strong>s en los sistemas relacionales. Una vez creada, la base de datos estará compuesta por una o más <strong>colecciones</strong>. El término colección en el ámbito NoSQL es el equivalente al concepto de <strong>tabla</strong> en los sistemas relacionales. Cada colección, por tanto, estará formada por un conjunto de <strong>documentos</strong> (o incluso ninguno, en cuyo caso la colección estaría vacía). El concepto de documento en NoSQL se corresponde con el concepto de <strong>registro</strong> en una base de datos relacional. Un documento estará compuesto por una serie de <strong>campos</strong>, al igual que lo están los registros de una base de datos relacional. En el ámbito NoSQL, y más concretamente en MongoDB, cada documento viene dado por un archivo <strong>JSON</strong> (http://www.json.org/) en el cual, siguiendo una estructura clave-valor se especifican las características de cada documento. El listado 3.11 muestra un ejemplo de documento que define un barco.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="p">{</span>
+<span class="linenos" data-linenos="2 "></span><span class="w">    </span><span class="kc">na</span><span class="err">me</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;USS</span><span class="w"> </span><span class="err">E</span><span class="kc">nter</span><span class="err">prise</span><span class="mi">-</span><span class="err">D&#39;</span><span class="p">,</span>
+<span class="linenos" data-linenos="3 "></span><span class="w">    </span><span class="err">opera</span><span class="kc">t</span><span class="err">or</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;S</span><span class="kc">tarfleet</span><span class="err">&#39;</span><span class="p">,</span>
+<span class="linenos" data-linenos="4 "></span><span class="w">    </span><span class="kc">t</span><span class="err">ype</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;Explorer&#39;</span><span class="p">,</span>
+<span class="linenos" data-linenos="5 "></span><span class="w">    </span><span class="err">class</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;Galaxy&#39;</span><span class="p">,</span>
+<span class="linenos" data-linenos="6 "></span><span class="w">    </span><span class="err">crew</span><span class="p">:</span><span class="w"> </span><span class="mi">750</span><span class="p">,</span>
+<span class="linenos" data-linenos="7 "></span><span class="w">    </span><span class="err">codes</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">]</span>
+<span class="linenos" data-linenos="8 "></span><span class="p">}</span>
+</code></pre></div>
+<em>Listado 3.11: Definición json de un documento barco</em></p>
+<p>Para la administración del sistema de bases de datos, MongoDB pone a disposición de los usuarios las siguientes utilidades:</p>
+<ul>
+<li>
+<p><strong>mongo</strong>: Se trata del shell interactivo de MongoDB que permite insertar, eliminar, actualizar datos y realizar consultas, además de replicar la información, apagar servidores y ejecutar código JavaScript.</p>
+</li>
+<li>
+<p><strong>mongostat</strong>: Herramienta de línea de comandos que muestra las estadísticas de una instancia en ejecución de MongoDB</p>
+</li>
+<li>
+<p><strong>mongotop</strong>: Herramienta de línea de comandos que muestra la cantidad de tiempo empleado en la lectura y escritura de datos por parte de la instancia en ejecución</p>
+</li>
+<li>
+<p><strong>mongosniff</strong>: Herramienta de línea de comandos que permite hacer un rastreo del tráfico de la red que va desde y hacia MongoDB.</p>
+</li>
+<li>
+<p><strong>mongoimport/mongoexport</strong>: Herramienta de línea de comandos para importar y exportar contenido en o desde .json, .csv o .tsv entre otros.</p>
+</li>
+<li>
+<p><strong>mongodump/mongorestore</strong>: Herramienta de línea de comandos para la creación de una exportación binaria del contenido de la base de datos.</p>
+</li>
+</ul>
+<p>Aunque MongoDB tiene una interfaz administrativa accesible desde http://localhost:28017/ (siempre que se haya iniciado con la opción mongod − −rest, existen algunas herramientas gráficas para la administración y uso de este sistema de base de datos como <strong>UMongo</strong> (https://github.com/agirbal/umongo) , el cual es una aplicación open source de sobremesa para navegar y administrar un clúster MongoDB o <strong>Robomongo</strong> (https://robomongo.org), que también es una herramienta gráfica open source que incluye una terminal de comandos completamente compatible con el shell de mongo.</p>
+<p><em><a href="https://moodle.iesgrancapitan.org/pluginfile.php/58312/mod_folder/content/0/BDA_UD3_05.pdf">ver presentación BDA3.5</a></em></p>
+<h3 id="333-mongodb-operaciones-crud">3.3.3 MongoDB: Operaciones CRUD<a class="headerlink" href="#333-mongodb-operaciones-crud" title="Permanent link">&para;</a></h3>
+<p><strong><em><a href="https://www.mongodb.com/docs/manual/crud/#mongodb-crud-operations">MongoDB CRUD Operations</a></em></strong></p>
+<p>Cualquier sistema de datos permite definir operaciones básicas como son la creación de tablas e inserción de registros, lectura de datos, actualización y eliminación de registros. Estas operaciones básicas se conocen con el nombre de <strong>CRUD (Create, Read, Update, Delete)</strong>. A continuación, se muestran distintos ejemplos para ilustrar la implementación de estas operaciones en MongoDB.</p>
+<p>Una vez iniciada una sesión del Shell de Mongo, es posible crear una base de datos utilizando el siguiente comando.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>test&gt;use DB_Ejemplo
+<span class="linenos" data-linenos="2 "></span>switched to db DB_Ejemplo
+</code></pre></div>
+<p>Para crear una colección de documentos "Barco" dentro de la base de datos
+DB_Ejemplo se puede escribir.
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>DB_Ejemplo&gt;db.createCollection(&quot;ships&quot;)
+<span class="linenos" data-linenos="2 "></span>{ ok: 1 }
+</code></pre></div></p>
+<p>Para visualizar las bases de datos almacenadas en el servidor se puede utilizar el comando <em>show dbs</em> mientras que para obtener un listado de las colecciones de la base de datos sobre la que se está trabajando, es posible utilizar el comando <em>show collections</em>. Por otra parte, para insertar un documento dentro de la colección, como el mostrado en el listado 3.11, se ejecuta el siguiente comando.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>db.ships.insertOne({name:&#39;USS-Enterprise-D&#39;,operator:&#39;Starfleet&#39;,type:&#39;Explorer&#39;,class:&#39;Galaxy&#39;,crew:750,codes:[10,11,12]})
+</code></pre></div>
+<em><a href="https://moodle.iesgrancapitan.org/pluginfile.php/58312/mod_folder/content/0/BDA_UD3_06.pdf">ver presentación BDA3.6</a></em></p>
+<p>Para <strong>actualizar</strong> el nombre del barco "USS-Enterprise-D" por "USS Something" es posible escribir el comando.</p>
+<p><strong><em><a href="https://www.mongodb.com/docs/manual/crud/#update-operations">MongoDB Update Operations</a></em></strong></p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>db.ships.updateOne({name : {$eq: &#39;USS-Enterprise-D&#39;}}, {$set : {name: &#39;USS Something&#39;}})
+</code></pre></div>
+<p>Mientras que si se pretenden establecer o cambiar varios atributos de un mismo documento, como por ejemplo el operador y la clase, se puede utilizar el comando update de la siguiente forma.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>db.ships.updateOne({name : {$eq: &#39;USS Something&#39;}}, {$set : {name: &#39;USS Prometheus&#39;, class: &#39;Prometheus&#39;}})
+</code></pre></div>
+<p>Finalmente, la eliminación de algún atributo de un documento también es una operación de actualización que puede realizarse de la siguiente forma.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>db.ships.updateOne({name : {$eq: &#39;USS Prometheus&#39;}}, {$unset : {operator: 1}})
+</code></pre></div>
+<p><strong><em><a href="https://www.mongodb.com/docs/manual/crud/#delete-operations">MongoDB Delete Operations</a></em></strong></p>
+<p>La <strong>eliminación</strong> de documentos de una colección puede realizarse de forma directa o bien utilizando expresiones regulares. A continuación se muestran dos comandos para ilustrar ambas formas de eliminación. El segundo de ellos elimina aquellos documentos que comienzan por "a".</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>db.ships.deleteOne({name : &#39;USS Prometheus&#39;})
+<span class="linenos" data-linenos="2 "></span>db.ships.deleteOne({name:{$regex:&#39;^A*&#39;}})
+</code></pre></div>
+<p>Para <strong>leer y mostrar</strong> documentos, se utiliza el comando find(). A continuación se muestra un ejemplo en el que, el primer comando muestra un documento al azar de los existentes, el segundo muestra todos los documentos y lo hace de forma indexada en lugar de como texto seguido, el tercero muestra solo los nombres de los barcos y el último, encuentra un documento cuyo nombre sea "USS Defiant".</p>
+<p><strong><em><a href="https://www.mongodb.com/docs/manual/crud/#read-operations">MongoDB Read Operations</a></em></strong></p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>db.ships.findOne()
+<span class="linenos" data-linenos="2 "></span>db.ships.find().pretty()
+<span class="linenos" data-linenos="3 "></span>db.ships.find({}, {name:true})
+<span class="linenos" data-linenos="4 "></span>db.ships.findOne({&#39;name&#39;:&#39;USS Defiant&#39;})
+</code></pre></div>
+<em><a href="https://moodle.iesgrancapitan.org/pluginfile.php/58312/mod_folder/content/0/BDA_UD3_07.pdf">ver presentación BDA3.7</a></em></p>
+<h3 id="334-mongodb-consultas-y-agregacion">3.3.4 MongoDB Consultas y Agregación<a class="headerlink" href="#334-mongodb-consultas-y-agregacion" title="Permanent link">&para;</a></h3>
+<p>Al igual que cualquier lenguaje de manipulación de datos, MongoDB dispone de las herramientas y operadores necesarios para realizar consultas sobre los documentos almacenados en las colecciones. A continuación, se muestran ejemplos de uso de los principales operadores.</p>
+<p>Los operadores relaciones mayor que, menor que, mayor o igual que y menor o igual que se corresponden, respectivamente, con los operadores $gt, $lt, $gte, $lte. Además, también es posible utilizar el operador $regex para recuperar elementos que cumplan una expresión regular. A continuación, se muestran dos consultas que recuperan aquellos barcos que permitan subir a bordo a más de cien pasajeros y otra consulta para recuperar aquellos que dejen subir tan solo a 1" pasajeros o menos.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>db.ships.find({crew:{$gt:100}})
+<span class="linenos" data-linenos="2 "></span>db.ships.find({crew:{$lte:100}})
+</code></pre></div>
+<p>El operador \$exists permite devolver aquellos documentos para los que existe o no un determinado atributo. El siguiente comando permite encontrar aquellos barcos para los cuales existe el campo "class".</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>db.ships.find({class:{$exists:true}})
+</code></pre></div>
+<p><strong><em><a href="https://www.mongodb.com/docs/manual/aggregation/#aggregation-operations">MongoDB Aggregation Operations</a></em></strong></p>
+<p>Las funciones de <strong>agregación</strong> son especialmente útiles en los lenguajes de consulta y manipulación de datos. De esta forma, $sum permite agregar mediante la operación suma una serie de valores, $avg permite obtener la media, $mnin y $max encontrar el valor máximo y mínimo de un atributo para el conjunto de elementos, $push introduce en un array los resultados de la consulta que se ha realizado, $addToSet es similar al anterior solo que sin incluir valores duplicados y, por último, $first y $last permiten obtener el primer y último documento en una consulta. A continuación, se muestra un ejemplo del uso de cada uno de estos operadores de agregación.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>db.ships.aggregate([{$group:{_id:&quot;$operator&quot;,num_ships:{$sum:&quot;$crew&quot;}}}])
+<span class="linenos" data-linenos="2 "></span>db.ships.aggregate([{$group : {_id : &quot;$operator&quot;, num_ships : {$avg : &quot;$crew&quot;}}}])
+<span class="linenos" data-linenos="3 "></span>db.ships.aggregate([{$group : {_id : &quot;$operator&quot;, num_ships : {$min : &quot;$crew&quot;}}}])
+<span class="linenos" data-linenos="4 "></span>db.ships.aggregate([{$group : {_id : &quot;$operator&quot;, classes : {$push: &quot;$class&quot;}}}])
+<span class="linenos" data-linenos="5 "></span>db.ships.aggregate([{$group : {_id : &quot;$operator&quot;, classes : {$addToSet : &quot;$class&quot;}}}])
+<span class="linenos" data-linenos="6 "></span>db.ships.aggregate([{$group:{_id:&quot;$operator&quot;,last_class:{$last: &quot;$class&quot;}}}])
+</code></pre></div>
+<p>Finalmente, MongoDB pone a disposición de los usuarios multitud de funciones útiles en la realización de consultas. La tabla 3.4 muestra algunas de las más utilizadas.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Función</strong></th>
+<th><strong>Significado</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$project</td>
+<td>Cambia el conjunto de documentos modificando sus claves y valores</td>
+</tr>
+<tr>
+<td>$match</td>
+<td>Operación de filtrado para reducir el número de elementos recuperados</td>
+</tr>
+<tr>
+<td>$group</td>
+<td>Operador de agregación para agrupar resultados</td>
+</tr>
+<tr>
+<td>$sort</td>
+<td>Ordena los documentos</td>
+</tr>
+<tr>
+<td>$skip</td>
+<td>Recupera los documentos a partir de un numero especificado por el usuario</td>
+</tr>
+<tr>
+<td>$limit</td>
+<td>Limita los resultados de la consulta al valor pasado como parámetro a la función</td>
+</tr>
+<tr>
+<td>$unwind</td>
+<td>Utilizado como equivalente al join de SQL</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tabla 3.4: Funciones útiles en MongoDB</em></p>
+<p><em><a href="https://moodle.iesgrancapitan.org/pluginfile.php/58312/mod_folder/content/0/BDA_UD3_08.pdf">ver presentación BDA3.8</a></em></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="http://xmlvalidator.new-studio.org">https://www.liquid-technologies.com/online-xsd-validator</a> y <a href="http://xmlvalidator.new-studio.org">http://xmlvalidator.new-studio.org</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://www.freeformatter.com">https://www.freeformatter.com</a>, <a href="https://www.liquid-technologies.com/online-xsd-validator">https://www.liquid-technologies.com/online-xsd-validator</a> y <a href="https://extendsclass.com/xml-schema-validator.html">https://extendsclass.com/xml-schema-validator.html</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://download.cnet.com/XPath-Visualizer/3000-7241_4-75804649.html">https://download.cnet.com/XPath-Visualizer/3000-7241_4-75804649.html</a>, <a href="https://www.freeformatter.com/xpath-tester.html">https://www.freeformatter.com/xpath-tester.html</a>&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p><a href="https://cassandra.apache.org/">https://cassandra.apache.org/</a>&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p><a href="http://couchdb.apache.org">http://couchdb.apache.org</a>&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p><a href="https://riak.com">https://riak.com</a>&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:7">
+<p><a href="https://www.mongodb.com/es">https://www.mongodb.com/es</a>&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Volver al principio
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2022-2023 Jaime Rabasco - Licencia CC BY-NC-SA
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/jaimerabasco" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    <a href="mailto:<jaimerabasco@iesgrancapitan.org>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.7l167.6-182.9c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking", "navigation.indexes", "toc.follow", "navigation.top", "header.autohide", "announce.dismiss"], "search": "../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.ba449ae6.min.js"></script>
+      
+    
+  </body>
+</html>

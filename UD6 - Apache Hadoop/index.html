@@ -1,0 +1,1388 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://jaimerabasco.github.io/CE-IABD_BigDataAplicado_IESGranCapitan/UD6%20-%20Apache%20Hadoop/index.html">
+      
+      
+        <link rel="prev" href="../UD5%20-%20Introducci%C3%B3n%20a%20la%20computaci%C3%B3n%20paralela%20y%20distribuida/index.html">
+      
+      
+      <link rel="icon" href="../images/logo.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
+    
+    
+      
+        <title>UD 6 - Apache Hadoop - Big Data Aplicado</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6b71719e.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="UD 6 - Apache Hadoop - Big Data Aplicado" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="https://jaimerabasco.github.io/CE-IABD_BigDataAplicado_IESGranCapitan/assets/images/social/UD6 - Apache Hadoop/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://jaimerabasco.github.io/CE-IABD_BigDataAplicado_IESGranCapitan/UD6%20-%20Apache%20Hadoop/index.html" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="UD 6 - Apache Hadoop - Big Data Aplicado" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="https://jaimerabasco.github.io/CE-IABD_BigDataAplicado_IESGranCapitan/assets/images/social/UD6 - Apache Hadoop/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ud-6-apache-hadoop" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../index.html" title="Big Data Aplicado" class="md-header__button md-logo" aria-label="Big Data Aplicado" data-md-component="logo">
+      
+  <img src="../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Big Data Aplicado
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              UD 6 - Apache Hadoop
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="Big Data Aplicado" class="md-nav__button md-logo" aria-label="Big Data Aplicado" data-md-component="logo">
+      
+  <img src="../images/logo.png" alt="logo">
+
+    </a>
+    Big Data Aplicado
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        Inicio
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../UD1%20-%20Gesti%C3%B3n%20de%20soluciones%20I/index.html">UD1.- Gestión de Soluciones I</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="UD1.- Gestión de Soluciones I" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          UD1.- Gestión de Soluciones I
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../UD2%20-%20Gesti%C3%B3n%20de%20soluciones%20II/index.html">UD2.- Gestión de Soluciones II</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="UD2.- Gestión de Soluciones II" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          UD2.- Gestión de Soluciones II
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../UD3%20-%20Gesti%C3%B3n%20de%20soluciones%20III/index.html">UD3.- Gestión de Soluciones III</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="UD3.- Gestión de Soluciones III" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          UD3.- Gestión de Soluciones III
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UD3%20-%20Gesti%C3%B3n%20de%20soluciones%20III/Ejercicios_clase/Ejemplo1.html" class="md-nav__link">
+        Ejercicio de clase
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../UD4%20-%20Gesti%C3%B3n%20de%20soluciones%20IV/index.html">UD4.- Gestión de Soluciones IV</a>
+          
+            <label for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="UD4.- Gestión de Soluciones IV" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          UD4.- Gestión de Soluciones IV
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UD4%20-%20Gesti%C3%B3n%20de%20soluciones%20IV/Ejercicios_clase/Ejemplo1.html" class="md-nav__link">
+        Ejercicio de clase 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UD4%20-%20Gesti%C3%B3n%20de%20soluciones%20IV/Ejercicios_clase/Ejemplo2.html" class="md-nav__link">
+        Ejercicio de clase 2
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../UD5%20-%20Introducci%C3%B3n%20a%20la%20computaci%C3%B3n%20paralela%20y%20distribuida/index.html">UD5 - Introducción a la computación paralela y distribuida</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="UD5 - Introducción a la computación paralela y distribuida" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          UD5 - Introducción a la computación paralela y distribuida
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index md-nav__link--active">
+          <a href="index.html">UD6 - Apache Hadoop</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="UD6 - Apache Hadoop" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          UD6 - Apache Hadoop
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#61-componentes-y-ecosistema" class="md-nav__link">
+    6.1 Componentes y Ecosistema
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#62-distribuciones-hadoop" class="md-nav__link">
+    6.2 Distribuciones Hadoop
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#63-arquitectura" class="md-nav__link">
+    6.3 Arquitectura
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#64-uso-de-hadoop" class="md-nav__link">
+    6.4 Uso de Hadoop
+  </a>
+  
+    <nav class="md-nav" aria-label="6.4 Uso de Hadoop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cuando-usar-hadoop" class="md-nav__link">
+    ¿Cuándo Usar Hadoop?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cuando-no-usar-hadoop" class="md-nav__link">
+    ¿Cuándo no usar Hadoop?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#65-hdfs" class="md-nav__link">
+    6.5 HDFS
+  </a>
+  
+    <nav class="md-nav" aria-label="6.5 HDFS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#651-caracteristicas-hdfs" class="md-nav__link">
+    6.5.1 Características HDFS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#652-bloques" class="md-nav__link">
+    6.5.2 Bloques
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#653-arquitectura-hdfs" class="md-nav__link">
+    6.5.3 Arquitectura HDFS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#654-funcionamiento-lectura-y-escritura" class="md-nav__link">
+    6.5.4 Funcionamiento (Lectura y Escritura)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#655-factor-de-replicacion" class="md-nav__link">
+    6.5.5 Factor de replicación
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#656-manejo-y-uso-de-hdfs" class="md-nav__link">
+    6.5.6 Manejo y uso de HDFS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ud-6-apache-hadoop">UD 6 - Apache Hadoop<a class="headerlink" href="#ud-6-apache-hadoop" title="Permanent link">&para;</a></h1>
+<p><strong>Apache Hadoop</strong> es un framework de software que soporta <strong>aplicaciones distribuidas</strong> bajo una licencia libre. Permite a las aplicaciones trabajar con miles de nodos y petabytes de datos.</p>
+<p>Fue inicialmente concebido para resolver un problema de escalabilidad en Nutch, un motor de búsqueda Open Source que pretendía indexar mil millones de páginas web.</p>
+<figure style="align: center; width:600px;">
+    <img src="images/Figura6.1_Componentes_básicos_de_Hadoop.png">
+    <figcaption>Figura 6.1: Figura6.1_Componentes básicos de Hadoop</figcaption>
+</figure>
+
+<p>Al mismo tiempo, Google había publicado los documentos que describían su novedoso sistema de archivos distribuidos, el Google File System (GFS), y MapReduce, un framework de computación para procesamiento paralelo. La exitosa implementación de estos conceptos en Nutch resultó en dos proyectos separados, el segundo se convirtió en Hadoop, un proyecto Apache de primera clase.</p>
+<div class="admonition note">
+<p class="admonition-title"><strong>Hadoop</strong></p>
+<p>El nombre de Hadoop no es ningún acrónimo, sino un nombre inventado. Su creador se lo puso por un elefante amarillo de peluche que tenía su hijo. Pensó que un nombre corto, relativamente fácil de deletrear y pronunciar sería adecuado</p>
+</div>
+<p>Si Big Data es la filosofía de trabajo para grandes volúmenes de datos, <a href="http://hadoop.apache.org/">Apache Hadoop</a> es la tecnología catalizadora. <strong>Hadoop</strong> puede escalar hasta miles de ordenadores creando un clúster con un almacenamiento del orden de petabytes de información.</p>
+<div class="admonition info">
+<p class="admonition-title">¿Qué es Hadoop?</p>
+<p>Apache Hadoop es una <strong>plataforma opensource</strong> que ofrece la capacidad de <strong>almacenar y procesar</strong>, a "bajo" <strong>coste</strong>, grandes <strong>volúmenes</strong> de datos, sin importar su <strong>estructura</strong>, en un entorno <strong>distribuido, escalable y tolerante a fallos</strong>, basado en la utilización de hardware commodity y en un paradigma del <strong>procesamiento a los datos</strong>. </p>
+</div>
+<p>Hadoop es una <strong>plataforma</strong>, lo que significa que es la base sobre la que construir aplicaciones. Se podría hacer el símil de Hadoop como una caja de herramientas que proporciona un conjunto de herramientas con las que construir una gran variedad de aplicaciones que requieran almacenar y procesar grandes volúmenes de datos. La selección de qué herramienta utilizar para cada aplicación la realizaremos en función de las necesidades de cada caso de uso.</p>
+<p>Otras soluciones, como MongoDB u otras bases de datos NoSQL no se consideran plataformas, ya que tienen un único propósito y ofrecen un tipo de funcionalidad.</p>
+<p>Hadoop aglutina una serie de <strong>herramientas</strong> para el procesamiento distribuido de grandes conjuntos de datos a través de clústers de ordenadores utilizando modelos de programación sencillos.</p>
+<p>Sus características son:</p>
+<ul>
+<li><strong>Confiable</strong>: Crea múltiples copias de los datos de manera automática y, en caso de fallo, vuelve a desplegar la lógica de procesamiento.</li>
+<li><strong>Tolerante a fallos</strong>: Tras detectar un fallo aplica una recuperación automática. Cuando un componente se recupera, vuelve a formar parte del clúster. En Hadoop los fallos de hardware se tratan como una regla, no como una excepción.</li>
+<li><strong>Heterogeneo</strong>: Los datos que pueden almacenarse y procesarse en Hadoop pueden ser de cualquier tipo: estructurados, semiestructurados o datos no estructurados.</li>
+</ul>
+<figure style="align: center;">
+    <img src="images/Figura6.2_Hadoop_Caract_datos_heterogeneos.png">
+    <figcaption>Figura6.2_Hadoop: Datos heterogéneos</figcaption>
+</figure>
+
+<ul>
+<li><strong>Portable</strong>: Se puede instalar en todo tipos de hardware y sistemas operativos.</li>
+<li><strong>Escalable</strong>: Los datos y su procesamiento se distribuyen sobre un clúster de ordenadores (escalado horizontal), desde un único servidor a miles de máquinas, cada uno ofreciendo computación y almacenamiento local.</li>
+</ul>
+<figure style="align: center;">
+    <img src="images/Figura6.3_Hadoop_Caract_escalado.png">
+    <figcaption>Figura6.3_Hadoop: Escalable</figcaption>
+</figure>
+
+<ul>
+<li><strong>Distribuido</strong>: Hadoop se basa en una infraestructura que tiene muchos servidores (también llamados nodos) que trabajan conjuntamente para almacenar y para procesar los datos, a diferencia de los sistemas centralizados, donde todo se realiza en un único servidor.</li>
+</ul>
+<h2 id="61-componentes-y-ecosistema">6.1 Componentes y Ecosistema<a class="headerlink" href="#61-componentes-y-ecosistema" title="Permanent link">&para;</a></h2>
+<figure style="align: center; width:600px;">
+    <img src="images/Figura6.4_Ecosistema_Hadoop.jpg">
+    <figcaption>Figura6.4_Ecosistema Hadoop</figcaption>
+</figure>
+
+<p>El <strong>núcleo de Hadoop</strong> se compone de:</p>
+<ul>
+<li><strong>Hadoop Common</strong>: un conjunto de utilidades comunes</li>
+<li><strong>HDFS (Hadoop Distributed File System)</strong>: un sistema de ficheros distribuidos (<strong>capa de almacenamiento</strong>) que almacena los datos en una estructura basada en espacios de nombres (directorios, subdirectorios, etc)</li>
+<li><strong>YARN</strong>: un gestor de recursos (<strong>capa de procesamiento</strong>) para el manejo del clúster y la planificación de procesos, que permite ejecutar aplicaciones sobre los datos almacenados en HDFS</li>
+<li><strong>MapReduce</strong>: un sistema para procesamiento paralelo de grandes conjuntos de datos, con aplicaciones que lo utilizan de forma transparente.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Sin embargo, normalmente se identifica el nombre Hadoop con todo el ecosistema de componentes independientes que suelen incluirse para dotar a Hadoop de funcionalidades necesarias en proyectos Big Data empresariales, como puede ser la ingesta de información, el acceso a datos con lenguajes estándar, o las capacidades de administración y monitorización.
+Estos componentes suelen ser proyectos opensource de Apache.. </p>
+</div>
+<p>Estos elementos permiten trabajar casi de la misma forma que si tuviéramos un sistema de fichero local en nuestro ordenador personal, pero realmente los datos están repartidos entre miles de servidores.</p>
+<p>Las aplicaciones se desarrollan a alto nivel, sin tener constancia de las características de la red. De esta manera, los científicos de datos se centran en la analítica y no en la programación distribuida.</p>
+<p>Sobre este conjunto de herramientas existe un ecosistema "infinito" con tecnologías que facilitan el acceso, gestión y extensión del propio Hadoop.</p>
+<ul>
+<li><a href="https://accumulo.apache.org/">Accumulo</a>: Base de datos NoSQL que ofrece funcionalidades de acceso aleatorio y atómico.</li>
+<li><strong><a href="https://ambari.apache.org/">Ambari</a></strong>: Herramienta utilizada para instalar, configurar, mantener y monitorizar Hadoop.</li>
+<li><a href="https://atlas.apache.org/">Atlas</a>: Herramienta de gobierno de datos de Hadoop.</li>
+<li><a href="https://phoenix.apache.org/">Phoenix</a>: Capa que permite acceder a los datos de HBase mediante interfaz SQL.</li>
+<li><strong><a href="https://flume.apache.org/">Flume</a></strong>: Servicio distribuido y altamente eficiente para distribuir, agregar y recolectar grandes cantidades de información procedentes de sistemas <em>real-time</em> en Hadoop. Es útil para cargar y mover información como ficheros de logs, datos de Twitter/Reddit, etc. Utiliza una arquitectura de tipo streaming con un flujo de datos muy potente y personalizables</li>
+<li><strong><a href="https://hbase.apache.org/">HBase</a></strong>: Es el sistema de almacenamiento NoSQL basado en columnas para Hadoop.<ul>
+<li>Es una base de datos de código abierto, distribuida y escalable para el almacenamiento de Big Data.</li>
+<li>Escrita en Java, implementa y proporciona capacidades similares sobre Hadoop y HDFS.</li>
+<li>El objetivo de este proyecto es el de trabajar con grandes tablas, de miles de millones de filas y columnas, sobre un clúster Hadoop.</li>
+</ul>
+</li>
+<li><strong><a href="https://hive.apache.org/">Hive</a></strong>: Permite acceder a ficheros de datos estructurados o semiestructurados que están en HDFS como si fueran una tabla de una base de datos relacional, utilizando un lenguaje similar a SQL (<em>HiveSQL</em>). Simplifica enormemente el desarrollo y la gestión con Hadoop.</li>
+<li><strong><a href="https://impala.apache.org/">Impala</a></strong>: Herramienta con funcionalidad similar a Hive (tratamiento de los datos de HDFS mediante SQL) pero con un rendimiento elevado (tiempos de respuesta menores).</li>
+<li><strong><a href="https://kafka.apache.org/">Kafka</a></strong>: Sistema de mensajería que permite recoger eventos en tiempo real así como su procesamiento.</li>
+<li><a href="https://mahout.apache.org/">Mahout</a>: Conjunto de librerías para desarrollo y ejecución de modelos de machine learning utilizando las capacidades de computación de Hadoop.</li>
+<li><strong><a href="https://oozie.apache.org/">Oozie</a></strong>: Herramienta que permite definir flujos de trabajo en Hadoop así como su orquestación y planificación.</li>
+<li><strong><a href="https://pig.apache.org/">Pig</a></strong>: Lenguaje de alto de nivel para analizar grandes volúmenes de datos. Trabaja en paralelo, lo que permite gestionar gran cantidad de información. Realmente es un compilador que genera comandos MapReduce, mediante el lenguaje textual denominado Pig Latin.</li>
+<li><strong><a href="https://spark.apache.org/">Spark</a></strong>: Aunque habitualmente no se asocia al ecosistema Hadoop, Apache Spark ha sido el mejor complemento de Hadoop en los últimos años. Apache Spark es un motor de procesamiento masivo de datos muy eficiente a gran escala que ofrece funcionalidades para ingeniería de datos, machine learning, grafos, etc. <em>Implementa procesamiento en tiempo real al contrario que MapReduce, lo que provoca que sea más rápido</em>. Para ello, en vez de almacenar los datos en disco, trabaja de forma masiva en memoria. Puede trabajar de forma autónoma, sin necesidad de Hadoop.</li>
+<li><strong><a href="https://sqoop.apache.org/">Sqoop</a></strong>: Componente para importar o exportar datos estructurados desde bases de datos relacionales a Hadoop y viceversa.</li>
+<li><a href="https://storm.apache.org/">Storm</a>: Sistema de procesamiento real-time de eventos con baja latencia.</li>
+<li><a href="https://zeppelin.apache.org/">Zeppelin</a>: Aplicación web de notebooks que permite a los Data Scientists realizar análisis y evaluar código de forma sencilla, así como la colaboración entre equipos.</li>
+<li><strong><a href="https://zookeeper.apache.org/">ZooKeeper</a></strong>: Herramienta técnica que permite sincronizar el estado de los diferentes servicios distribuidos de Hadoop.</li>
+</ul>
+<h2 id="62-distribuciones-hadoop">6.2 Distribuciones Hadoop<a class="headerlink" href="#62-distribuciones-hadoop" title="Permanent link">&para;</a></h2>
+<p>No te preocupes si ves muchos componentes y piensas que es imposible dominar todos. En la realidad, los proyectos suelen utilizar sólo una pequeña parte de los componentes dependiendo de las necesidades. En negrita encuentras los más utilizados, además de los componentes core: HDFS y YARN.</p>
+<p>Cada componente es un proyecto Apache independiente, lo que impacta, entre otros a:</p>
+<ul>
+<li><strong>Política de versionado (periodicidad, identificación, …)</strong>: cada componente sigue su propio camino en cuanto a cuándo se publican las nuevas versiones, qué mejoras o evoluciones incluyen, etc.</li>
+<li><strong>Dependencias del proyecto con otras versiones de componentes del ecosistema y librerías externas</strong>: los componentes suelen tener dependencias entre ellos. Por ejemplo, Hive tiene dependencia de HDFS, o Phoenix de HBase. Las dependencias suelen ser difíciles de gestionar, por ejemplo, porque una versión de Phoenix requiere una versión específica de HBase.</li>
+<li><strong>Roadmap y estrategia del proyecto</strong>: al tener grupos de trabajo diferentes, cada proyecto tiene su propia estrategia en cuanto a cómo evolucionar la solución, cuándo adaptarse a cambios externos, etc. y no siempre están alineados.</li>
+<li><strong>Commiters / desarrolladores</strong>: los desarrolladores de cada proyecto son diferentes.</li>
+</ul>
+<p>Por este motivo, realizar una instalación de toda una plataforma Hadoop con sus componentes asociados de forma independiente (lo que se denomina Hadoop Vanila) resulta muy complicado. Por ejemplo, al instalar la versión X de Phoenix necesitas la versión Y de HBase, pero otro componente (Hive, por ejemplo), requiere la versión Z de HBase.</p>
+<p>La misma dificultad ocurre para la <strong>resolución de incidencias</strong> que puedan ocurrir en la plataforma cuando se ejecuta en producción.</p>
+<p>Para solventar las dificultades mencionadas, surgen las <strong>distribuciones comerciales de Hadoop</strong>, que contienen en un único paquete la mayor parte de componentes del ecosistema, resolviendo dependencias, añadiendo incluso utilidades, e incorporando la posibilidad de contratar soporte empresarial 24x7</p>
+<p><strong>Distribuciones: Cloudera</strong></p>
+<div class="admonition note inline end">
+<p class="admonition-title">Note</p>
+<p><strong>Cloudera</strong> es la principal distribución que existe actualmente (hubo otras, como MAPR y HortonWorks, pero desaparece MAPR y Hortonworks se une a Cloudera)</p>
+</div>
+<p>Utiliza la mayor parte de componentes de Apache, en algún caso realizando algunas modificaciones, y añade algún componente
+propietario (Cloudera Manager, Cloudera Navigator, etc.). <em><a href="https://www.cloudera.com/products/open-source/apache-hadoop/key-cdh-components.html">CDN Cloudera</a></em> y como <a href="https://www.cloudera.com/downloads/cdh.html">descargarlo</a></p>
+<figure style="align: center;">
+    <img src="images/Figura6.5_Distribución_Cloudera.png">
+    <figcaption>Distribución Cloudera. Fuente: Cloudera</figcaption>
+</figure>
+
+<div class="admonition note">
+<p class="admonition-title">CDH Cloudera</p>
+<p><strong>CDH (Cloudera’s Distribution including Apache Hadoop)</strong> es la distribución de Cloudera con Apache Hadoop orientada a empresas. La última versión es Cloudera 6 (CDH 6). Está disponible como paquetes RPM y paquetes para Debian, Ubuntu o Suse. Cloudera proporciona CDH en varias modalidades.</p>
+<p>La versión más completa y empresarial es Cloudera Enterprise, que incluye suscripciones por cada nodo del clúster, Cloudera Manager y el soporte técnico. Por otro lado, Cloudera Express es una versión más sencilla, sin actualizaciones o herramientas de disaster recovery. Por último, existe una versión gratuita de CDH: Cloudera Community. Permite desplegar un clúster con un número de nodos limitado.</p>
+<p>Es posible ejecutar Cloudera desde un contenedor Docker. Proporciona una imagen Docker con CDH y Cloudera Manager que sirve como entorno para aprender Hadoop y su ecosistema de una forma sencilla y sin necesidad de Hardware potente. También es útil para desarrollar aplicaciones o probar sus funcionalidades.</p>
+</div>
+<p><strong>Soluciones como servicio (SaaS)</strong></p>
+<ul>
+<li><strong>Amazon Elastic Map Reduce (EMR)</strong><ul>
+<li><a href="https://aws.amazon.com/es/emr/">Sitio Oficial</a></li>
+<li><a href="https://docs.aws.amazon.com/es_es/emr/latest/ManagementGuide/emr-what-is-emr.html">¿Qué es Amazon EMR?</a></li>
+</ul>
+</li>
+<li><strong>Microsoft Azure HDInsight</strong><ul>
+<li><a href="https://azure.microsoft.com/es-es/products/hdinsight/">Sitio Oficial</a></li>
+<li><a href="https://learn.microsoft.com/es-es/azure/hdinsight/hdinsight-overview">¿Qué es Azure HDInsight?</a></li>
+</ul>
+</li>
+<li><strong>Google Dataproc</strong><ul>
+<li><a href="https://cloud.google.com/dataproc?hl=es">Sitio Oficial</a></li>
+<li><a href="https://cloud.google.com/dataproc/docs/concepts/overview?hl=es-419">¿Qué es Dataproc?</a></li>
+</ul>
+</li>
+</ul>
+<p><strong>Principales Servicios de Datos en Cloud</strong></p>
+<p>Para comprender mejor los servicios que ofrecen los proveedores cloud, podemos clasificarlos en varios grupos en función de sus características:</p>
+<ul>
+<li>Ingesta</li>
+<li>Procesamiento</li>
+<li>Almacenamiento</li>
+<li>Análisis</li>
+</ul>
+<p>En la siguiente tabla se muestran estos grupos de servicios, con la categoría a la que pertenecen, las alternativas en los principales proveedores de servicios cloud (HDInsight, AWS y GCP) y su opción Open Source.</p>
+<table>
+<thead>
+<tr>
+<th><strong>GRUPO</strong></th>
+<th><strong>CATEGORÍA</strong></th>
+<th><strong>AZURE</strong></th>
+<th><strong>AWS</strong></th>
+<th><strong>GCP</strong></th>
+<th><strong>OPEN SOURCE</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ingesta</td>
+<td>ETL</td>
+<td>Data Factory</td>
+<td>Glue</td>
+<td>Dataprep</td>
+<td>Apache NiFi</td>
+</tr>
+<tr>
+<td>Ingesta</td>
+<td>Message Queue</td>
+<td>Streaming</td>
+<td>EventHub</td>
+<td>Kinesis</td>
+<td>Pub/Sub</td>
+</tr>
+<tr>
+<td>Ingesta</td>
+<td>Scheduling</td>
+<td>Logic Apps, Batch</td>
+<td>Stepfunctions, Cloudwatch, EventBridge</td>
+<td>Cloud Scheduler, Cloud Batch, Cloud Workflows, Cloud Composer</td>
+<td>Apache Airflow</td>
+</tr>
+<tr>
+<td>Procesamiento</td>
+<td>Procesamiento</td>
+<td>Functions, Data Factory, Databricks</td>
+<td>Lambda, EMR, Glue, Databricks</td>
+<td>Cloud Functions, DataProc, DataFlow</td>
+<td>Apache Flink, Apache Spark, Apache Hadoop</td>
+</tr>
+<tr>
+<td>Almacenamiento</td>
+<td>Relacional</td>
+<td>Azure SQL DB</td>
+<td>RDS</td>
+<td>CloudSQL, BigTable</td>
+<td>MySQL, MariaDB, PostgreSQL</td>
+</tr>
+<tr>
+<td>Almacenamiento</td>
+<td>NoSQL</td>
+<td>CosmosDB</td>
+<td>DynamoDB, DocumentDB</td>
+<td>Datastore, Firestore</td>
+<td>Elasticsearch, Apache Cassandra, MongoDB</td>
+</tr>
+<tr>
+<td>Almacenamiento</td>
+<td>OLAP, Data Warehouse</td>
+<td>Synapse Analytics, Snowflake</td>
+<td>Redshift, Athena, Snowflake</td>
+<td>BigQuery, Snowflake</td>
+<td>Apache Druid, Apache Hive, Presto</td>
+</tr>
+<tr>
+<td>Almacenamiento</td>
+<td>Objetos</td>
+<td>Blob Storage</td>
+<td>S3</td>
+<td>Cloud Storage</td>
+<td>Minio, Ceph</td>
+</tr>
+<tr>
+<td>Almacenamiento</td>
+<td>Cache</td>
+<td>Cache for Redis</td>
+<td>ElastiCache</td>
+<td>Memorystore</td>
+<td>Memcached, Redis</td>
+</tr>
+<tr>
+<td>Almacenamiento</td>
+<td>Grafo</td>
+<td>CosmosDB</td>
+<td>Neptune</td>
+<td>Vertex AI</td>
+<td>Neo4j</td>
+</tr>
+<tr>
+<td>Análisis</td>
+<td>Machine Learning</td>
+<td>Azure ML</td>
+<td>SageMaker</td>
+<td>Cloud datalab, Vertex AI</td>
+<td>Tensorflow, Keras, PyTorch</td>
+</tr>
+<tr>
+<td>Análisis</td>
+<td>Business Intelligence</td>
+<td>PowerBI</td>
+<td>Quicksight</td>
+<td>Data Studio, Looker</td>
+<td>Grafana, Apache Superset</td>
+</tr>
+</tbody>
+</table>
+<h2 id="63-arquitectura">6.3 Arquitectura<a class="headerlink" href="#63-arquitectura" title="Permanent link">&para;</a></h2>
+<p>Hadoop se basa en un modelo de despliegue distribuido y está diseñado para ejecutar sistemas de procesamiento en el mismo clúster que almacena los datos (<em>data local computing</em>). </p>
+<p>Pese a que hay un conjunto de servidores trabajando en paralelo y de forma conjunta, para un usuario externo todos ellos actúan como si fuera una sola máquina, es decir, un usuario del sistema de ficheros (<strong>HDFS</strong>) verá la estructura de directorios, subdirectorios y ficheros, pero no tendrá que conocer en qué servidores está cada fichero (lo mismo ocurre con cualquier otro componente que se ejecuta en toda la infraestructura)</p>
+<p><strong>Su filosofía es almacenar todos los datos en un lugar y procesarlos en el mismo lugar, esto es, mover el procesamiento al almacén de datos y no mover los datos al sistema de procesamiento.</strong></p>
+<div class="admonition note inline end">
+<p class="admonition-title">Note</p>
+<p><strong>Cluster y Nodo:</strong> Al conjunto de servidores que trabajan para implementar las funcionalidades de Apache Hadoop se le denomina <strong>clúster</strong>, y a cada uno de los servidores que forman parte del clúster se le denomina <strong>nodo</strong>.
+A partir de ahora, cuando usemos la palabra "clúster de Hadoop" debes pensar en el conjunto de servidores que forman la plataforma que está en ejecución, y cuando usemos la palabra "nodo" debes pensar en cada uno de los servidores que componen el clúster.</p>
+</div>
+<p>Esto lo logra mediante un entorno distribuido de datos y procesos. El procesamiento se realiza en paralelo a través de nodos de datos en un sistema de ficheros distribuidos (HDFS), donde se distingue entre:</p>
+<ul>
+<li>Nodos <strong>worker</strong>: Realizan los trabajos. Tratan con los datos locales y los procesos de aplicación. Por ejemplo, para el almacenamiento, cada worker se ocupará de almacenar una parte, mientras que para la ejecución de trabajos, cada worker realiza una parte del trabajo. Su número dependerá de las necesidad de nuestros sistemas, pero pueden estar comprendido entre 4 y 10.000. Su hardware es relativamente barato (<em>commodity hardware</em>) mediante servidores X86.</li>
+<li>Nodos <strong>master</strong>: Encargados de los procesos de gestión global, es decir, controlar la ejecución o el almacenamiento de los trabajos y/o datos. Son los nodos que controlan el trabajo que realizan los nodos worker, por ejemplo, asignando a cada worker una parte del proceso o de los datos a almacenar, vigilando que están realizando el trabajo y no están caídos, rebalanceando el trabajo a otros nodos en caso de que un worker tenga problemas, etc. Normalmente se necesitan 3.</li>
+<li>Nodos <strong>edge</strong>: Hacen de puente entre el clúster y la red exterior y proporcionan interfaces, ya que normalmente un clúster Hadoop no tiene conexión con el resto de servidores e infraestructura de la empresa, por lo que toda la comunicación desde el exterior hacia el clúster se canaliza a través de los nodos frontera, que además, ofrecen las APIs para poder invocar a servicios del clúster.</li>
+</ul>
+<figure style="align: center;">
+    <img src="images/Figura6.6_Arquitectura_Hadoop.png">
+    <figcaption>Arquitectura Hadoop</figcaption>
+</figure>
+
+<p>El hardware típico donde se ejecuta un cluster Hadoop sería:</p>
+<div class="admonition note inline end">
+<p class="admonition-title">Note</p>
+<p><strong>Commodity Hardware:</strong> A veces el concepto hardware commodity suele confundirse con hardware doméstico, cuando lo que hace referencia es a hardware no específico, que no tiene unos requerimientos en cuanto a disponibilidad o resiliencia exigentes</p>
+</div>
+<ul>
+<li>Nodos <em>master</em>: 12 HDs x 2-3 TB JBOD (<em>Just a bunch of disks = sólo un montón de discos</em>) - 2CPUs x 8 cores - 256 GB RAM</li>
+<li>Nodos <em>worker</em>: 2 HDs x 2-3 TB RAID - 2CPUs x 8 cores - 256 GB RAM</li>
+<li>Nodos <em>edge</em>: 2 HDs x 2-3 TB RAID - 2CPUs x 8 cores - 256 GB RAM</li>
+</ul>
+<h2 id="64-uso-de-hadoop">6.4 Uso de Hadoop<a class="headerlink" href="#64-uso-de-hadoop" title="Permanent link">&para;</a></h2>
+<p>Es importante analizar y tener en cuenta en que casos reales es aconsejable el uso de Hadoop y cuando no lo es.</p>
+<h3 id="cuando-usar-hadoop">¿Cuándo Usar Hadoop?<a class="headerlink" href="#cuando-usar-hadoop" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Cuando el <strong>volumen</strong> de datos es mayor que la capacidad de los sistemas tradicionales (no cabe en una máquina).</li>
+<li>Cuando hay un problema de <strong>variedad</strong> de datos, porque son diversos o porque cambian frecuentemente.</li>
+<li>Cuando se requiere una <strong>escalabilidad</strong> que no pueden ofrecer los sistemas tradicionales, por volumen, por velocidad de proceso, por rendimiento global, y no se requiere un nivel de transaccionalidad elevado.</li>
+<li>Cuando se pretende tener <strong>una plataforma</strong> con la capacidad de almacenamiento y procesamiento de un gran volumen de datos para cubrir diferentes casos de uso (con la misma plataforma).</li>
+</ul>
+<h3 id="cuando-no-usar-hadoop">¿Cuándo no usar Hadoop?<a class="headerlink" href="#cuando-no-usar-hadoop" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Cuando los sistemas tradicionales son capaces de dar soporte a los casos de uso y cuando los formatos/tipos de datos son fijos o no cambian apenas.</li>
+<li>Cuando se tiene requisitos de transaccionalidad muy estrictos, es decir, cuando se pretende cubrir la operativa de una empresa (por ejemplo, en un banco: las transferencias, movimientos, pagos, etc.).</li>
+<li>Cuando sólo se requiere resolver un caso de uso "Big Data" muy específico.</li>
+</ul>
+<h2 id="65-hdfs">6.5 HDFS<a class="headerlink" href="#65-hdfs" title="Permanent link">&para;</a></h2>
+<p><strong>Hadoop Distributed File System (HDFS)</strong> Es el componente principal del ecosistema Hadoop. Hace posible almacenar conjuntos de datos masivos con tipos de datos estructurados, semi-estructurados y no estructurados como imágenes, vídeo, datos de sensores, etc.</p>
+<p>Es un sistema de almacenamiento distribuido y tolerante a fallos que puede almacenar gran cantidad de datos, escalar de forma incremental y sobrevivir a fallos de hardware sin perder datos. Se basa en el <a href="https://static.googleusercontent.com/media/research.google.com/es//archive/gfs-sosp2003.pdf">paper</a> que publicó Google detallando su Google File System en 2003.</p>
+<p>Está optimizado para obtener un alto rendimiento y trabajar con máxima eficiencia cuando se leen <em>archivos grandes</em>. Para obtener este rendimiento, utiliza tamaños de bloque inusualmente grandes y optimización de localización de los datos para reducir la E/S de red.</p>
+<p>Con el fin de ofrecer una visión de los recursos como una sola unidad crea una capa de abstracción como un sistema de ficheros único. <strong>Está basado en la idea de que mover el procesamiento es mucho más rápido, fácil y eficiente que mover grandes cantidades de datos, que pueden producir altas latencias y congestión en la red</strong>.</p>
+<h3 id="651-caracteristicas-hdfs">6.5.1 Características HDFS<a class="headerlink" href="#651-caracteristicas-hdfs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Es un sistema de ficheros distribuido</strong>, es decir, se ejecuta sobre diferentes nodos que trabajan en conjunto ofreciendo a los usuarios y aplicaciones que utilizan el sistema, un interfaz como si sólo hubiera un único servidor por detrás.</li>
+<li>Está diseñado para ejecutarse sobre <strong>hardware commodity</strong>, es decir, no requiere unos servidores específicos o costosos. Esto conlleva la necesidad de poder sobreponerse a los fallos que pudieran tener los servidores o algunas partes de los servidores.</li>
+<li>Está optimizado para almacenar <strong>ficheros de gran tamaño</strong> y para hacer operaciones de lectura o escritura masivas. Su objetivo es cubrir los casos de uso de analítica masiva, no los casos de uso que dan soporte a las operaciones de las empresas.</li>
+<li>Tiene capacidad para <strong>escalar horizontalmente</strong> hasta volúmenes de Petabytes y miles de nodos, y está diseñado para poder dar soporte a <strong>múltiples clientes</strong> con acceso concurrente. La escalabilidad se consigue añadiendo más servidores</li>
+<li>No establece <strong>ninguna restricción sobre los tipos de datos</strong> que se almacenan en el sistema, ya que éstos pueden ser estructurados, semiestructurados o no disponer de ninguna estructura, como el caso de imágenes o vídeos.</li>
+<li>HDFS tiene una orientación <strong>"write-once, read many"</strong>, que significa "se escribe una vez, se lee muchas veces", es decir, asume que un archivo una vez escrito en HDFS <strong>no se modificará</strong>, aunque se puede acceder a él muchas veces. Así pues, los datos, una vez escritos en HDFS son <em>immutables</em>. Cada fichero de HDFS solo permite añadir contenido (append-only). Una vez se ha creado y escrito en él, solo podemos añadir contenido o eliminarlo. Es decir, a priori, no podemos modificar los datos.</li>
+</ul>
+<p><em>Recuerda las características con esta imagen</em></p>
+<figure style="align: center; width:600px;">
+    <img src="images/Figura6.7_Características_HDFS.png">
+    <figcaption>Figura6.7_Características HDFS</figcaption>
+</figure>
+
+<h3 id="652-bloques">6.5.2 Bloques<a class="headerlink" href="#652-bloques" title="Permanent link">&para;</a></h3>
+<p>Un bloque es la cantidad mínima de datos que puede ser leída o escrita. En HDFS, los ficheros se dividen en bloques, como en la mayoría de sistemas de ficheros. Sin embargo, el <strong>tamaño de un bloque en HDFS es</strong> muy grande, <strong>de 128 megabytes por defecto</strong>. En el sistema operativo de un PC (Windows, Linux, etc.), el tamaño suele ser de 512 bytes o 4 kilobytes, es decir, unas 50.000 veces más pequeño que en HDFS.</p>
+<p><em>El bloque es la unidad mínima de lectura</em>, lo que significa que aunque tengamos un fichero que ocupa 1 kilobyte, tendremos que leer o escribir 128 megabytes cada vez que queramos operar con el fichero. Para ficheros grandes, por ejemplo, de 500 gigabytes, la ventaja que aporta es que hay que buscar y leer o escribir muchos menos bloques. Esta característica explica por qué Hadoop está diseñado para ficheros grandes y lecturas masivas, y por qué tiene un mal rendimiento para operaciones pequeñas.</p>
+<p>Por lo tanto, cuando queremos escribir un fichero en HDFS, lo primero que se hace es dividir el fichero en bloques. A continuación, los bloques son almacenados en diferentes nodos, no siendo necesario que los bloques de un mismo fichero estén en un mismo nodo. Además, un aspecto importante es que cada bloque se replica (se copia) en más de un nodo, lo que se conoce como el <strong>factor de replicación</strong>. <em>El factor de replicación por defecto en HDFS es 3</em>, lo que significa que cada bloque tiene 3 copias almacenadas en 3 nodos diferentes. <strong>La replicación es el mecanismo con el que se consigue, entre otras cosas, la tolerancia a fallos</strong>.</p>
+<p>Al tener varias réplicas de cada bloque en diferentes nodos, en caso de que un nodo se caiga, o que un disco de un nodo se corrompa, HDFS dispondrá de otras copias, por lo que no se perderán los datos. </p>
+<figure style="align: center;width:600px;">
+    <img src="images/Figura6.8_Bloques_HDFS.png">
+    <figcaption>Figura6.8_Bloques HDFS</figcaption>
+</figure>
+
+<p>En el ejemplo anterior, si se cayera el nodo 3, HDFS dispondría de otras dos copias por cada bloque que almacena del fichero.</p>
+<figure style="align: center;width:800px;">
+    <img src="images/Figura6.9_Factor_Replicación_HDFS.png">
+    <figcaption>Figura6.9_Factor Replicación HDFS</figcaption>
+</figure>
+
+<p>El factor de replicación puede configurarse a nivel de fichero o directorio, es decir, podemos elegir un factor de replicación diferente para los ficheros o directorios que consideremos. Cuanto mayor sea el factor de replicación, más difícil será que perdamos los datos e incluso mejorará el rendimiento en las lecturas, porque para leer un bloque, HDFS podrá utilizar cualquier nodo. Sin embargo, un factor de replicación alto hace que las escrituras tengan peor rendimiento, al tener que hacer muchas copias en cada escritura, y además, consumirá más espacio real en disco.</p>
+<h3 id="653-arquitectura-hdfs">6.5.3 Arquitectura HDFS<a class="headerlink" href="#653-arquitectura-hdfs" title="Permanent link">&para;</a></h3>
+<p>La arquitectura de HDFS consta de distintos servicios y tipos de nodo, aunque fundamentalmente son tres tipos:</p>
+<ul>
+<li><strong>NameNode</strong>(NN): Nodo de Nombres.</li>
+<li><strong>Secondary NameNode</strong>(SNN): Nodo de Nombres Secundario.</li>
+<li><strong>DataNode</strong>(DN): Nodos de Datos</li>
+</ul>
+<p><strong>NameNode</strong></p>
+<p>El nodo Namenode actúa de maestro, manteniendo la metainformación de todo el sistema de ficheros, esto es:</p>
+<ul>
+<li>Almacena el espacio de nombres HDFS</li>
+<li>La estructura de directorios, subdirectorios y los ficheros</li>
+<li>La información de los ficheros: tamaño, fecha de modificación, propietario, permisos, etc.</li>
+<li>El factor de replicación de cada fichero.</li>
+<li>Los bloques que componen cada fichero.</li>
+<li>La ubicación de los distintos bloques (en qué nodo se encuentran).</li>
+</ul>
+<div class="admonition note inline end">
+<p class="admonition-title">Note</p>
+<p><em>La información es almacenada tanto en disco, para garantizar la durabilidad en caso de una caída del servidor, como en memoria, para poder acceder a la información lo más rápido posible y optimizar el rendimiento.</em></p>
+</div>
+<p>NameNode se compone principalmente de dos ficheros:</p>
+<ul>
+<li><strong>FsImage:</strong> Contiene la estructura de directorio completa (espacio de nombres) de HDFS con detalles sobre la ubicación de los datos en los bloques de datos y qué bloques están almacenados en qué nodo. NameNode utiliza este archivo cuando se inicia.</li>
+<li><strong>EditLog:</strong> Es un <em>registro de transacciones</em> que registra los cambios en el sistema de archivos HDFS o cualquier acción realizada en el clúster HDFS, como la adición de un nuevo bloque, la replicación, la eliminación, etc. En resumen, registra los cambios desde que se creó la última FsImage</li>
+</ul>
+<p>Cuando se inicia un NameNode, lee el estado HDFS de un archivo de imagen, fsimage, y luego aplica las ediciones del archivo de registro de ediciones. Seguidamente escribe un nuevo estado HDFS en el fsImage y comienza la operación normal con un archivo de edición vacío.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Por ejemplo, la creación de un nuevo archivo en HDFS hace que NameNode inserte un registro en EditLog para indicarlo. De manera similar, cambiar el factor de replicación de un archivo hace que se inserte un nuevo registro en EditLog. El NameNode utiliza un archivo en su sistema de archivos del sistema operativo anfitrión local para almacenar el EditLog. Todo el espacio de nombres del sistema de archivos, incluida la asignación de bloques a archivos y las propiedades del sistema de archivos, se almacena en un archivo denominado FsImage. La FsImage también se almacena como un archivo en el sistema de archivos local de NameNode.</p>
+</div>
+<p>Además de gestionar la <strong>metainformación</strong>, <strong>coordina</strong> todas las <strong>lecturas</strong> y <strong>escrituras</strong>, y controla el funcionamiento de los Datanodes, es decir, detecta si hay algún fallo en algún nodo y toma las acciones necesarias en caso de que alguno esté caído o con fallos.</p>
+<p>Es importante que el Namenode sea robusto y no tenga caídas. Por este motivo, se utiliza hardware más resiliente que en el caso de los Datanodes.</p>
+<p><strong>Secondary NameNode</strong></p>
+<p>Para mejorar la <strong>tolerancia a fallos</strong>, suele existir un nodo secundario del maestro, denominado <strong>Secondary Namenode</strong>.</p>
+<p>El NameNode es el único punto de fallo en HDFS ya que, si el Namenode falla, se pierde todo el sistema de archivos HDFS. Para reducir este riesgo esto, Hadoop implementó el Secondary Namenode en la versión 3.</p>
+<p>Secondary Namenode no es un <strong>nodo de respaldo</strong>. Su principal función es almacenar una copia de los ficheros <strong><em>fsimage</em></strong> y <strong><em>editlog</em></strong>. Comprueba los metadatos del sistema de archivos almacenados en NameNode. Esto es lo que se llama <em>checkpointing</em>. El proceso que sigue el NameNode secundario para fusionar periódicamente los archivos fsimage y edits log es el siguiente:</p>
+<ol>
+<li>El NameNode secundario obtiene los últimos archivos fsImage y editLog del NameNode primario.</li>
+<li>El NameNode secundario aplica cada transacción del archivo editLog a fsImage para crear un nuevo archivo FsImage fusionado.</li>
+<li>El archivo fsImage fusionado se transfiere de nuevo al NameNode primario.</li>
+</ol>
+<figure style="align: center;">
+    <img src="images/Figura6.10_Relacion_NameNode_DataNode.png">
+    <figcaption>Figura6.10_Relación entre NameNode y DataNode</figcaption>
+</figure>
+
+<p><strong>DataNode</strong></p>
+<p>Los <strong>Datanodes</strong> son los servicios que se encuentran en los <strong>nodos worker</strong>, y su labor principal es almacenar o leer los bloques que componen los ficheros que están almacenados en HDFS, con las siguientes particularidades:</p>
+<ul>
+<li>Habrá más de uno en cada clúster. Por cada Namenode podemos tener miles de Datanodes.</li>
+<li>Almacena y lee bloques de datos. El Datanode sólo conoce los bloques que contiene, pero no sabe a qué fichero pertenecen o dónde se encuentran el resto de bloques del fichero. Toda esta información sólo está en el Namenode. Por eso es crítico para HDFS.</li>
+<li>Envían al Namenode la lista de los bloques que almacenan, para que el Namenode pueda tener una lista actualizada de los bloques y su ubicación.</li>
+<li>Almacenan un checksum por cada bloque para detectar si el bloque
+está corrupto y garantizar su integridad.</li>
+<li>Envía un latido (<em>heartbeat</em>) al Namenode, que es un mensaje corto indicando que está levantado</li>
+</ul>
+<p><strong>Resumen</strong></p>
+<figure style="align: center;">
+    <img src="images/Figura6.11_Resumen_Nodos_HDFS.jpg">
+    <figcaption>Figura6.11_Resumen Nodos HDFS</figcaption>
+</figure>
+
+<h3 id="654-funcionamiento-lectura-y-escritura">6.5.4 Funcionamiento (Lectura y Escritura)<a class="headerlink" href="#654-funcionamiento-lectura-y-escritura" title="Permanent link">&para;</a></h3>
+<p>Los datos que se escriben en HDFS son <strong><em>immutables</em></strong>, es decir, no pueden ser modificados.</p>
+<p>Esto significa que HDFS sólo permite añadir contenido a los ficheros, así que por ejemplo, si en un fichero de 256 megabytes se pretende modificar un carácter, HDFS creará un nuevo bloque con el cambio y lo escribirá por completo, borrando el bloque anterior. </p>
+<p>Esto, junto con la característica del tamaño de bloque de <strong>128 megabytes</strong>, que es la <strong>unidad mínima de lectura</strong>, hace que el rendimiento de HDFS para operaciones sencillas sobre registros aleatorios sea muy pobre. Recuerda que HDFS está pensado para <em>ficheros grandes y lecturas masivas</em>. </p>
+<p>HDFS proporciona dos tipos de operaciones básicas con los ficheros: <strong>leer y escribir un fichero</strong></p>
+<p><strong>Lectura</strong></p>
+<p>En el caso de las lecturas, un <strong><em>esquema simplificado</em></strong> de esta operación sería:</p>
+<figure style="align: center;">
+    <img src="images/Figura6.12_Lectura_HDFS.jpg">
+    <figcaption>Figura6.12_Lectura HDFS</figcaption>
+</figure>
+
+<ol>
+<li>El cliente que desea leer un fichero de HDFS, mediante una librería instalada en su equipo, realiza una llamada al Namenode para conocer qué bloques forman un fichero (llamemos X al fichero), así como los Datanodes que contienen cada uno de los bloques.</li>
+<li>El Namenode retorna dicha información, y ordena para cada bloque los Datanodes que contienen dicho bloque en función de la distancia al cliente (un algoritmo evalúa la distancia entre el cliente y cada Datanode). El objetivo de esta lista ordenada es intentar reducir el tiempo de acceso a cada Datanode desde el cliente.</li>
+<li>Con la información recibida del Namenode, el cliente se comunica directamente con el Datanode 1 para solicitarle el primer bloque.</li>
+<li>El cliente se comunica con el Datanode 2 para obtener el bloque 2.</li>
+<li>El cliente se comunica con el Datanode 1 para obtener el bloque 3. </li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Es preciso indicar que durante la operación, la única responsabilidad del Namenode es devolver al cliente la lista de bloques y la ubicación de los mismos, pero no interviene en las lecturas. Es decir, para realizar las lecturas de cada bloque, <strong>el cliente se comunica directamente con los Datanodes, sin que los datos pasen por el Namenode</strong>. Esto hace que el Namenode no sea cuello de botella del proceso, y pueda atender múltiples peticiones en paralelo, ya que no le supone mucho esfuerzo de computación atender las diferentes solicitudes de los clientes.</p>
+</div>
+<p><strong>Escritura</strong></p>
+<p>En el caso de las escrituras, un esquema simplificado de esta operación sería:</p>
+<figure style="align: center;">
+    <img src="images/Figura6.13_Escritura_HDFS.jpg">
+    <figcaption>Figura6.13_Escritura HDFS</figcaption>
+</figure>
+
+<ol>
+<li>El cliente, que desea escribir un fichero, invoca a un servicio del Namenode para solicitar la creación del fichero, indicándole en la llamada el nombre y la ruta en la que desea guardarlo.</li>
+<li>El Namenode realiza una serie de verificaciones, como los permisos del usuario/cliente en el directorio, si el fichero ya existe, etc. En caso de que todas las verificaciones sean correctas, devuelve un OK, en caso contrario un KO.</li>
+<li>El cliente comienza a generar los bloques en los que se dividirá el fichero utilizando una librería de HDFS.</li>
+<li>Para cada bloque que desea escribir el cliente, se invoca al Namenode para obtener el Datanode en el que escribir el bloque.</li>
+<li>El Namenode devuelve la lista de Datanodes en los que escribir el bloque, y el cliente escribe dicho bloque en el primer Datanode obtenido, realizando una comunicación directamente con dicho Datanode.</li>
+<li>Una vez escrito el bloque en el primer Datanode, éste es responsable de comunicarse con el siguiente Datanode en la cadena para que escriba una copia del bloque. Una vez todos los Datanodes han escrito la réplica, se devuelve un "Ok" al cliente para que escriba el siguiente bloque.</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Al igual que en el caso de la lectura, es importante señalar que el Namenode no recibe en ningún momento los datos del fichero, sino que se limita a resolver las cuestiones relacionadas con la ubicación de cada bloque. De esta manera, liberando al Namenode de la operativa de escritura, permite optimizar el funcionamiento y que el Namenode no se convierta en el cuello de botella de HDFS en las escrituras de fichero.</p>
+</div>
+<h3 id="655-factor-de-replicacion">6.5.5 Factor de replicación<a class="headerlink" href="#655-factor-de-replicacion" title="Permanent link">&para;</a></h3>
+<p>Como sabemos, la replicación es un concepto muy importante en HDFS, ya que nos permite tener una mayor tolerancia a fallos, pero tiene otras implicaciones en cuanto al rendimiento como acabamos de ver.</p>
+<p>Sin embargo, tiene una implicación directa en la capacidad de almacenamiento. Veámoslo.</p>
+<p>En un clúster, la capacidad de almacenamiento total viene dado por la suma de la capacidad de todos los discos que hay en los Datanodes. Por ejemplo, en un clúster de 20 nodos, con 12 discos de 3 terabytes por nodo, tendremos una capacidad de 36 terabytes por nodo, y 720 terabytes en total.</p>
+<p>Ahora bien, si todos los ficheros de HDFS van a tener un factor de
+replicación 3 significará que cada fichero ocupará el triple, al haber 3 copias para cada datos. Esto hace que la capacidad total del clúster baje hasta 240 terabytes.</p>
+<p>Además, cuando calculamos la capacidad real de un clúster, hay que dejar otro espacio para que las aplicaciones o los usuarios puedan guardar datos parciales de sus operaciones, logs, etc. Normalmente se reserva un 30 o 40% para este propósito, así que nuestro clúster de 20 nodos y 36 terabytes por nodo, tendrá una capacidad real de unos 150 terabytes. Sigue siendo una capacidad alta, <em>pero está lejos de los 720 terabytes iniciales</em>.</p>
+<p>Con esto, podemos afirmar por lo tanto que:</p>
+<ul>
+<li>Un factor de replicación alto:</li>
+<li>Mejora la tolerancia a fallos.</li>
+<li>Mejora la velocidad de lectura porque se pueden utilizar más Datanodes para recuperar un bloque.</li>
+<li>Reduce la velocidad de las escrituras porque cada bloque hay que almacenarlo en más Datanodes.</li>
+<li>
+<p>Reduce la capacidad total de almacenamiento de un clúster.</p>
+</li>
+<li>
+<p>Un factor de replicación bajo:</p>
+</li>
+<li>Incrementa el riesgo de perder algún dato si se corrompen los Datanodes que almacenan un bloque.</li>
+<li>Reduce la velocidad de lectura porque hay que leer cada bloque de uno o pocos Datanodes que lo contienen, y a lo mejor esos Datanodes están ocupados con otras operaciones.</li>
+<li>Incrementa la velocidad de escritura, al tener que escribir cada bloque en pocos Datanodes.</li>
+<li>Incrementa (o mejor dicho, reduce menos) la capacidad total de almacenamiento del clúster.</li>
+</ul>
+<p>Con estos puntos enumerados, normalmente se aplican estas reglas para calcular el <strong>factor de replicación óptimo</strong>:</p>
+<ul>
+<li>Para datos temporales, que se van a escribir y quizás no se lean nunca, y que no son críticos, el factor de replicación suele ser bajo (1 ó 2).</li>
+<li>Para datos críticos, que es importante que no se puedan perder, y que suelen ser accedidos muchas veces, como por ejemplo una tabla maestra, el factor de replicación suele ser alto (incluso teniendo una copia por cada Datanode si es accedida muchas veces y no ocupa mucho).</li>
+<li>Para el resto de ficheros, se suele dejar el factor de replicación por defecto.</li>
+</ul>
+<h3 id="656-manejo-y-uso-de-hdfs">6.5.6 Manejo y uso de HDFS<a class="headerlink" href="#656-manejo-y-uso-de-hdfs" title="Permanent link">&para;</a></h3>
+<div class="admonition example inline end">
+<p class="admonition-title">Example</p>
+<p>Para una primera aproximación y para empezar a familiarizarnos con Apache Hadoop y HDFS usaremos la siguiente <a href="https://bit.ly/3k3bmWx">imagen de Cloudera</a> <em>(Necesitas pertenecer a IES Gran Capitán)</em></p>
+</div>
+<p>HDFS soporta operaciones similares a los sistemas Unix:</p>
+<ul>
+<li>Lectura, escritura o borrado de ficheros.</li>
+<li>Creación, listado o borrado de directorios.</li>
+<li>Usuarios, grupos y permisos.</li>
+</ul>
+<p>En cuanto a los interfaces con los que poder usar el sistema de ficheros, ofrece diferentes interfaces, siendo los principales los mencionados a continuación:</p>
+<ul>
+<li><strong>Cliente de línea de comandos</strong>: HDFS dispone de un amplio número de comandos que pueden ser ejecutados en consola. </li>
+<li><strong>Java API</strong>: HDFS está escrito en Java de forma nativa y ofrece un API que puede ser utilizado por aplicaciones con el mismo lenguaje.</li>
+<li><strong>RestFul API(WebHDFS)</strong>: para poder utilizar HDFS desde otros lenguajes, HDFS ofrece su funcionalidad mediante un servicio HTTP mediante el protocolo WebHDFS. Este interfaz, sin embargo, ofrece un rendimiento inferior al API de Java al utilizar HTTP como capa de transporte, por lo que no debería utilizarse para operaciones masivas o con alto volumen de datos.</li>
+<li><strong>NFS interface (HDFS NFS Gateway)</strong>: es posible montar HDFS en el sistema de archivos de un cliente local utilizando la puerta de enlace NFSv3 de Hadoop.</li>
+<li><strong>Librería C</strong>: HDFS ofrece una librería escrita en C, llamada libhdfs, que tiene un buen rendimiento, pero que no suele ofrecer toda la funcionalidad del API Java.</li>
+</ul>
+<p><strong>Cliente de línea de comandos</strong></p>
+<p>Una vez dentro del sistema, el comando <em>hadoop fs</em> nos proporcionará todas las funcionalidades sobre HDFS. Si se introduce sólo el comando, nos ofrecerá la lista de opciones o comandos disponibles. Algunos de los comandos más utilizados son los siguientes:</p>
+<div class="admonition info inline end">
+<p class="admonition-title">Info</p>
+<p><figure style="align: center;">
+    <img src="images/Figura6.14_HDFS_DFS.png" width="200px">
+    <figcaption>Figura6.14_HDFS DFS</figcaption>
+</figure></p>
+<p><code>hadoop fs</code> es soportado por cualquier sistema de archivos genérico que puede apuntar a cualquier sistema de archivos como local, HDFS, FTP, S3, etc. En cambio <code>hdfs dfs</code> es exclusivo de HDFS y es el usado en las versiones actuales. </p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>En la distribución de cloudera, el sistema de archivos local por defecto está localizado en /home/cloudera y la localización por defecto de HDFS es /user/cloudera</p>
+</div>
+<p>En el caso concreto de interactuar con el sistema de ficheros de Hadoop se utiliza el comando dfs, el cual requiere de otro argumento (empezando con un guion) el cual será uno de los comandos Linux para interactuar con el shell. Podéis consultar la lista de comandos en la <a href="https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/HDFSCommands.html">documentación oficial</a>.</p>
+<ul>
+<li>
+<p><strong>Listar contenidos de un directorio</strong>: Para ver los contenidos del directorio HDFS el comando es el siguiente:</p>
+<p><code>hdfs dfs -ls /user/cloudera</code></p>
+</li>
+<li>
+<p>Crear un directorio: Para crear un nuevo directorio dentro del sistema de ficheros HDFS.</p>
+<p><code>hdfs dfs -mkdir /user/cloudera/prueba</code></p>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Atención a los permisos necesarios para crear directorios en diferentes puntos del sistema de archivos</p>
+</div>
+<ul>
+<li>
+<p><strong>Copiar un fichero</strong> del sistema de archivos local al sistema de archivos HDFS. Se podrá verificar esa copia mediante el comando     <em>hdfs dfs -ls</em> o mediante la operación cat que se menciona a continuación.</p>
+<p><code>hdfs dfs -copyFromLocal /home/cloudera/fichero /user/cloudera</code></p>
+<p><em>Por defecto, el destino de cualquier operación HJDFS es /user/cloudera, de manera que es opcional especificar esa parte de la ruta salvo que sea diferente a la de por defecto.</em></p>
+</li>
+<li>
+<p><strong>Visualización del contenido de un archivo</strong>: Para ver el contenido de un archivo ubicado en el sistema de archivo HDFS la operación será la siguiente:</p>
+<p><code>hdfs dfs -cat /user/cloudera/prueba/fichero</code></p>
+</li>
+<li>
+<p><strong>Extraer un fichero</strong> del sistema de archivos HDFS: Con el fin de copiar a nuestros sistema de archivos local un archivo del sistema de archivos de HDFS se utilizará alguno de los siguientes comandos.
+    <code>hdfs dfs -copyToLocal /user/cloudera/prueba/fichero</code>
+    <code>hdfs dfs -get /user/cloudera/prueba/fichero</code></p>
+</li>
+<li>
+<p><strong>Mover ficheros</strong> dentro de HDFS: Para mover ficheros almacenados en HDFS a otros directorios de HDFS se podría utilizar el siguiente comando:</p>
+<p><code>hdfs dfs -mv /user/cloudera/prueba/fichero /user/cloudera/</code> $</p>
+<p>Se permiten múltiples orígenes de ficheros, lo que obliga a que el destino sea un directorio. El movimiento de ficheros entre diferentes sistemas de archivos no está permitido.</p>
+</li>
+<li>
+<p><strong>Copiar ficheros</strong> dentro de HDFS: Copia un fichero entre diferentes localizaciones dentro de HDFS. También, como mv permite copiar desde diferentes orígenes, pero siempre con un directorio de destino final.</p>
+<p><code>hdfs dfs -cp -f /user/cloudera/prueba/fichero /user/cloudera/</code></p>
+<p><em>la opción -f permitirá sobreescribir el destino si éste existe previamente.</em></p>
+</li>
+<li>
+<p><strong>Put</strong>: Permite copiar uno o varios orígenes desde el sistema de archivos local al sistema de archivos distribuido.</p>
+<p><code>hdfs dfs -put /user/cloudera/prueba/fichero /user/cloudera/</code></p>
+<p>También permite leer desde la entrada estándar (stdin) y escribe en el sistema de archivos destino.</p>
+<p><code>hdfs dfs -put - /user/cloudera/entrada</code></p>
+</li>
+<li>
+<p><strong>Añadir contenido al final del fichero</strong>: A veces es necesario hacer operaciones de concatenación de ficheros, etc., para ello existe la operación <em>appendToFile</em> que permite hacer esta operación.
+    <code>hdfs dfs -appendToFile fichero_tail /user/cloudera/fichero</code></p>
+</li>
+<li>
+<p><strong>Mezcla de ficheros</strong>: se utiliza para combinar varios archivos (o directorios) del sistema de archivos distribuido y luego ponerlo en un solo archivo de salida en nuestro sistema de archivos local. Dispone de una opción -nl con el fin de añadir una nueva línea al final de cada fichero.</p>
+<p><code>hdfs dfs -getmerge -nl file1.txt file2.txt /home/cloudera/output.txt</code></p>
+</li>
+<li>
+<p><strong>Borrado de ficheros</strong>: La operación rm permitirá borrar los ficheros especificados como argumentos. Con la opción -R se borrarán el directorio y los subdirectorios de forma recursiva.</p>
+<p><code>hdfs dfs -rm -r /user/cloudera/prueba</code></p>
+</li>
+<li>
+<p><strong>Cambio de permisos a los ficheros</strong>: De la misma forma que en Linux la operación chmod permitirá realizar cambios en los permisos de uso de los ficheros. Con la opción -R hace que el cambio se propague recursivamente a través de la estructura de directorios.</p>
+<p><code>hdfs dfs -chmod -R 777 /user/cloudera/prueba</code></p>
+</li>
+<li>
+<p><strong>Comprobar uso de disco</strong>: Servirá para comprobar cuando espacio de disco se está usando en HDFS. Si estamos interesados únicamente en el uso de disco de nuestro directorio de usuario el comando será:</p>
+<p><code>hdfs dfs -du</code></p>
+<p>Si por el contrario queremos conocer cuando espacio de disco está disponible en todo el cluster, el comando será:</p>
+<p><code>hdfs dfs -df</code></p>
+</li>
+<li>
+<p><strong>Contar número de directorios</strong>: El siguiente comando permite  obtener la información del número de directorios , ficheros y tamaño de los mismos.</p>
+<p><code>hdfs dfs -count /user/cloudera</code></p>
+</li>
+<li>
+<p><strong>Crea un fichero vacío</strong>:</p>
+<p><code>hdfs dfs -touchz /user/cloudera/emptyfile</code></p>
+</li>
+<li>
+<p><strong>setrep</strong>: Modifica el factor de replicación de un fichero o un directorio. Ya sabes que el factor de replicación por defecto es 3. Con este comando se puede modificar para un fichero o directorio concreto.</p>
+<p><code>hdfs dfs -setrep 6 /user/cloudera/changerepfile</code></p>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Recuerda</p>
+<p>Recuerda diferencia entre trabajar con HDFS o trabajar con el disco local de la máquina en la que tienes abierto un terminal, que suele ser el nodo frontera. Este esquema te permitirá ver la diferencia:</p>
+<p><figure style="align: center;">
+    <img src="images/Figura6.15_Comandos_HDFS.jpg">
+    <figcaption>Figura6.15_Comandos HDFS</figcaption>
+</figure></p>
+<p>Cuando accedemos por terminal a una máquina, que suele ser la máquina frontera, y navegamos por su sistema de ficheros, lo estaremos haciendo sobre el disco o los discos que tiene esa máquina. Cuando ejecutamos el comando <code>hdfs dfs</code> , éste se ejecutará sobre el sistema de ficheros de HDFS, que es diferente al de la máquina en la que estamos.</p>
+<p>Cuando queremos subir un fichero a HDFS, lo habitual es copiarlo primero en la máquina frontera, y posteriormente subirlo a Hadoop con el comando put.</p>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Volver al principio
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2022-2023 Jaime Rabasco - Licencia CC BY-NC-SA
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/jaimerabasco" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    <a href="mailto:<jaimerabasco@iesgrancapitan.org>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.7l167.6-182.9c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking", "navigation.indexes", "toc.follow", "navigation.top", "header.autohide", "announce.dismiss"], "search": "../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.ba449ae6.min.js"></script>
+      
+    
+  </body>
+</html>

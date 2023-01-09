@@ -1,0 +1,1306 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://jaimerabasco.github.io/CE-IABD_BigDataAplicado_IESGranCapitan/UD4%20-%20Gesti%C3%B3n%20de%20soluciones%20IV/index.html">
+      
+      
+        <link rel="prev" href="../UD3%20-%20Gesti%C3%B3n%20de%20soluciones%20III/Ejercicios_clase/Ejemplo1.html">
+      
+      
+        <link rel="next" href="Ejercicios_clase/Ejemplo1.html">
+      
+      <link rel="icon" href="../images/logo.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
+    
+    
+      
+        <title>UD 4 - Gestión de Soluciones IV - Big Data Aplicado</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6b71719e.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="UD 4 - Gestión de Soluciones IV - Big Data Aplicado" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="https://jaimerabasco.github.io/CE-IABD_BigDataAplicado_IESGranCapitan/assets/images/social/UD4 - Gestión de soluciones IV/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://jaimerabasco.github.io/CE-IABD_BigDataAplicado_IESGranCapitan/UD4%20-%20Gesti%C3%B3n%20de%20soluciones%20IV/index.html" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="UD 4 - Gestión de Soluciones IV - Big Data Aplicado" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="https://jaimerabasco.github.io/CE-IABD_BigDataAplicado_IESGranCapitan/assets/images/social/UD4 - Gestión de soluciones IV/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ud-4-gestion-de-soluciones-iv" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../index.html" title="Big Data Aplicado" class="md-header__button md-logo" aria-label="Big Data Aplicado" data-md-component="logo">
+      
+  <img src="../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Big Data Aplicado
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              UD 4 - Gestión de Soluciones IV
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="Big Data Aplicado" class="md-nav__button md-logo" aria-label="Big Data Aplicado" data-md-component="logo">
+      
+  <img src="../images/logo.png" alt="logo">
+
+    </a>
+    Big Data Aplicado
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        Inicio
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../UD1%20-%20Gesti%C3%B3n%20de%20soluciones%20I/index.html">UD1.- Gestión de Soluciones I</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="UD1.- Gestión de Soluciones I" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          UD1.- Gestión de Soluciones I
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../UD2%20-%20Gesti%C3%B3n%20de%20soluciones%20II/index.html">UD2.- Gestión de Soluciones II</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="UD2.- Gestión de Soluciones II" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          UD2.- Gestión de Soluciones II
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../UD3%20-%20Gesti%C3%B3n%20de%20soluciones%20III/index.html">UD3.- Gestión de Soluciones III</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="UD3.- Gestión de Soluciones III" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          UD3.- Gestión de Soluciones III
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UD3%20-%20Gesti%C3%B3n%20de%20soluciones%20III/Ejercicios_clase/Ejemplo1.html" class="md-nav__link">
+        Ejercicio de clase
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index md-nav__link--active">
+          <a href="index.html">UD4.- Gestión de Soluciones IV</a>
+          
+            <label for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="UD4.- Gestión de Soluciones IV" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          UD4.- Gestión de Soluciones IV
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Ejercicios_clase/Ejemplo1.html" class="md-nav__link">
+        Ejercicio de clase 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Ejercicios_clase/Ejemplo2.html" class="md-nav__link">
+        Ejercicio de clase 2
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../UD5%20-%20Introducci%C3%B3n%20a%20la%20computaci%C3%B3n%20paralela%20y%20distribuida/index.html">UD5 - Introducción a la computación paralela y distribuida</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="UD5 - Introducción a la computación paralela y distribuida" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          UD5 - Introducción a la computación paralela y distribuida
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../UD6%20-%20Apache%20Hadoop/index.html">UD6 - Apache Hadoop</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="UD6 - Apache Hadoop" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          UD6 - Apache Hadoop
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#41-bases-de-datos-orientadas-a-grafos" class="md-nav__link">
+    4.1 Bases de datos orientadas a grafos
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1 Bases de datos orientadas a grafos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#411-caracteristicas-principales" class="md-nav__link">
+    4.1.1 Características principales
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#412-areas-de-aplicacion" class="md-nav__link">
+    4.1.2 Áreas de Aplicación
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#42-neo4j" class="md-nav__link">
+    4.2 Neo4j
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2 Neo4j">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#421-introduccion" class="md-nav__link">
+    4.2.1 Introducción
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#422-importacion-de-datos-creacion-de-grafos" class="md-nav__link">
+    4.2.2 Importación de datos. Creación de grafos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#423-recorridos-sobre-grafos" class="md-nav__link">
+    4.2.3 Recorridos sobre grafos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#434-caminos-minimos" class="md-nav__link">
+    4.3.4 Caminos mínimos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#425-medidas-de-centralidad" class="md-nav__link">
+    4.2.5 Medidas de centralidad
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#426-deteccion-de-comunidades" class="md-nav__link">
+    4.2.6 Detección de comunidades
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#427-prediccion-de-enlaces" class="md-nav__link">
+    4.2.7 Predicción de enlaces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#428-machine-learning" class="md-nav__link">
+    4.2.8 Machine Learning
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ud-4-gestion-de-soluciones-iv">UD 4 - Gestión de Soluciones IV<a class="headerlink" href="#ud-4-gestion-de-soluciones-iv" title="Permanent link">&para;</a></h1>
+<p>En este capítulo se profundizará en las <strong>bases de datos orientadas a grafos</strong> como solución a problemas de Big Data. En la actualidad, cualquier problema puede ser modelizado por medio de grafos. Esta estructura matemática <strong>versátil y escalable</strong> proporciona un mayor rendimiento a los sistemas que utilizan este tipo de bases de datos. Para ilustrar todos los conceptos de este capítulo, se utilizará <strong>Neo4j</strong> como plataforma de bases de datos orientada a grafos.</p>
+<h2 id="41-bases-de-datos-orientadas-a-grafos">4.1 Bases de datos orientadas a grafos<a class="headerlink" href="#41-bases-de-datos-orientadas-a-grafos" title="Permanent link">&para;</a></h2>
+<p>Una base de datos orientada a grafos es un tipo de base de datos <strong>NoSQL</strong> como lo son también, por ejemplo, las bases de datos documentales. Un sistema de gestión de bases de datos orientadas a grafos es aquel <strong>define métodos y operaciones CRUD sobre un modelo de datos representado mediante un grafo</strong>. Por norma general, este tipo de bases de datos se implementan para su uso junto con sistemas OLTP, por lo que están diseñadas en términos de relaciones de integridad y optimizadas para ofrecer un rendimiento operacional.</p>
+<p>Aunque existen diferentes tipos de modelos de datos basados en grafos, cada sistema de base de datos elegirá uno de ellos para representar el contenido de la base de datos. Cualquiera de estos modelos está inspirado en <strong>la estructura matemática de un grafo para modelizar un conjunto de datos</strong>. Matemáticamente, un grafo es un conjunto de <strong>nodos o vértices</strong>, que representan entidades de un dominio, y un conjunto de <strong>aristas o enlaces</strong>, que representan las relaciones o interacciones que se producen entre las entidades. La <a href="images/Figura4.1_Ejemplo%20de%20grafo%20relaciones%20de%20seguimiento%20de%20canales%20Youtube.jpg" title="Figura4.1_Ejemplo de grafo relaciones de seguimiento de canales Youtube">figura4.1</a> muestra un ejemplo de grafo que representa las relaciones de seguimiento entre distintos canales en YouTube.</p>
+<p><img alt="figura4.1" src="images/Figura4.1_Ejemplo%20de%20grafo%20relaciones%20de%20seguimiento%20de%20canales%20Youtube.jpg" title="Figura4.1_Ejemplo de grafo relaciones de seguimiento de canales Youtube" /></p>
+<p><em>Figura 4.1: Ejemplo de grafo: relaciones de seguimiento entre canales YouTube</em></p>
+<p>Uno de los modelos de datos basado en grafos más popular es el <strong>modelo de grafo de propiedades etiquetadas</strong>. Un grafo representado mediante este modelo, debe cumplir las siguientes características principales:</p>
+<p>1) Debe contener un conjunto de nodos y aristas o relaciones entre dichos nodos,
+2) Los nodos contienen propiedades, definidas a través de pares “clave-valor”,
+3) Los nodos pueden estar etiquetados con una o más etiquetas,
+4) Las relaciones entre los nodos están nombradas y son dirigidas, teniendo siempre un nodo de inicio y otro nodo de fin,
+5) Las relaciones del grafo también pueden contener propiedades. Este modelo, a pesar de su simplicidad, es sencillo de entender y permite modelar cualquier problema y/o conjunto de datos.</p>
+<h3 id="411-caracteristicas-principales">4.1.1 Características principales<a class="headerlink" href="#411-caracteristicas-principales" title="Permanent link">&para;</a></h3>
+<p>El aumento del uso de los sistemas de bases de datos orientados a grafos y el auge que están alcanzando en los últimos años se debe, principalmente, a una serie de característica que confieren a estos sistemas una serie de ventajas importantes sobre los sistemas de bases de datos tradicionales y otros sistemas NoSQL.</p>
+<ul>
+<li><strong>Almacenamiento</strong>: Las bases de datos orientadas a grafo pueden ser de almacenamiento nativo, en cuyo caso los datos se almacenan internamente con estructura de grafo. No obstante, existen bases de datos de grafos que mapean los datos para adptarlos a una estructura relacional.</li>
+<li><strong>Procesamiento</strong>: El almacenamiento nativo permite obtener una estructura de datos que no requiere índices de adyacencia para referenciar los nodos del grafo, mejorando el rendimiento en la ejecución de consultas.</li>
+<li><strong>Rendimiento</strong>: La ejecución de consultas sobre datos estructurados en forma de grafo proporciona escalabilidad al sistema de bases de datos, ya que aunque el número de datos aumente, las consultas se ejecutan sobre la porción del grafo de interés.</li>
+<li><strong>Flexibilidad</strong>: Los modelos de datos basados en grafos permiten rápidamente añadir nuevos nodos, enlaces y subgrafos a un modelo existente con facilidad y sin pérdida de funcionalidad ni rendimiento.</li>
+<li><strong>Rapidez</strong>: La naturaleza libre de esquema de las bases de datos orientadas a grafos, juntos con las APIs desarrolladas para su manipulación y los lenguajes de consulta, hacen que estos sistemas sean ágiles y rápidos, integrándolos con las metodologías de desarrollo de software iterativas e incrementales.</li>
+</ul>
+<h3 id="412-areas-de-aplicacion">4.1.2 Áreas de Aplicación<a class="headerlink" href="#412-areas-de-aplicacion" title="Permanent link">&para;</a></h3>
+<p>Las características de las bases de datos orientadas a grafos desarrolladas en el apartado anterior confieren a esta tecnología un sinfín de aplicaciones reales en las que su uso mejora significativamente a las tecnologías tradicionales. A continuación, se muestran algunos ejemplos de aplicación donde, actualmente, este tipo de bases de datos es el más ampliamente utilizado.</p>
+<ul>
+<li>
+<p><strong>Redes sociales</strong>: El análisis de redes sociales es, a día de hoy, una de las principales fuentes de información de cualquier dominio. El análisis de redes sociales mediante bases de datos orientadas a grafos permite <strong>identificar relaciones explícitas e implícitas</strong> entre usuarios y grupos de usuarios, así como identificar la forma en la que ellos interactúan pudiendo inferir el comportamiento de un usuario en base a sus conexiones. En una red social, dos usuarios presentan una <strong>conexión explícita</strong> si están directamente conectados. Esto ocurre, por ejemplo, entre dos usuarios de Facebook que son amigos o dos compañeros de trabajo de la misma empresa en LinkedIn. Por otra parte, una <strong>relación implícita</strong> es aquella que se produce entre dos usuarios a través de un intermediario, como puede ser otro usuario, un post donde han hecho un comentario, un “like” o un artículo que ambos han comprado.</p>
+</li>
+<li>
+<p><strong>Sistemas de recomendación</strong>: Estos sistemas permiten modelar en forma de grafo las relaciones que se establecen entre personas o usuarios y cosas, como pueden ser productos, servicios, contenido multimedia o cualquier otro concepto relevante en función del dominio de aplicación. <strong>Las relaciones se establecen en función del comportamiento de los usuarios al comprar, consumir contenido, puntuarlo o evaluarlo etc</strong>. De esta forma, los sistemas de recomendación <strong>identifican recursos de interés</strong> para un usuario específico y pueden <strong>predecir su comportamiento al comprar un producto o contratar un servicio</strong>.</p>
+</li>
+<li>
+<p><strong>Información geográfica</strong>: Se trata del caso de aplicación más popular de la teoría de grafos. Las aplicaciones de las bases de datos orientadas a grafos en información geográfica van desde <strong>calcular rutas óptimas entre dos puntos en cualquier tipo de red</strong> (red de carreteras, de ferrocarril, aérea, logística...) <strong>hasta encontrar todos los puntos de interés en un área concreta, encontrar el centro de una región u obtener la intersección entre dos o más regiones, entre otras muchas</strong>. Así, las bases de datos orientadas a grafos permiten modelar estos casos de aplicación como grafos dirigidos sobre los cuales operar para obtener los resultados deseados.</p>
+</li>
+</ul>
+<p>Aunque en este apartado se hayan analizado las principales áreas de aplicación, son muchos los dominios de aplicación donde las bases de datos orientadas a grafos se están convirtiendo en una solución predominante, como lo son <strong>la gestión de datos maestros, gestión de redes y centros de datos o control de acceso entre otros muchos</strong>.</p>
+<p><em><a href="https://moodle.iesgrancapitan.org/pluginfile.php/58314/mod_folder/content/0/BDA_UD4_01.pdf">ver presentación BDA4.1</a></em></p>
+<h2 id="42-neo4j">4.2 Neo4j<a class="headerlink" href="#42-neo4j" title="Permanent link">&para;</a></h2>
+<p>En esta sección se profundiza en una tecnología concreta de bases de datos orientadas a grafos. Aunque existe un amplio abanico de tecnologías que dan soporte a este tipo de bases de datos, como lo son OrientDB1<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> , FlockDB<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> o InfiniteGraph<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> , en esta sección se profundiza en el trabajo con bases de datos orientadas a grafos utilizando Neo4j<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> .</p>
+<h3 id="421-introduccion">4.2.1 Introducción<a class="headerlink" href="#421-introduccion" title="Permanent link">&para;</a></h3>
+<p>Neo4j es una plataforma de bases de datos orientada a grafos lanzada en 2007 e implementada en Java. Entre sus características principales destacan <strong>el almacenamiento y procesamiento de grafos nativo</strong>, lo que la convierte en una alternativa potente para el trabajo en entornos reales, donde se requiere de estas características para mejorar el rendimiento y la escalabilidad de los sistemas. Además, a pesar de lo anterior, Neo4j también <strong>permite trabajar con modelos de datos en forma de grafo de manera transaccional</strong>, por lo que también es útil en sistemas transaccionales.</p>
+<p>Junto a todo lo anterior, Neo4j dispone de <strong>amplias librerías que permiten crear también modelos de aprendizaje automático sobre grafos</strong>. Esta plataforma puede integrarse con múltiples lenguajes de programación como Python o C++, entre otros, y ofrece una serie de herramientas muy útiles para usuarios y desarrolladores. A continuación, se enumeran y detallan algunas de ellas:</p>
+<ul>
+<li>
+<p><strong>Graph Data Science Library</strong>: Se trata de la librería principal que contiene una gran cantidad de algoritmos de búsqueda sobre grafos además de modelos de aprendizaje automático. Se trata de algoritmos y modelos eficientemente programados y escalables para el trabajo con grafos.</p>
+</li>
+<li>
+<p><strong>Neo4j Bloom</strong>: Es una aplicación de visualización y exploración de grafos que permite la visualización de estos desde distintas perspectivas y puntos de vista, ofreciendo así una herramienta visual muy útil para visualizar los resultados de los algoritmos así como mostrar resultados a clientes.</p>
+</li>
+<li>
+<p><strong>Cypher</strong>: Es el lenguaje de creación de consultas utilizado en Neo4j. Se trata de un lenguaje inspirado en SQL, solo que más sencillo y optimizado para el trabajo con grafos.</p>
+</li>
+<li>
+<p><strong>Integradores</strong>: Con el objetivo de integrar y conectar Neo4j con otras plataformas y lenguajes, se han desarrollado distintos conectores para integrar esta plataforma con tecnologías como Apache Spark, Apache Kafka, BI... </p>
+</li>
+<li>
+<p><strong>Herramientas para desarrolladores</strong>: Neo4j dispone de versiones para escritorio y web así como un sandbox en el que se proporciona un entorno controlado e integrado de los servicios Neo4j para desarrolladores.</p>
+</li>
+<li>
+<p><strong>Neo4j Aura</strong>: Neo4j ofrece un servicio de computación en la nube para la creación de grafos y ejecución de algoritmos y modelos sobre ellos. Se trata de Neo4j Aura, el cual se encuentra disponible de forma gratuita y está integrado con Google Cloud Platform.</p>
+</li>
+</ul>
+<p>Las características anteriormente mencionadas y la cantidad de herramientas disponibles que Neo4j pone a disposición de los desarrolladores han sido los motivos principales para optar por esta plataforma para ilustrar el trabajo con bases de datos orientadas a grafos.</p>
+<p><em><a href="https://moodle.iesgrancapitan.org/pluginfile.php/58314/mod_folder/content/0/BDA_UD4_02.pdf">ver presentación BDA4.2</a></em></p>
+<h3 id="422-importacion-de-datos-creacion-de-grafos">4.2.2 Importación de datos. Creación de grafos<a class="headerlink" href="#422-importacion-de-datos-creacion-de-grafos" title="Permanent link">&para;</a></h3>
+<p><em><a href="https://moodle.iesgrancapitan.org/pluginfile.php/58314/mod_folder/content/0/BDA_UD4_03.pdf">ver presentación BDA4.3</a></em></p>
+<p>Para comenzar a trabajar con Neo4j, es necesario <strong>crear un grafo o bien partir de un grafo ya existente</strong> que se importa dentro del área de trabajo de Neo4j. A continuación, se muestra cómo implementar ambos procedimientos.</p>
+<p><strong>Importación de un grafo</strong></p>
+<p>Sea el caso en el que se pretende importar un grafo a partir de un fichero .csv. En el ejemplo que se muestra a continuación, se dispone de dos ficheros .csv que contienen, respectivamente, <strong>la definición de los nodos y de las aristas del grafo que se pretende importar</strong>. Así pues, el listado 4.1 muestra los nodos del grafo. Para cada nodo se almacena su identificador, latitud, longitud y población</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>id,latitude,longitude,population
+<span class="linenos" data-linenos=" 2 "></span>&quot;Amsterdam&quot;,52.379189,4.899431,821752
+<span class="linenos" data-linenos=" 3 "></span>&quot;Utrecht&quot;,52.092876,5.104480,334176
+<span class="linenos" data-linenos=" 4 "></span>&quot;Den Haag&quot;,52.078663,4.288788,514861
+<span class="linenos" data-linenos=" 5 "></span>&quot;Immingham&quot;,53.61239,-0.22219,9642
+<span class="linenos" data-linenos=" 6 "></span>&quot;Doncaster&quot;,53.52285,-1.13116,302400
+<span class="linenos" data-linenos=" 7 "></span>&quot;Hoek van Holland&quot;,51.9775,4.13333,9382
+<span class="linenos" data-linenos=" 8 "></span>&quot;Felixstowe&quot;,51.96375,1.3511,23689
+<span class="linenos" data-linenos=" 9 "></span>&quot;Ipswich&quot;,52.05917,1.15545,133384
+<span class="linenos" data-linenos="10 "></span>&quot;Colchester&quot;,51.88921,0.90421,104390
+<span class="linenos" data-linenos="11 "></span>&quot;London&quot;,51.509865,-0.118092,8787892
+<span class="linenos" data-linenos="12 "></span>&quot;Rotterdam&quot;,51.9225,4.47917,623652
+<span class="linenos" data-linenos="13 "></span>&quot;Gouda&quot;,52.01667,4.70833,70939
+</code></pre></div>
+<em>Listado 4.1: Definición de nodos de un grafo</em></p>
+<p>Por su parte, el listado 4.2 especifica cada uno de los enlaces entre los nodos del grafo. Para cada uno de los enlaces se identifica el origen y destino del enlace, el tipo de relación que se define entre ellos y el coste. </p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>src,dst,relationship,cost
+<span class="linenos" data-linenos=" 2 "></span>&quot;Amsterdam&quot;,&quot;Utrecht&quot;,&quot;EROAD&quot;,46
+<span class="linenos" data-linenos=" 3 "></span>&quot;Amsterdam&quot;,&quot;Den Haag&quot;,&quot;EROAD&quot;,59
+<span class="linenos" data-linenos=" 4 "></span>&quot;Den Haag&quot;,&quot;Rotterdam&quot;,&quot;EROAD&quot;,26
+<span class="linenos" data-linenos=" 5 "></span>&quot;Amsterdam&quot;,&quot;Immingham&quot;,&quot;EROAD&quot;,369
+<span class="linenos" data-linenos=" 6 "></span>&quot;Immingham&quot;,&quot;Doncaster&quot;,&quot;EROAD&quot;,74
+<span class="linenos" data-linenos=" 7 "></span>&quot;Doncaster&quot;,&quot;London&quot;,&quot;EROAD&quot;,277
+<span class="linenos" data-linenos=" 8 "></span>&quot;Hoek van Holland&quot;,&quot;Den Haag&quot;,&quot;EROAD&quot;,27
+<span class="linenos" data-linenos=" 9 "></span>&quot;Felixstowe&quot;,&quot;Hoek van Holland&quot;,&quot;EROAD&quot;,207
+<span class="linenos" data-linenos="10 "></span>&quot;Ipswich&quot;,&quot;Felixstowe&quot;,&quot;EROAD&quot;,22
+<span class="linenos" data-linenos="11 "></span>&quot;Colchester&quot;,&quot;Ipswich&quot;,&quot;EROAD&quot;,32
+<span class="linenos" data-linenos="12 "></span>&quot;London&quot;,&quot;Colchester&quot;,&quot;EROAD&quot;,106
+<span class="linenos" data-linenos="13 "></span>&quot;Gouda&quot;,&quot;Rotterdam&quot;,&quot;EROAD&quot;,25
+<span class="linenos" data-linenos="14 "></span>&quot;Gouda&quot;,&quot;Utrecht&quot;,&quot;EROAD&quot;,35
+<span class="linenos" data-linenos="15 "></span>&quot;Den Haag&quot;,&quot;Gouda&quot;,&quot;EROAD&quot;,32
+<span class="linenos" data-linenos="16 "></span>&quot;Hoek van Holland&quot;,&quot;Rotterdam&quot;,&quot;EROAD&quot;,33
+</code></pre></div>
+<em>Listado 4.2: Definición de aristas de un grafo</em></p>
+<p>Dados estos dos ficheros, es posible <strong>importar los nodos del grafo</strong> según se indica en el listado 4.3.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span> // Importamos los nodos
+<span class="linenos" data-linenos="2 "></span>WITH &quot;https://github.com/neo4j-graph-analytics/book/raw/master/data/transport-nodes.csv&quot; AS uri
+<span class="linenos" data-linenos="3 "></span>LOAD CSV WITH HEADERS FROM uri AS row
+<span class="linenos" data-linenos="4 "></span>MERGE (place:Place {id:row.id})
+<span class="linenos" data-linenos="5 "></span>SET place.latitude = toFloat(row.latitude),
+<span class="linenos" data-linenos="6 "></span>place.longitude = toFloat(row.latitude),
+<span class="linenos" data-linenos="7 "></span>place.population = toInteger(row.population)
+</code></pre></div>
+<em>Listado 4.3: Importación de nodos</em></p>
+<p>Así, en el listado anterior se define como identificador de recurso la dirección donde se encuentra el archivo que se pretende cargar, el cual es cargado a través de la instrucción <strong>LOAD CSV</strong>. La instrucción <strong>MERGE</strong> permite definir cada fila como nodo de un grafo de tipo lugar (place) y añadir a cada nodo la propiedad id cuyo valor será el identificador de la fila en la que se encuentra cada nodo dentro del fichero csv. Finalmente, los valores de latitud y longitud se convierten en valores de tipo real y la población en un valor de tipo entero.</p>
+<p>Análogamente a la importación de nodos, el listado 4.4 muestra el código necesario para la <strong>importación del fichero que contiene los enlaces</strong> entre los nodos del grafo.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>//Importamos las relaciones
+<span class="linenos" data-linenos="2 "></span>WITH &quot;https://github.com/neo4j-graph-analytics/book/raw/master/data/transport-relationships.csv&quot; AS uri
+<span class="linenos" data-linenos="3 "></span>LOAD CSV WITH HEADERS FROM uri AS row
+<span class="linenos" data-linenos="4 "></span>MATCH (origin:Place {id: row.src})
+<span class="linenos" data-linenos="5 "></span>MATCH (destination:Place {id: row.dst})
+<span class="linenos" data-linenos="6 "></span>MERGE (origin)-[:EROAD {distance: toInteger(row.cost)}]-&gt;(destination)
+</code></pre></div>
+<em>Listado 4.4: Importación de aristas</em></p>
+<p>La diferencia principal de este listado con respecto al anterior, es que en este se necesita identificar mediante la instrucción <strong>MATCH</strong> los nodos de origen y destino de cada uno de los enlaces, lo cual es posible mediante los atributos “src” y “dst” incluidos en el archivo .csv. Finalmente, se utiliza la sentencia <strong>MERGE</strong> para crear una relación entre “origin” y “destination” de tipo <strong>EROAD</strong> que contiene la propiedad “distance” cuyo valor es el coste que aparecía en el fichero .csv.</p>
+<p><strong>Creación de un grafo</strong></p>
+<p>Otra alternativa es la <strong>creación de un grafo desde cero</strong>, especificando para ello sus nodos y enlaces. La <a href="images/Figura4.2_Grafo%20de%20co-ocurrencia%20de%20hashtags.jpg" title="Figura4.2_Grafo de co-ocurrencia de hashtags">figura4.2</a> muestra un ejemplo de un <strong>grafo de coocurrencia de hashtags</strong> en el que cada uno de los nodos es un hashtag y los enlaces entre ellos se producen cuando dos hashtags aparecieron en un mismo tweet. Sobre cada enlace, se puede apreciar un valor que indica en cuántos tweets concurrieron los hashtags conectados por medio de dicha arista.</p>
+<p><img alt="figura4.2" src="images/Figura4.2_Grafo%20de%20co-ocurrencia%20de%20hashtags.jpg" title="Figura4.2_Grafo de co-ocurrencia de hashtags" /></p>
+<p><em>Figura 4.2: Grafo de co-ocurrencia de hashtags</em></p>
+<p>Para representar este grafo en Neo4j, se puede escribir el siguiente fragmento de código que muestra el listado 4.5.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>CREATE
+<span class="linenos" data-linenos=" 2 "></span>(JS:Hashtag {name: &#39;JoaquinSabina&#39;}),
+<span class="linenos" data-linenos=" 3 "></span>(RS:Hashtag {name: &#39;Rusia2018&#39;}),
+<span class="linenos" data-linenos=" 4 "></span>(AG:Hashtag {name: &#39;Argentina&#39;}),
+<span class="linenos" data-linenos=" 5 "></span>(FD:Hashtag {name: &#39;Feliz Domingo&#39;}),
+<span class="linenos" data-linenos=" 6 "></span>(MS:Hashtag {name: &#39;Messi&#39;}),
+<span class="linenos" data-linenos=" 7 "></span>
+<span class="linenos" data-linenos=" 8 "></span>(JS)-[:COOC {ntweet: 52}]-&gt;(FD),
+<span class="linenos" data-linenos=" 9 "></span>(FD)-[:COOC {ntweet: 52}]-&gt;(JS),
+<span class="linenos" data-linenos="10 "></span>(RS)-[:COOC {ntweet: 183}]-&gt;(FD),
+<span class="linenos" data-linenos="11 "></span>(FD)-[:COOC {ntweet: 183}]-&gt;(RS),
+<span class="linenos" data-linenos="12 "></span>(RS)-[:COOC {ntweet: 73}]-&gt;(AG),
+<span class="linenos" data-linenos="13 "></span>(AG)-[:COOC {ntweet: 73}]-&gt;(RS),
+<span class="linenos" data-linenos="14 "></span>(AG)-[:COOC {ntweet: 112}]-&gt;(MS),
+<span class="linenos" data-linenos="15 "></span>(MS)-[:COOC {ntweet: 112}]-&gt;(AG),
+<span class="linenos" data-linenos="16 "></span>(FD)-[:COOC {ntweet: 81}]-&gt;(MS),
+<span class="linenos" data-linenos="17 "></span>(MS)-[:COOC {ntweet: 81}]-&gt;(FD)
+</code></pre></div>
+<em>Listado 4.5: Creación grafo de co-ocurrencia de hashtags</em></p>
+<p>Tal y como se puede ver, en primer lugar se definen los nodos y sus propiedades y a continuación los enlaces y sus propiedades. <strong>Todo grafo en Neo4j tiene aristas dirigidas, si bien es cierto que cuando se ejecutan las consultas puede no tenerse en cuenta la dirección de las aristas</strong>. Por este motivo, se han especificado las aristas en ambas direcciones. En caso de querer crear una arista que sea interpretada como no dirigida, se debe crear sin el operador flecha que determina el sentido de la arista. Esto es posible hacerlo solo fuera de la instrucción <strong>CREATE</strong>. El listado 4.6 muestra cómo crear la primera relación del grafo solo que de forma no dirigida.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>MATCH(JS:Hashtag{name:&#39;JoaquinSabina&#39;})
+<span class="linenos" data-linenos="2 "></span>MATCH(FD:Hashtag{name:&#39;Feliz Domingo&#39;})
+<span class="linenos" data-linenos="3 "></span>MERGE (JS)-[:COOC{ntweet:52}]-(FD)
+</code></pre></div>
+<em>Listado 4.6: Creación de una arista no dirigida</em></p>
+<p>Para <strong>mostrar el grafo</strong>, es posible utilizar el siguiente comando. La figura 4.3 muestra cómo quedaría el grafo creado en el listado 4.5.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>MATCH(n) return (n)
+</code></pre></div>
+<p>Para eliminar un nodo creado, es posible utilizar el comando:</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>MATCH(JS:Hashtag{name:&#39;JoaquinSabina&#39;}) delete (JS)
+</code></pre></div>
+<p>Sin embargo, <strong>un nodo solo puede ser eliminado si se eliminan las relaciones</strong> que contiene. Para ello, es posible utilizar el comando:</p>
+<p><img alt="figura4.3" src="images/Figura4.3_Visualizaci%C3%B3n%20del%20grafo%20de%20co-ocurrencia%20de%20hashtags.jpg" title="Figura4.3_Visualización del grafo de co-ocurrencia de hashtags" /></p>
+<p><em>Figura 4.3: Visualización del grafo de co-ocurrencia de hashtags</em></p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>MATCH(JS:Hashtag{name:&#39;JoaquinSabina&#39;}) detach delete (JS)
+</code></pre></div>
+<p>Mientras que, para eliminar todos los nodos y aristas, es posible escribir:</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>MATCH(n) detach delete(n)
+</code></pre></div>
+<h3 id="423-recorridos-sobre-grafos">4.2.3 Recorridos sobre grafos<a class="headerlink" href="#423-recorridos-sobre-grafos" title="Permanent link">&para;</a></h3>
+<p>Los recorridos sobre grafos son una utilidad imprescindible en el trabajo con esta estructura de datos. Del mismo modo, los recorridos también son una herramienta fundamental cuando se trabaja con bases de datos orientadas a grafos.</p>
+<p><strong>Un recorrido sobre grafos es un procedimiento sistemático que permite explorar un grafo examinando todos sus vértices y aristas, comenzando desde un vértice inicial</strong>. A la hora de recorrer un grafo, existen dos tipos de recorridos: el <strong>recorrido en anchura</strong> (denotado BFS, por sus siglas en inglés) y el <strong>recorrido en profundidad</strong> (denotado DFS, también por sus siglas en inglés).</p>
+<p><em><a href="https://moodle.iesgrancapitan.org/pluginfile.php/58314/mod_folder/content/0/BDA_UD4_04.pdf">ver presentación BDA4.4</a></em></p>
+<p><strong>Recorrido en anchura (<a href="https://neo4j.com/docs/graph-data-science/current/algorithms/bfs/">BFS</a>)</strong></p>
+<p>El recorrido en anchura, también conocido por sus siglas en inglés <em>Breadth First Search (BFS)</em> es un procedimiento que permite recorrer un grafo, explorando todos sus nodos y aristas.</p>
+<p>El recorrido en anchura parte de un nodo inicial. A continuación, el método comienza a explorar todos los nodos hijo del nodo inicial seleccionado que se encuentran a un salto. Una vez visitados, comienzan a explorarse los nodos hijo del siguiente nivel y así sucesivamente hasta haber recorrido el grafo completo. Este recorrido es muy utilizado cuando se busca un camino con el número mínimo de aristas entre dos vértices dados o cuando se busca un ciclo simple, es decir, una secuencia de nodos y aristas que se pueden describir circularmente en el que todos los nodos y aristas son distintos.</p>
+<p>Por ejemplo, sea el grafo de la <a href="images/Figura4.4_Visualizaci%C3%B3n%20del%20grafo%20de%20ciudades.png" title="Figura4.4_Visualización del grafo de ciudades">figura4.4</a> que se corresponde con el grafo que se importó anteriormente. Es posible recorrerlo utilizando BFS escribiendo el siguiente código Neo4j que aparece en el listado 4.7. </p>
+<p><img alt="figura4.4" src="images/Figura4.4_Visualizaci%C3%B3n%20del%20grafo%20de%20ciudades.png" title="Figura4.4_Visualización del grafo de ciudades" /></p>
+<p><em>Figura 4.4: Visualización del grafo de ciudades</em></p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>// Creamos el grafo. 
+<span class="linenos" data-linenos="2 "></span>CALL gds.graph.project(
+<span class="linenos" data-linenos="3 "></span>    &#39;myGraph_BFR&#39;,
+<span class="linenos" data-linenos="4 "></span>    &#39;Place&#39;,
+<span class="linenos" data-linenos="5 "></span>    &#39;EROAD&#39;
+<span class="linenos" data-linenos="6 "></span>)
+</code></pre></div>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>//Realizamos la búsqueda en anchura
+<span class="linenos" data-linenos="2 "></span>MATCH (a:Place{id:&#39;Doncaster&#39;})
+<span class="linenos" data-linenos="3 "></span>WITH id(a) AS startNode
+<span class="linenos" data-linenos="4 "></span>CALL gds.bfs.stream(&#39;myGraph_BFR&#39;, {sourceNode: startNode})
+<span class="linenos" data-linenos="5 "></span>YIELD path
+<span class="linenos" data-linenos="6 "></span>UNWIND [ n in nodes(path) | n.id ] AS tags
+<span class="linenos" data-linenos="7 "></span>RETURN tags
+</code></pre></div>
+<em>Listado 4.7: Recorrido en anchura</em></p>
+<p>En el fragmento anterior, se define un grafo llamado <em>myGraph_BFR</em> el cual está formado por nodos de tipo Place y cuyas relaciones son del tipo <strong>EROAD</strong> y tienen una propiedad, denominada <em>distance</em>. A continuación, se define el nodo inicial con las sentencias <strong>MATCH</strong> y <strong>WITH</strong>. Después, se llama al método que realiza el recorrido BFS sobre el grafo anterior partiendo desde el nodo inicial para producir un camino (<em>path</em>). Finalmente, se devuelven todos los nodos que forman parte del camino, mostrando los identificadores de cada uno de ellos. El resultado del recorrido es: Doncaster, London, Colchester, Ipswich, Felixstowe, Hoek van Holand, Den Haag, Rotterdam, Gouda, Utrecht.</p>
+<p><strong>Recorrido en profundidad (<a href="https://neo4j.com/docs/graph-data-science/current/algorithms/dfs/">DFS</a>)</strong></p>
+<p>El recorrido en profundidad, también conocido por sus siglas en inglés <em>Depth First Search (DFS)</em> es un procedimiento alternativo al recorrido en anchura para explorar un grafo, recorriendo todos sus nodos y aristas.</p>
+<p>El procedimiento para recorrer un grafo mediante el método DFS es el siguiente: en primer lugar, se parte de un nodo inicial. A partir de él, se empiezan a recorrer todos sus hijos hasta el último nivel. Una vez llegados al último nivel del grafo, se vuelve hacia atrás recorriendo todos los hijos de los nodos de niveles anteriores. </p>
+<p>En Neo4j, el procedimiento para recorrer un grafo utilizando el recorrido BFS se muestra en el listado de código 4.8. El procedimiento, como se puede comprobar, es prácticamente idéntico al del listado 4.7 solo que cambiando el método de recorrido. El resultado obtenido es: Doncaster, London, Colchester, Ipswich, Felixstowe, Hoek van Holland, Rotterdam, Den Haag, Gouda, Utrecht.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>// Creamos el grafo. 
+<span class="linenos" data-linenos=" 2 "></span>CALL gds.graph.project(
+<span class="linenos" data-linenos=" 3 "></span>    &#39;myGraph_DFS&#39;,
+<span class="linenos" data-linenos=" 4 "></span>    &#39;Place&#39;,
+<span class="linenos" data-linenos=" 5 "></span>    &#39;EROAD&#39;
+<span class="linenos" data-linenos=" 6 "></span>)
+<span class="linenos" data-linenos=" 7 "></span>
+<span class="linenos" data-linenos=" 8 "></span>
+<span class="linenos" data-linenos=" 9 "></span>//Realizamos la búsqueda en Profundidad
+<span class="linenos" data-linenos="10 "></span>MATCH (a:Place{id:&#39;Doncaster&#39;})
+<span class="linenos" data-linenos="11 "></span>WITH id(a) AS startNode
+<span class="linenos" data-linenos="12 "></span>CALL gds.dfs.stream(&#39;myGraph_BFR&#39;, {sourceNode: startNode})
+<span class="linenos" data-linenos="13 "></span>YIELD path
+<span class="linenos" data-linenos="14 "></span>UNWIND [ n in nodes(path) | n.id ] AS tags
+<span class="linenos" data-linenos="15 "></span>RETURN tags
+</code></pre></div>
+<em>Listado 4.8: Recorrido en profundidad</em></p>
+<h3 id="434-caminos-minimos">4.3.4 Caminos mínimos<a class="headerlink" href="#434-caminos-minimos" title="Permanent link">&para;</a></h3>
+<p>El cálculo y la obtención de caminos mínimos dentro de un grafo es uno de los problemas clásicos en teoría de grafos con multitud de aplicaciones en el mundo real. <strong>Un camino dentro de un grafo es un conjunto de nodos y aristas que conectan un par de nodos del grafo</strong>. En el caso de los <strong>grafos no pesados</strong>, es decir, aquellos cuyas aristas no tienen coste, el cálculo del camino mínimo se obtiene <strong>minimizando el número de saltos</strong> entre el nodo origen y el nodo destino. En el caso de los <strong>grafos pesados</strong>, aquellos cuyas aristas tienen coste, el cálculo del camino mínimo se obtiene a través del camino en el que <strong>la suma de los costes de sus aristas es mínima</strong>.</p>
+<p><em><a href="https://moodle.iesgrancapitan.org/pluginfile.php/58314/mod_folder/content/0/BDA_UD4_05.pdf">ver presentación BDA4.5</a></em></p>
+<p>Junto con los recorridos de grafos, los métodos de obtención de caminos mínimos son muy útiles cuando se trabaja en <strong>entornos dinámicos</strong>, donde aparecen y desaparecen continuamente aristas del grafo o sus costes cambian dinámicamente. El cálculo de caminos mínimos también es muy útil en aplicaciones que deben dar <strong>respuestas en tiempo real</strong>. Algunos ejemplos claros pueden ser encontrar rutas entre dos localidades, como ocurre en Google Maps u obtener los grados de separación entre una empresa y un empleado potencial al que se quiere contratar, como puede ocurrir en LinkedIn.</p>
+<ul>
+<li><strong>Algoritmo de Dijkstra</strong></li>
+</ul>
+<p>El <strong>algoritmo de Dijkstra</strong> es uno de los algoritmos más utilizados en teoría de grafos para la obtención de caminos mínimos. Dado el grafo de ciudades con el que se está trabajando a lo largo de este capítulo, el listado 4.9 permite obtener <strong>los caminos mínimos entre un nodo del grafo y todos los demás nodos alcanzables(<a href="https://neo4j.com/docs/graph-data-science/current/algorithms/dijkstra-single-source/">Single-Source Shortest Path</a>)</strong>.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>// Creamos el grafo. 
+<span class="linenos" data-linenos=" 2 "></span>CALL gds.graph.project(
+<span class="linenos" data-linenos=" 3 "></span>    &#39;myGraph_Dijkstra&#39;,
+<span class="linenos" data-linenos=" 4 "></span>    &#39;Place&#39;,
+<span class="linenos" data-linenos=" 5 "></span>    &#39;EROAD&#39;,
+<span class="linenos" data-linenos=" 6 "></span>    {
+<span class="linenos" data-linenos=" 7 "></span>        relationshipProperties: &#39;distance&#39;
+<span class="linenos" data-linenos=" 8 "></span>    }
+<span class="linenos" data-linenos=" 9 "></span>)
+<span class="linenos" data-linenos="10 "></span>
+<span class="linenos" data-linenos="11 "></span>
+<span class="linenos" data-linenos="12 "></span>MATCH (source:Place {id: &#39;Amsterdam&#39;})
+<span class="linenos" data-linenos="13 "></span>CALL gds.allShortestPaths.dijkstra.stream(&#39;myGraph_Dijkstra&#39;, {
+<span class="linenos" data-linenos="14 "></span>    sourceNode: source,
+<span class="linenos" data-linenos="15 "></span>    relationshipWeightProperty: &#39;distance&#39;
+<span class="linenos" data-linenos="16 "></span>})
+<span class="linenos" data-linenos="17 "></span>YIELD index, sourceNode, targetNode, totalCost, nodeIds, costs, path
+<span class="linenos" data-linenos="18 "></span>RETURN
+<span class="linenos" data-linenos="19 "></span>    index,
+<span class="linenos" data-linenos="20 "></span>    gds.util.asNode(sourceNode).id AS sourceNodeName,
+<span class="linenos" data-linenos="21 "></span>    gds.util.asNode(targetNode).id AS targetNodeName,
+<span class="linenos" data-linenos="22 "></span>    totalCost,
+<span class="linenos" data-linenos="23 "></span>    [nodeId IN nodeIds | gds.util.asNode(nodeId).id] AS nodeNames,
+<span class="linenos" data-linenos="24 "></span>    costs,
+<span class="linenos" data-linenos="25 "></span>    nodes(path) as path
+<span class="linenos" data-linenos="26 "></span>ORDER BY index
+</code></pre></div>
+<em>Listado 4.9: Ejecución del algoritmo de Dijkstra sobre el nodo Amsterdam</em></p>
+<p>En el listado anterior, se utiliza la sentencia <strong>MATCH</strong> para definir el nodo de origen y, posteriormente, se guarda el grafo incluyendo el nodo de origen y la propiedad de distancia que es la utilizada para obtener el camino mínimo. A continuación, se producirá un conjunto de caminos en el que se mostrará información completa del nodo de origen, destino, coste total y camino recorrido así como los distintos costes parciales. En caso de querer obtener el <strong>camino mínimo entre un par de nodos concretos(<a href="https://neo4j.com/docs/graph-data-science/current/algorithms/dijkstra-source-target/">Single Source-Target Shortest Path</a>)</strong>, es posible utilizar el código mostrado en el listado 4.10 análogo al listado 4.9.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>MATCH (source:Place {id: &#39;Amsterdam&#39;}), (target:Place {id: &#39;London&#39;})
+<span class="linenos" data-linenos=" 2 "></span>CALL gds.shortestPath.dijkstra.stream(&#39;myGraph_Dijkstra&#39;, {
+<span class="linenos" data-linenos=" 3 "></span>    sourceNode: source,
+<span class="linenos" data-linenos=" 4 "></span>    targetNode: target,
+<span class="linenos" data-linenos=" 5 "></span>    relationshipWeightProperty: &#39;distance&#39;
+<span class="linenos" data-linenos=" 6 "></span>})
+<span class="linenos" data-linenos=" 7 "></span>YIELD index, sourceNode, targetNode, totalCost, nodeIds, costs, path
+<span class="linenos" data-linenos=" 8 "></span>RETURN
+<span class="linenos" data-linenos=" 9 "></span>    index,
+<span class="linenos" data-linenos="10 "></span>    gds.util.asNode(sourceNode).id AS sourceNodeName,
+<span class="linenos" data-linenos="11 "></span>    gds.util.asNode(targetNode).id AS targetNodeName,
+<span class="linenos" data-linenos="12 "></span>    totalCost,
+<span class="linenos" data-linenos="13 "></span>    [nodeId IN nodeIds | gds.util.asNode(nodeId).id] AS nodeNames,
+<span class="linenos" data-linenos="14 "></span>    costs,
+<span class="linenos" data-linenos="15 "></span>    nodes(path) as path
+<span class="linenos" data-linenos="16 "></span>ORDER BY index
+</code></pre></div>
+<em>Listado 4.10: Ejecución del algoritmo de Dijkstra sobre el par de nodos Amsterdam-London</em></p>
+<p>El camino mínimo entre Amsterdam y Londres es el formado por: Amsterdam Immingham, Doncaster, London. Este camino tiene un coste total de 720.</p>
+<ul>
+<li><strong><a href="https://neo4j.com/docs/graph-data-science/current/algorithms/astar/">Algoritmo A*</a></strong></li>
+</ul>
+<p>El <strong>algoritmo A* es una técnica de búsqueda informada</strong> que permite, al igual que el algoritmo de Dijkstra, <strong>calcular el camino mínimo entre dos nodos dados cualesquiera</strong>. Al contrario que el algoritmo de Dijkstra, cuando se va a seleccionar el siguiente nodo del camino, la técnica A<em> no solo se tiene en cuanta la distancia ya calculada, sino que </em><em>este algoritmo combina la distancia calculada con el resultado de una función heurística</em><em>. Esta función toma un nodo como entrada y devuelve un valor que corresponde con el coste de llegar al nodo objetivo desde ese nodo. Esta técnica, que se conoce también como de </em><em>búsqueda informada</em><em>, continúa el recorrido del grafo en cada iteración desde el nodo con el menor coste combinado entre la distancia ya calculada y la función heurística. El listado 4.11 muestra cómo obtener el camino mínimo mediante el método A</em> entre Amsterdam y Londres.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>// Creamos el grafo. 
+<span class="linenos" data-linenos=" 2 "></span>CALL gds.graph.project(
+<span class="linenos" data-linenos=" 3 "></span>    &#39;myGraph_A&#39;,
+<span class="linenos" data-linenos=" 4 "></span>    &#39;Place&#39;,
+<span class="linenos" data-linenos=" 5 "></span>    &#39;EROAD&#39;,
+<span class="linenos" data-linenos=" 6 "></span>    {
+<span class="linenos" data-linenos=" 7 "></span>        nodeProperties: [&#39;latitude&#39;, &#39;longitude&#39;, &#39;population&#39;],
+<span class="linenos" data-linenos=" 8 "></span>        relationshipProperties: &#39;distance&#39;
+<span class="linenos" data-linenos=" 9 "></span>    }
+<span class="linenos" data-linenos="10 "></span>)
+<span class="linenos" data-linenos="11 "></span>
+<span class="linenos" data-linenos="12 "></span>
+<span class="linenos" data-linenos="13 "></span>MATCH (source:Place {id: &#39;Amsterdam&#39;}), (target:Place {id: &#39;London&#39;})
+<span class="linenos" data-linenos="14 "></span>CALL gds.shortestPath.astar.stream(&#39;myGraph_A&#39;, {
+<span class="linenos" data-linenos="15 "></span>    sourceNode: source,
+<span class="linenos" data-linenos="16 "></span>    targetNode: target,
+<span class="linenos" data-linenos="17 "></span>    latitudeProperty: &#39;latitude&#39;,
+<span class="linenos" data-linenos="18 "></span>    longitudeProperty: &#39;longitude&#39;,
+<span class="linenos" data-linenos="19 "></span>    relationshipWeightProperty: &#39;distance&#39;
+<span class="linenos" data-linenos="20 "></span>})
+<span class="linenos" data-linenos="21 "></span>YIELD index, sourceNode, targetNode, totalCost, nodeIds, costs, path
+<span class="linenos" data-linenos="22 "></span>RETURN
+<span class="linenos" data-linenos="23 "></span>    index,
+<span class="linenos" data-linenos="24 "></span>    gds.util.asNode(sourceNode).id AS sourceNodeName,
+<span class="linenos" data-linenos="25 "></span>    gds.util.asNode(targetNode).id AS targetNodeName,
+<span class="linenos" data-linenos="26 "></span>    totalCost,
+<span class="linenos" data-linenos="27 "></span>    [nodeId IN nodeIds | gds.util.asNode(nodeId).id] AS nodeNames,
+<span class="linenos" data-linenos="28 "></span>    costs,
+<span class="linenos" data-linenos="29 "></span>    nodes(path) as path
+<span class="linenos" data-linenos="30 "></span>ORDER BY index
+</code></pre></div>
+<em>Listado 4.11: Ejecución del algoritmo A* sobre el par de nodos Amsterdam-London</em></p>
+<p>Como se puede ver, este fragmento de código es similar a los vistos anteriormente, solo que a la hora de guardar el grafo, se almacenan los propiedades de latitud y longitud, necesarias en Neo4j para ejecutar el algoritmo A*.</p>
+<h3 id="425-medidas-de-centralidad">4.2.5 Medidas de centralidad<a class="headerlink" href="#425-medidas-de-centralidad" title="Permanent link">&para;</a></h3>
+<p><strong>La centralidad se define como la relevancia de un nodo dentro de un grafo</strong>. Por tanto, el estudio de medidas de centralidad permite <strong>identificar nodos relevantes dentro de un grafo</strong>. Esta identificación permitirá entender el comportamiento de la red, qué nodos permiten viralizar con mayor rapidez el contenido de la red, desde qué nodos la información está más accesible, etc. El estudio de medidas de centralidad tiene multitud de aplicaciones, aunque son especialmente notables las relacionadas con los ámbitos de la <strong>publicidad y el marketing</strong>, donde el estudio de estas métricas permite identificar actores relevantes dentro de una red a los que se puede contratar para anunciar un producto o identificar sobre qué actores enviar información para alcanzar a más usuarios.</p>
+<p>Respecto a las medidas de centralidad, no existe una única medida sino que, en función de los datos y del propósito que se pretende alcanzar, se utilizan unas métricas u otras. a continuación, se van a definir tres medidas de centralidad con las que se realizarán ejemplos en Neo4j: <strong>centralidad de grado, cercanía e intermediación</strong>. </p>
+<p><em><a href="https://moodle.iesgrancapitan.org/pluginfile.php/58314/mod_folder/content/0/BDA_UD4_06.pdf">ver presentación BDA4.6</a></em></p>
+<p>Para trabajar con medidas de centralidad, se va a importar un grafo social que servirá de ejemplo para el cálculo de estas métricas. El listado 4.12 muestra el código necesario para su creación. Por otra parte, la <a href="images/Figura4.5_Visualizaci%C3%B3n%20de%20un%20grafo%20social.png" title="Figura4.5_Visualización de un grafo social">figura4.5</a> muestra una visualización del grafo importado.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>// Importamos los nodos
+<span class="linenos" data-linenos=" 2 "></span>WITH &quot;https://github.com/neo4j-graph-analytics/book/raw/master/data/&quot; AS base
+<span class="linenos" data-linenos=" 3 "></span>WITH base + &quot;social-nodes.csv&quot; AS uri
+<span class="linenos" data-linenos=" 4 "></span>LOAD CSV WITH HEADERS FROM uri AS row
+<span class="linenos" data-linenos=" 5 "></span>MERGE (:User {id: row.id})
+<span class="linenos" data-linenos=" 6 "></span>
+<span class="linenos" data-linenos=" 7 "></span>//Importamos las relaciones
+<span class="linenos" data-linenos=" 8 "></span>WITH &quot;https://github.com/neo4j-graph-analytics/book/raw/master/data/&quot; AS base
+<span class="linenos" data-linenos=" 9 "></span>WITH base + &quot;social-relationships.csv&quot; AS uri
+<span class="linenos" data-linenos="10 "></span>LOAD CSV WITH HEADERS FROM uri AS row
+<span class="linenos" data-linenos="11 "></span>MATCH (source:User {id: row.src})
+<span class="linenos" data-linenos="12 "></span>MATCH (destination:User {id: row.dst})
+<span class="linenos" data-linenos="13 "></span>MERGE (source)-[:FOLLOWS]-&gt;(destination)
+</code></pre></div>
+<em>Listado 4.12: Importación de un grafo social</em></p>
+<p><img alt="figura4.5" src="images/Figura4.5_Visualizaci%C3%B3n%20de%20un%20grafo%20social.png" title="Figura4.5_Visualización de un grafo social" /></p>
+<p>Figura 4.5: Visualización de un grafo social</p>
+<p><strong><a href="https://neo4j.com/docs/graph-data-science/current/algorithms/degree-centrality/">Centralidad de grado (Degree Centrality)</a></strong></p>
+<p><strong>El grado de un nodo en un grafo se define como el número de aristas o conexiones que entran o salen de un nodo</strong>. Así pues, en un nodo de un grafo se distinguen dos grados: el <strong>grado de entrada</strong>, correspondiente al conjunto de conexiones que entran a un nodo y el <strong>grado de salida</strong>, que se corresponde con el conjunto de aristas que salen de un nodo. El primero indica la <strong>prominencia</strong> de un nodo dentro de la red, mientras que el segundo la <strong>influencia</strong> del nodo dentro del grafo. Esta medida de centralidad es muy utilizada para identificar actores prominentes o influyentes o para identificar conductas fraudulentas, caracterizadas en ocasiones por una actividad anormal. Para calcular la centralidad de grado en este grafo, se almacenará en primer lugar el grafo creado y, a continuación, se ejecutará el método que calcula la centralidad de grado según el código mostrado en el listado 4.13. El nodo con mayor grado es Doug, que tiene un grado de 5, seguido de Alice que tiene un grado de 3.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>CALL gds.graph.project(
+<span class="linenos" data-linenos="2 "></span>&#39;myGraph_centralidad_grado&#39;,
+<span class="linenos" data-linenos="3 "></span>&#39;User&#39;,
+<span class="linenos" data-linenos="4 "></span>{
+<span class="linenos" data-linenos="5 "></span>    FOLLOWS: {
+<span class="linenos" data-linenos="6 "></span>    orientation: &#39;REVERSE&#39;
+<span class="linenos" data-linenos="7 "></span>    }
+<span class="linenos" data-linenos="8 "></span>}
+<span class="linenos" data-linenos="9 "></span>)
+</code></pre></div>
+<p>Como no tenemos ninguna propiedad/coste/puntución en la relación, no hay que indicarla. Si la quisieramos tener en cuenta habría que añadirla dentro de follow de la siguiente forma:</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>CALL gds.graph.project(
+<span class="linenos" data-linenos=" 2 "></span>&#39;myGraph_centralidad_grado&#39;,
+<span class="linenos" data-linenos=" 3 "></span>&#39;User&#39;,
+<span class="linenos" data-linenos=" 4 "></span>{
+<span class="linenos" data-linenos=" 5 "></span>    FOLLOWS: {
+<span class="linenos" data-linenos=" 6 "></span>    orientation: &#39;REVERSE&#39;,
+<span class="linenos" data-linenos=" 7 "></span>    properties: [&#39;score&#39;]
+<span class="linenos" data-linenos=" 8 "></span>    }
+<span class="linenos" data-linenos=" 9 "></span>}
+<span class="linenos" data-linenos="10 "></span>)
+</code></pre></div>
+<p>La centralidad de grado de este grafo sería</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>CALL gds.degree.stream(&#39;myGraph_centralidad_grado&#39;)
+<span class="linenos" data-linenos="2 "></span>YIELD nodeId, score
+<span class="linenos" data-linenos="3 "></span>RETURN gds.util.asNode(nodeId).id AS id, score AS followers
+<span class="linenos" data-linenos="4 "></span>ORDER BY followers DESC, id DESC
+</code></pre></div>
+<em>Listado 4.13: Cálculo de la centralidad de grado</em></p>
+<p><strong><a href="https://neo4j.com/docs/graph-data-science/current/algorithms/closeness-centrality/">Cercanía (Closeness Centrality)</a></strong>
+<em>Beta a 9-11-2022</em></p>
+<p><strong>La cercanía es una medida de centralidad que determina qué nodos del grafo expanden rápida y eficientemente la información a través del grafo</strong>. Para calcular esta medida, se obtiene <strong>la suma del inverso de las distancias de un nodo al resto</strong>. De esta forma, dado un nodo u la cercanía del mismo se calcula por medio de la <a href="images/Ecuacion4.1_Cercania.jpg" title="Ecuación4.1 Cercania">ecuación4.1</a>.</p>
+<p><img alt="ecuación4.1" src="images/Ecuacion4.1_Cercania.jpg" title="Ecuación4.1 Cercania" /></p>
+<p>Donde <em>n</em> es el número de nodos del grafo y <em>d(u, v)</em> es la distancia del camino mínimo entre <em>u</em> y <em>v</em>. <strong>La cercanía es una métrica muy utilizada para estimar tiempos de llegada en redes logísticas, para descubrir actores en posiciones privilegiadas en redes sociales o para estudiar la prominencia de palabras en un documento en el campo de la minería de textos</strong>. Para obtener la cercanía en el grafo social de ejemplo, se puede utilizar el fragmento de código mostrado en el listado 4.14. En el grafo de la imagen, Doug y David tienen una cercanía de 1.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>CALL gds.graph.project(
+<span class="linenos" data-linenos=" 2 "></span>    &#39;myGraph_cercania&#39;,
+<span class="linenos" data-linenos=" 3 "></span>    &#39;User&#39;,
+<span class="linenos" data-linenos=" 4 "></span>    &#39;FOLLOWS&#39;
+<span class="linenos" data-linenos=" 5 "></span>)
+<span class="linenos" data-linenos=" 6 "></span>
+<span class="linenos" data-linenos=" 7 "></span>CALL gds.beta.closeness.stream(&#39;myGraph_cercania&#39;)
+<span class="linenos" data-linenos=" 8 "></span>YIELD nodeId, score
+<span class="linenos" data-linenos=" 9 "></span>RETURN gds.util.asNode(nodeId).id AS id, score
+<span class="linenos" data-linenos="10 "></span>ORDER BY score DESC
+</code></pre></div>
+<em>Listado 4.14: Cálculo de la cercanía</em></p>
+<p><strong><a href="https://neo4j.com/docs/graph-data-science/current/algorithms/betweenness-centrality/">Indeterminación (Betweenness Centrality)</a></strong></p>
+<p><strong>La intermediación es una medida de centralidad que permite detectar la influencia que tiene un nodo o actor del grafo en el flujo de información o de recursos de la red</strong>. El cálculo de la intermediación permite identificar a nodos que hacen de puentes entre distintas porciones del grafo. Esta medida de centralidad <strong>es muy utilizada para la identificación de influencers y el estudio de la viralización de mensajes en redes sociales.</strong> Intuitivamente, la intermediación de un nodo <strong>será mayor en tanto en cuanto dicho nodo aparezca en los caminos mínimos de cualquier otro par de nodos</strong>. Más formalmente, la intermediación puede calcularse según la <a href="images/Ecuacion4.2_Intermediacion.jpg" title="Ecuación4.2 Intermediacion">ecuación4.2</a>.</p>
+<p><img alt="ecuación4.2" src="images/Ecuacion4.2_Intermediacion.jpg" title="Ecuación4.2 Intermediacion" /></p>
+<p>Donde <em>u</em> es el nodo del cual se calcula la intermediación <em>(B),s</em> y <em>t</em> son nodos del grafo, <em>p(u)</em> es el número de caminos mínimos entre <em>s</em> y <em>t</em> que pasan por <em>u</em> y <em>p</em> es el número de caminos mínimos entre s y t. Para el cálculo de la intermediación, se puede utilizar el fragmento de código mostrado en el listado 4.15. Al ejecutar este listado, se obtiene que Alice tiene la mayor intermediación, teniendo un valor de 10.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>CALL gds.graph.project(
+<span class="linenos" data-linenos="2 "></span>    &#39;myGraph_intermediacion&#39;,
+<span class="linenos" data-linenos="3 "></span>    &#39;User&#39;,
+<span class="linenos" data-linenos="4 "></span>    &#39;FOLLOWS&#39;
+<span class="linenos" data-linenos="5 "></span>)
+</code></pre></div>
+<p>Como no tenemos ninguna propiedad/coste/puntución en la relación, no hay que indicarla. Si la quisieramos tener en cuenta habría que añadirla dentro de follow de la siguiente forma:</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>CALL gds.graph.project(
+<span class="linenos" data-linenos=" 2 "></span>    &#39;myGraph_intermediacion&#39;,
+<span class="linenos" data-linenos=" 3 "></span>    &#39;User&#39;,
+<span class="linenos" data-linenos=" 4 "></span>    {
+<span class="linenos" data-linenos=" 5 "></span>        FOLLOWS:
+<span class="linenos" data-linenos=" 6 "></span>        {
+<span class="linenos" data-linenos=" 7 "></span>            properties: &#39;weight&#39;
+<span class="linenos" data-linenos=" 8 "></span>        }
+<span class="linenos" data-linenos=" 9 "></span>    }
+<span class="linenos" data-linenos="10 "></span>)
+</code></pre></div>
+<p>El cálculo de la indeterminación sería</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>CALL gds.betweenness.stream(&#39;myGraph_intermediacion&#39;)
+<span class="linenos" data-linenos="2 "></span>YIELD nodeId, score
+<span class="linenos" data-linenos="3 "></span>RETURN gds.util.asNode(nodeId).id AS id, score
+<span class="linenos" data-linenos="4 "></span>ORDER BY score DESC
+</code></pre></div>
+<em>Listado 4.15: Cálculo de la intermediación</em></p>
+<h3 id="426-deteccion-de-comunidades">4.2.6 Detección de comunidades<a class="headerlink" href="#426-deteccion-de-comunidades" title="Permanent link">&para;</a></h3>
+<p>A la hora de trabajar con grafos reales, que presentan una gran cantidad de nodos y enlaces, muchas veces se pretende <strong>identificar comunidades</strong> dentro del grafo para aplicar algoritmos sobre ellas. <strong>Una comunidad es, por tanto, un conjunto de nodos que presentan más relaciones entre sí que con el resto de nodos fuera de la comunidad</strong>. La detección e identificación de comunidades permite <strong>identificar comportamientos emergentes y de rebaño dentro de una red</strong>. De esta forma, es posible detectar y predecir hábitos de los usuarios. A continuación, se van a aplicar tres métodos de detección de comunidades sobre el grafo social de ejemplo que se ha utilizado en secciones anteriores.</p>
+<p><em><a href="https://moodle.iesgrancapitan.org/pluginfile.php/58314/mod_folder/content/0/BDA_UD4_07.pdf">ver presentación BDA4.7</a></em></p>
+<p><strong><a href="https://neo4j.com/docs/graph-data-science/current/algorithms/triangle-count/">Conteo de triángulos(Triangle Count)</a></strong></p>
+<p><strong>Un triángulo es un conjunto de tres nodos que tienen relaciones entre sí</strong>. El conteo de triángulos para un nodo dado, permite estudiar o inspeccionar de forma global un grafo y, aplicado sobre componentes conexas, permite inspeccionar regiones de un grafo. Para aplicar este método, es necesario almacenar el grafo teniendo en cuenta que las aristas deben almacenarse como <strong>UNDIRECTED</strong>. El listado 4.16 muestra el fragmento de código necesario para aplicar este método sobre el grafo social de ejemplo. La ejecución de este método da como resultado que Alice y Doug son aquellos que pertenecen a más triángulos, un total de 5.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>CALL gds.graph.project(
+<span class="linenos" data-linenos=" 2 "></span>    &#39;myGraph_conteo_triangulo&#39;,
+<span class="linenos" data-linenos=" 3 "></span>    &#39;User&#39;,
+<span class="linenos" data-linenos=" 4 "></span>    {
+<span class="linenos" data-linenos=" 5 "></span>        FOLLOWS: {
+<span class="linenos" data-linenos=" 6 "></span>        orientation: &#39;UNDIRECTED&#39;
+<span class="linenos" data-linenos=" 7 "></span>        }
+<span class="linenos" data-linenos=" 8 "></span>    }
+<span class="linenos" data-linenos=" 9 "></span>)
+<span class="linenos" data-linenos="10 "></span>
+<span class="linenos" data-linenos="11 "></span>CALL gds.triangleCount.stream(&#39;myGraph_conteo_triangulo&#39;)
+<span class="linenos" data-linenos="12 "></span>YIELD nodeId, triangleCount
+<span class="linenos" data-linenos="13 "></span>RETURN gds.util.asNode(nodeId).id AS id, triangleCount
+<span class="linenos" data-linenos="14 "></span>ORDER BY triangleCount DESC
+</code></pre></div>
+<em>Listado 4.16: Ejecución del conteo de triángulos</em></p>
+<p><strong><a href="https://neo4j.com/docs/graph-data-science/current/algorithms/local-clustering-coefficient/">Coeficiente local de clustering (Local Clustering Coefficient)</a></strong></p>
+<p>Este coeficiente <strong>proporciona una medida cuantitativa del grado de agrupación de un nodo</strong>. Para el cálculo del coeficiente local de clustering se utiliza el conteo de triángulos, de forma que se compara el grado de agrupación de un nodo con el grado máximo de agrupación que podría tener. Así pues, el coeficiente local de clustering se puede calcular mediante la <a href="images/Ecuacion4.3_Coeficiente%20local.jpg" title="Ecuación4.3 Coeficiente local">ecuación4.3</a>.</p>
+<p><img alt="ecuación4.3" src="images/Ecuacion4.3_Coeficiente%20local.jpg" title="Ecuación4.3 Coeficiente local" /></p>
+<p>Donde <em>u</em> es un nodo, <em>R(u)</em> es el número de relaciones que a través de los vecinos de <em>u</em> (lo cual puede medirse con el número de triángulos que pasan por <em>u</em> y <em>k(u)</em> es el grado de <em>u</em>. El cálculo del coeficiente local de clustering puede realizarse por medio del listado 4.17. Los actores Bridget, Charles, Mark y Michael tienen el mayor coeficiente local de clustering, que es 1. </p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>CALL gds.graph.project(
+<span class="linenos" data-linenos=" 2 "></span>    &#39;myGraph_LCC&#39;,
+<span class="linenos" data-linenos=" 3 "></span>    &#39;User&#39;,
+<span class="linenos" data-linenos=" 4 "></span>    {
+<span class="linenos" data-linenos=" 5 "></span>        FOLLOWS: {
+<span class="linenos" data-linenos=" 6 "></span>        orientation: &#39;UNDIRECTED&#39;
+<span class="linenos" data-linenos=" 7 "></span>        }
+<span class="linenos" data-linenos=" 8 "></span>    }
+<span class="linenos" data-linenos=" 9 "></span>)
+<span class="linenos" data-linenos="10 "></span>
+<span class="linenos" data-linenos="11 "></span>CALL gds.localClusteringCoefficient.stream(&#39;myGraph_LCC&#39;)
+<span class="linenos" data-linenos="12 "></span>YIELD nodeId, localClusteringCoefficient
+<span class="linenos" data-linenos="13 "></span>RETURN gds.util.asNode(nodeId).id AS id, localClusteringCoefficient
+<span class="linenos" data-linenos="14 "></span>ORDER BY localClusteringCoefficient DESC
+</code></pre></div>
+<em>Listado 4.17: Cálculo del coeficiente local de clustering</em></p>
+<p>Por último, <strong>el coeficiente global de clustering se calcula como la suma normalizada de los coeficientes de clustering locales</strong>. Así, estos coeficientes nos permiten encontrar medidas cuantitativas para detectar comunidades, pudiendo especificar incluso un umbral para establecer la comunidad (por ejemplo, especificar que los nodos han de estar conectados en un 40 %).</p>
+<p><strong><a href="https://neo4j.com/docs/graph-data-science/current/algorithms/strongly-connected-components/">Componentes fuertemente conexas (Strongly Connected Components)</a></strong>
+<em>alpha a 09-11-2022</em></p>
+<p><strong>En un grafo dirigido, una componente fuertemente conexa es aquel grupo de nodos en el que cualquier nodo puede ser alcanzado por cualquier otro en ambas direcciones</strong>. El estudio de las componentes fuertemente conexas en un grafo permite <strong>estudiar la conectividad de la red</strong>. Para realizar el cálculo de las componentes conexas, el cual se realiza en un tiempo de procesamiento proporcional al número de nodos, es posible utilizar el listado 4.18. El resultado permite comprobar que hay un total de cuatro componentes fuertemente conexas en el grafo social.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>CALL gds.graph.project(
+<span class="linenos" data-linenos=" 2 "></span>    &#39;myGraph_SCC&#39;,
+<span class="linenos" data-linenos=" 3 "></span>    &#39;User&#39;,
+<span class="linenos" data-linenos=" 4 "></span>    &#39;FOLLOWS&#39;
+<span class="linenos" data-linenos=" 5 "></span>)
+<span class="linenos" data-linenos=" 6 "></span>
+<span class="linenos" data-linenos=" 7 "></span>CALL gds.alpha.scc.stream(&#39;myGraph_SCC&#39;, {})
+<span class="linenos" data-linenos=" 8 "></span>YIELD nodeId, componentId
+<span class="linenos" data-linenos=" 9 "></span>RETURN gds.util.asNode(nodeId).id AS Name, componentId AS Component
+<span class="linenos" data-linenos="10 "></span>ORDER BY Component DESC
+</code></pre></div>
+<em>Listado 4.18: Obtención de componentes fuertemente conexas</em></p>
+<h3 id="427-prediccion-de-enlaces">4.2.7 Predicción de enlaces<a class="headerlink" href="#427-prediccion-de-enlaces" title="Permanent link">&para;</a></h3>
+<p>Los grafos son estructuras de datos que representan sistemas dinámicos, que evolucionan a lo largo del tiempo. Por este motivo, es muy común que en un grafo cualquiera aparezcan y desaparezcan nuevos nodos y conexiones entre dichos nodos. <strong>Los métodos de predicción de enlaces permiten predecir qué enlaces se formarán próximamente entre los nodos del grafo, permitiendo adelantarse a los acontecimientos y prevenir eventualidades</strong>. Como norma general, los métodos de predicción de enlaces <strong>se basan en medidas de cercanía y de centralidad</strong> asumiendo que los nuevos enlaces se producirán, mayoritariamente, sobre/desde los nodos más relevantes. A continuación, se detalla el funcionamiento de tres métodos comúnmente utilizados en predicción de enlaces. </p>
+<p><em><a href="https://moodle.iesgrancapitan.org/pluginfile.php/58314/mod_folder/content/0/BDA_UD4_08.pdf">ver presentación BDA4.8</a></em></p>
+<p><strong><a href="https://neo4j.com/docs/graph-data-science/current/alpha-algorithms/common-neighbors/">Vecinos comunes (Common Neighbors)</a></strong>
+<em>alpha a 09-11-2022</em></p>
+<p>El método de vecinos comunes se basa en la idea genérica de que dos actores de la red que tienen una relación con un usuario común tendrán más posibilidad de conectarse entre sí que quienes no. Formalmente, dados dos nodos, la posibilidad de que se produzca un enlace entre los nodos <em>x</em> e <em>y</em> viene dada por la <a href="images/Ecuacion4.4_Vecinos%20comunes.jpg" title="Ecuación4.4 Vecinos comunes">ecuación4.4</a>.</p>
+<p><img alt="ecuación4.4" src="images/Ecuacion4.4_Vecinos%20comunes.jpg" title="Ecuación4.4 Vecinos comunes" /></p>
+<p>Donde <em>N(x)</em> es el conjunto de nodos adyacentes a <em>x</em> y <em>N(y)</em> es el conjunto de nodos adyacentes a <em>y</em>. Cuanto mayor es el valor de <em>CN</em> calculado, existe mayor posibilidad de que se produzca un nuevo enlace entre <em>x</em> e <em>y</em>. En el grafo social de ejemplo, el cálculo de vecinos comunes para Charles y Bridget se puede realizar a través del listado 4.19. El resultado de este cálculo es 2.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>//No funciona ni en la documentación oficial (09-11-2022)
+<span class="linenos" data-linenos="2 "></span>MATCH (x:User{id:&#39;Charles&#39;})
+<span class="linenos" data-linenos="3 "></span>MATCH (y:User{id:&#39;Bridget&#39;})
+<span class="linenos" data-linenos="4 "></span>RETURN gds.alpha.linkprediction.commonNeighbors(x,y) AS score
+</code></pre></div>
+<em>Listado 4.19: Obtención del valor de vecinos comunes para Charles y Bridget</em></p>
+<p><strong><a href="https://neo4j.com/docs/graph-data-science/current/alpha-algorithms/preferential-attachment/">Adhesión preferencial (Preferential Attachment)</a></strong>
+<em>alpha a 09-11-2022</em></p>
+<p>Este método se basa en la idea general de que cuanto más conectado está un nodo, es más probable que reciba nuevos enlaces. Formalmente, esta idea se puede expresar por medio de la <a href="images/Ecuacion4.5_Adhesi%C3%B3n%20preferencial.jpg" title="Ecuación4.5 Adhesión preferencial">ecuación4.5</a></p>
+<p><img alt="ecuación4.5" src="images/Ecuacion4.5_Adhesi%C3%B3n%20preferencial.jpg" title="Ecuación4.5 Adhesión preferencial" /></p>
+<p>En el grafo social de ejemplo, el cálculo de adhesión preferencial para Charles y Bridget se puede realizar a través del listado 4.20. El resultado de este cálculo es 10.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>MATCH (x:User{id:&#39;Charles&#39;})
+<span class="linenos" data-linenos="2 "></span>MATCH (y:User{id:&#39;Bridget&#39;})
+<span class="linenos" data-linenos="3 "></span>RETURN gds.alpha.linkprediction.preferentialAttachment(x, y) AS score
+</code></pre></div>
+<em>Listado 4.20: Obtención del valor de adhesión preferencial para Charles y Bridget</em></p>
+<p><strong><a href="https://neo4j.com/docs/graph-data-science/current/alpha-algorithms/resource-allocation/">Asignación de recursos (Resource Allocation)</a></strong>
+<em>alpha a 09-11-2022</em></p>
+<p>Se trata de una métrica compleja que evalúa la cercanía de un par de nodos para determinar la posibilidad de que, entre ellos, se produzca un nuevo enlace. Para ello, se utiliza la expresión dada en la <a href="images/Ecuacion4.6_Asignaci%C3%B3n%20de%20recursos.jpg" title="Ecuación4.6 Asignación de recursos">ecuación4.6</a>.</p>
+<p><img alt="ecuación4.6" src="images/Ecuacion4.6_Asignaci%C3%B3n%20de%20recursos.jpg" title="Ecuación4.6 Asignación de recursos" /></p>
+<p>En el grafo social de ejemplo, el cálculo de la asignación de recursos para Charles y Bridget se puede realizar a través del listado 4.21. El resultado de este cálculo es 0.309.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>//No funciona ni en la documentación oficial (09-11-2022)
+<span class="linenos" data-linenos="2 "></span>MATCH (x:User{id:&#39;Charles&#39;})
+<span class="linenos" data-linenos="3 "></span>MATCH (y:User{id:&#39;Bridget&#39;})
+<span class="linenos" data-linenos="4 "></span>RETURN gds.alpha.linkprediction.resourceAllocation(x, y) AS score
+</code></pre></div>
+<em>Listado 4.21: Obtención del valor de asignación de recursos para Charles y Bridget</em></p>
+<h3 id="428-machine-learning">4.2.8 Machine Learning<a class="headerlink" href="#428-machine-learning" title="Permanent link">&para;</a></h3>
+<p>Existe también la posibilidad de trabajar con <strong>Machine learning</strong> en los sistema de Big Data orientados a grafos como Neo4j</p>
+<p>Toda la documentación de los mismos se encuentra también en la <a href="https://neo4j.com/docs/graph-data-science/current/machine-learning/machine-learning/">documentación oficial</a>. Esta funcionalidad no forma parte de los Resultados de Aprendizaje de este módulo, ya que existe un módulo especifíco para este tema. Aún así, podría ser interesante investigarlo e intentar integrarlo como una práctica opcional 😉</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="https://orientdb.org">https://orientdb.org</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://github.com/twitter-archive/flockdb">https://github.com/twitter-archive/flockdb</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://objectivity.com/infinitegraph/">https://objectivity.com/infinitegraph/</a>&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p><a href="https://neo4j.com">https://neo4j.com</a>&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Volver al principio
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2022-2023 Jaime Rabasco - Licencia CC BY-NC-SA
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/jaimerabasco" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    <a href="mailto:<jaimerabasco@iesgrancapitan.org>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.7l167.6-182.9c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking", "navigation.indexes", "toc.follow", "navigation.top", "header.autohide", "announce.dismiss"], "search": "../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.ba449ae6.min.js"></script>
+      
+    
+  </body>
+</html>

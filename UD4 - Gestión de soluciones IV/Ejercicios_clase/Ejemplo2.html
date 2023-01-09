@@ -1,0 +1,889 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://jaimerabasco.github.io/CE-IABD_BigDataAplicado_IESGranCapitan/UD4%20-%20Gesti%C3%B3n%20de%20soluciones%20IV/Ejercicios_clase/Ejemplo2.html">
+      
+      
+        <link rel="prev" href="Ejemplo1.html">
+      
+      
+        <link rel="next" href="../../UD5%20-%20Introducci%C3%B3n%20a%20la%20computaci%C3%B3n%20paralela%20y%20distribuida/index.html">
+      
+      <link rel="icon" href="../../images/logo.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
+    
+    
+      
+        <title>Ejercicio de clase 2 - Big Data Aplicado</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6b71719e.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Ejercicio de clase 2 - Big Data Aplicado" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="https://jaimerabasco.github.io/CE-IABD_BigDataAplicado_IESGranCapitan/assets/images/social/UD4 - Gestión de soluciones IV/Ejercicios_clase/Ejemplo2.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://jaimerabasco.github.io/CE-IABD_BigDataAplicado_IESGranCapitan/UD4%20-%20Gesti%C3%B3n%20de%20soluciones%20IV/Ejercicios_clase/Ejemplo2.html" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Ejercicio de clase 2 - Big Data Aplicado" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="https://jaimerabasco.github.io/CE-IABD_BigDataAplicado_IESGranCapitan/assets/images/social/UD4 - Gestión de soluciones IV/Ejercicios_clase/Ejemplo2.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#big-data-aplicado" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../index.html" title="Big Data Aplicado" class="md-header__button md-logo" aria-label="Big Data Aplicado" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Big Data Aplicado
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ejercicio de clase 2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="Big Data Aplicado" class="md-nav__button md-logo" aria-label="Big Data Aplicado" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    Big Data Aplicado
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
+        Inicio
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../UD1%20-%20Gesti%C3%B3n%20de%20soluciones%20I/index.html">UD1.- Gestión de Soluciones I</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="UD1.- Gestión de Soluciones I" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          UD1.- Gestión de Soluciones I
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../UD2%20-%20Gesti%C3%B3n%20de%20soluciones%20II/index.html">UD2.- Gestión de Soluciones II</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="UD2.- Gestión de Soluciones II" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          UD2.- Gestión de Soluciones II
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../UD3%20-%20Gesti%C3%B3n%20de%20soluciones%20III/index.html">UD3.- Gestión de Soluciones III</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="UD3.- Gestión de Soluciones III" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          UD3.- Gestión de Soluciones III
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UD3%20-%20Gesti%C3%B3n%20de%20soluciones%20III/Ejercicios_clase/Ejemplo1.html" class="md-nav__link">
+        Ejercicio de clase
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../index.html">UD4.- Gestión de Soluciones IV</a>
+          
+            <label for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="UD4.- Gestión de Soluciones IV" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          UD4.- Gestión de Soluciones IV
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Ejemplo1.html" class="md-nav__link">
+        Ejercicio de clase 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Ejercicio de clase 2
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Ejemplo2.html" class="md-nav__link md-nav__link--active">
+        Ejercicio de clase 2
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ud-4-gestion-de-soluciones-iv" class="md-nav__link">
+    UD 4 - Gestión de Soluciones IV
+  </a>
+  
+    <nav class="md-nav" aria-label="UD 4 - Gestión de Soluciones IV">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-2-neo4j" class="md-nav__link">
+    Ejemplo 2 Neo4j
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../UD5%20-%20Introducci%C3%B3n%20a%20la%20computaci%C3%B3n%20paralela%20y%20distribuida/index.html">UD5 - Introducción a la computación paralela y distribuida</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="UD5 - Introducción a la computación paralela y distribuida" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          UD5 - Introducción a la computación paralela y distribuida
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../UD6%20-%20Apache%20Hadoop/index.html">UD6 - Apache Hadoop</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="UD6 - Apache Hadoop" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          UD6 - Apache Hadoop
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ud-4-gestion-de-soluciones-iv" class="md-nav__link">
+    UD 4 - Gestión de Soluciones IV
+  </a>
+  
+    <nav class="md-nav" aria-label="UD 4 - Gestión de Soluciones IV">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-2-neo4j" class="md-nav__link">
+    Ejemplo 2 Neo4j
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="big-data-aplicado">Big Data APlicado<a class="headerlink" href="#big-data-aplicado" title="Permanent link">&para;</a></h1>
+<h2 id="ud-4-gestion-de-soluciones-iv">UD 4 - Gestión de Soluciones IV<a class="headerlink" href="#ud-4-gestion-de-soluciones-iv" title="Permanent link">&para;</a></h2>
+<h3 id="ejemplo-2-neo4j">Ejemplo 2 Neo4j<a class="headerlink" href="#ejemplo-2-neo4j" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Para esta práctica vamos a usar la herramienta SandBox Neo4j: https://sandbox.neo4j.com/</p>
+<ul>
+<li>Crearemos un nuevo proyecto y elegiremos el proyecto de twitter.</li>
+<li>Vamos obtener <strong>conocimiento</strong> a través de nuestras relaciones en nuestra cuenta oficial de Twitter</li>
+<li>Seguimos los pases para dar acceso a Neo4j a nuestra cuenta. <strong><em>No olvides derogar el permiso al terminar el ejemplo</em></strong></li>
+</ul>
+</li>
+<li>
+<p>El esquema del grafo que nos va a crear de nuestra cuenta de Twitter es la siguiente</p>
+</li>
+</ol>
+<p><img alt="" src="img/UD4_Ejemplo2_twitter-data-model.svg" /></p>
+<ul>
+<li>Quién te está mencionando en Twitter</li>
+<li>¿Quiénes son tus seguidores más influyentes?</li>
+<li>Qué etiquetas usas con frecuencia</li>
+<li>¿Cuántas personas a las que sigues también te siguen?</li>
+<li>La gente tuitea sobre ti, pero no los sigues</li>
+<li>Enlaces de retweets interesantes</li>
+<li>Otras personas tuiteando con algunos de tus mejores hashtags</li>
+</ul>
+<ol start="3">
+<li><strong>Tus menciones</strong></li>
+</ol>
+<p>La siguiente consulta de Cypher determinar quién te está mencionando en Twitter.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>// Graph of some of your mentions
+<span class="linenos" data-linenos="2 "></span>MATCH (u:Me:User)-[p:POSTS]-&gt;(t:Tweet)-[:MENTIONS]-&gt;(m:User)
+<span class="linenos" data-linenos="3 "></span>WITH u,p,t,m, COUNT(m.screen_name) AS count
+<span class="linenos" data-linenos="4 "></span>ORDER BY count DESC
+<span class="linenos" data-linenos="5 "></span>RETURN u,p,t,m
+<span class="linenos" data-linenos="6 "></span>LIMIT 10
+</code></pre></div>
+Detalles de algunas de tus menciones</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>// Detailed table of some of your mentions
+<span class="linenos" data-linenos="2 "></span>MATCH (u:User:Me)-[:POSTS]-&gt;(t:Tweet)-[:MENTIONS]-&gt;(m:User)
+<span class="linenos" data-linenos="3 "></span>RETURN m.screen_name AS screen_name, COUNT(m.screen_name) AS count 
+<span class="linenos" data-linenos="4 "></span>ORDER BY count DESC
+<span class="linenos" data-linenos="5 "></span>LIMIT 10
+</code></pre></div>
+<ol start="4">
+<li><strong>Seguidores más influyentes</strong></li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>// Most influential followers
+<span class="linenos" data-linenos="2 "></span>MATCH (follower:User)-[:FOLLOWS]-&gt;(u:User:Me)
+<span class="linenos" data-linenos="3 "></span>RETURN follower.screen_name AS user, follower.followers AS followers
+<span class="linenos" data-linenos="4 "></span>ORDER BY followers DESC
+<span class="linenos" data-linenos="5 "></span>LIMIT 10
+</code></pre></div>
+<ol start="5">
+<li><strong>Hashtags mas usados</strong></li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>// The hashtags you have used most often
+<span class="linenos" data-linenos="2 "></span>MATCH (h:Hashtag)&lt;-[:TAGS]-(t:Tweet)&lt;-[:POSTS]-(u:User:Me)
+<span class="linenos" data-linenos="3 "></span>WITH h, COUNT(h) AS Hashtags
+<span class="linenos" data-linenos="4 "></span>ORDER BY Hashtags DESC
+<span class="linenos" data-linenos="5 "></span>RETURN h.name, Hashtags
+<span class="linenos" data-linenos="6 "></span>LIMIT 10
+</code></pre></div>
+<ol start="6">
+<li><strong>Tasa de seguimiento</strong>. ¿A qué ritmo las personas a las que sigues también te siguen a ti?</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>// Followback rate
+<span class="linenos" data-linenos="2 "></span>MATCH (me:User:Me)-[:FOLLOWS]-&gt;(f)
+<span class="linenos" data-linenos="3 "></span>WITH me, f, size((f)-[:FOLLOWS]-&gt;(me)) as doesFollowBack
+<span class="linenos" data-linenos="4 "></span>RETURN SUM(doesFollowBack) / toFloat(COUNT(f))  AS followBackRate
+</code></pre></div>
+<ol start="7">
+<li><strong>Recomendaciones de seguidores.</strong> ¿Quién tuitea sobre ti, pero no lo sigues?</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>// Follower Recommendations - tweeting about you, but you don&#39;t follow
+<span class="linenos" data-linenos="2 "></span>MATCH (ou:User)-[:POSTS]-&gt;(t:Tweet)-[mt:MENTIONS]-&gt;(me:User:Me)
+<span class="linenos" data-linenos="3 "></span>WITH DISTINCT ou, me
+<span class="linenos" data-linenos="4 "></span>WHERE (ou)-[:FOLLOWS]-&gt;(me) AND NOT (me)-[:FOLLOWS]-&gt;(ou)
+<span class="linenos" data-linenos="5 "></span>RETURN ou.screen_name
+</code></pre></div>
+<ol start="8">
+<li><strong>Enlaces de retweets interesantes.</strong> ¿Qué enlaces retuiteas y con qué frecuencia se marcan como favoritos?</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>// Links from interesting retweets
+<span class="linenos" data-linenos="2 "></span>MATCH
+<span class="linenos" data-linenos="3 "></span>  (:User:Me)-[:POSTS]-&gt;
+<span class="linenos" data-linenos="4 "></span>  (t:Tweet)-[:RETWEETS]-&gt;(rt)-[:CONTAINS]-&gt;(link:Link)
+<span class="linenos" data-linenos="5 "></span>RETURN
+<span class="linenos" data-linenos="6 "></span>  t.id_str AS tweet, link.url AS url, rt.favorites AS favorites
+<span class="linenos" data-linenos="7 "></span>ORDER BY
+<span class="linenos" data-linenos="8 "></span>  favorites DESC
+<span class="linenos" data-linenos="9 "></span>LIMIT 10
+</code></pre></div>
+<p>Mismo que el anterior, pero mostrando el nombre del usuario del tweet original</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>// Links from interesting retweets
+<span class="linenos" data-linenos=" 2 "></span>MATCH
+<span class="linenos" data-linenos=" 3 "></span>  (u:User:Me)-[:POSTS]-&gt;(t:Tweet)-[:RETWEETS]-&gt;(rt)-[:CONTAINS]-&gt;(link:Link)
+<span class="linenos" data-linenos=" 4 "></span>MATCH
+<span class="linenos" data-linenos=" 5 "></span>  (u:User:Me)-[:POSTS]-&gt;(t_link:Tweet)-[:RETWEETS]-&gt;(rt)&lt;-[:POSTS]-(m:User)
+<span class="linenos" data-linenos=" 6 "></span>RETURN
+<span class="linenos" data-linenos=" 7 "></span>  t.id_str AS tweet, link.url AS url, rt.favorites AS favorites, m.screen_name
+<span class="linenos" data-linenos=" 8 "></span>ORDER BY
+<span class="linenos" data-linenos=" 9 "></span>  favorites DESC
+<span class="linenos" data-linenos="10 "></span>LIMIT 10
+</code></pre></div>
+<ol start="9">
+<li><strong>Hashtags comunes.</strong> ¿Qué usuarios tuitean con algunos de tus mejores hashtags?</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>// Users tweeting with your top hashtags
+<span class="linenos" data-linenos=" 2 "></span>MATCH
+<span class="linenos" data-linenos=" 3 "></span>  (me:User:Me)-[:POSTS]-&gt;(tweet:Tweet)-[:TAGS]-&gt;(ht)
+<span class="linenos" data-linenos=" 4 "></span>MATCH
+<span class="linenos" data-linenos=" 5 "></span>  (ht)&lt;-[:TAGS]-(tweet2:Tweet)&lt;-[:POSTS]-(sugg:User)
+<span class="linenos" data-linenos=" 6 "></span>WHERE
+<span class="linenos" data-linenos=" 7 "></span>  sugg &lt;&gt; me
+<span class="linenos" data-linenos=" 8 "></span>  AND NOT
+<span class="linenos" data-linenos=" 9 "></span>  (tweet2)-[:RETWEETS]-&gt;(tweet)
+<span class="linenos" data-linenos="10 "></span>WITH
+<span class="linenos" data-linenos="11 "></span>  sugg, collect(distinct(ht)) as tags
+<span class="linenos" data-linenos="12 "></span>RETURN
+<span class="linenos" data-linenos="13 "></span>  sugg.screen_name as friend, size(tags) as common
+<span class="linenos" data-linenos="14 "></span>ORDER BY
+<span class="linenos" data-linenos="15 "></span>  common DESC
+<span class="linenos" data-linenos="16 "></span>LIMIT 20
+</code></pre></div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Volver al principio
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2022-2023 Jaime Rabasco - Licencia CC BY-NC-SA
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/jaimerabasco" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    <a href="mailto:<jaimerabasco@iesgrancapitan.org>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.7l167.6-182.9c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.indexes", "toc.follow", "navigation.top", "header.autohide", "announce.dismiss"], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ba449ae6.min.js"></script>
+      
+    
+  </body>
+</html>
